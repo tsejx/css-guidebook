@@ -1,4 +1,4 @@
-﻿# css-clear-float-methods
+# css-clear-float-methods
 
 ---
 #CSS清除浮动的方法大全
