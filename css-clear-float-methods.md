@@ -1,9 +1,5 @@
-# css-clear-float-methods
+# CSS清除浮动的方法大全
 
----
-#CSS清除浮动的方法大全
-
-[TOC]
 
 在各种浏览器中显示效果也有可能不相同，这样让清除浮动更难了，下面总结8种清除浮动的方法，测试已通过 ie chrome firefox opera 
 
@@ -13,21 +9,23 @@
 
 下面总结8种清除浮动的方法（测试已通过 ie chrome firefox opera，后面三种方法只做了解就可以了）： 
 
-##1，父级div定义 height 
-```
-<style type="text/css"> 
-.div1{background:#000080;border:1px solid red;/*解决代码*/height:200px;} 
-.div2{background:#800080;border:1px solid red;height:100px;margin-top:10px} 
-.left{float:left;width:20%;height:200px;background:#DDD} 
-.right{float:right;width:30%;height:80px;background:#DDD} 
-</style> 
-<div class="div1"> 
-<div class="left">Left</div> 
-<div class="right">Right</div> 
-</div> 
-<div class="div2"> 
-div2 
-</div> 
+## 1.父级div定义 height 
+```javascript
+ 
+  <style type="text/css"> 
+  .div1{background:#000080;border:1px solid red;/*解决代码*/height:200px;} 
+  .div2{background:#800080;border:1px solid red;height:100px;margin-top:10px} 
+  .left{float:left;width:20%;height:200px;background:#DDD} 
+  .right{float:right;width:30%;height:80px;background:#DDD} 
+  </style> 
+  <div class="div1"> 
+  <div class="left">Left</div> 
+  <div class="right">Right</div> 
+  </div> 
+  <div class="div2"> 
+  div2 
+  </div> 
+
 ```
 
 - 原理：父级div手动定义height，就解决了父级div无法自动获取到高度的问题。 
