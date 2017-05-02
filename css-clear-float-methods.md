@@ -116,3 +116,101 @@ div2 
  - 缺点：不能和position配合使用，因为超出的尺寸的会被隐藏。 
 
  - 建议：只推荐没有使用position或对overflow:hidden理解比较深的朋友使用。 
+
+## 5.父级div定义 overflow:auto 
+代码如下:
+```
+<style type="text/css"> 
+.div1{background:#000080;border:1px solid red;/*解决代码*/width:98%;overflow:auto} 
+.div2{background:#800080;border:1px solid red;height:100px;margin-top:10px;width:98%} 
+.left{float:left;width:20%;height:200px;background:#DDD} 
+.right{float:right;width:30%;height:80px;background:#DDD} 
+</style> 
+<div class="div1"> 
+<div class="left">Left</div> 
+<div class="right">Right</div> 
+</div> 
+<div class="div2"> 
+div2 
+</div> 
+```
+ - 原理：必须定义width或zoom:1，同时不能定义height，使用overflow:auto时，浏览器会自动检查浮动区域的高度 
+
+ - 优点：简单、代码少、浏览器支持好 
+
+ - 缺点：内部宽高超过父级div时，会出现滚动条。 
+
+ - 建议：不推荐使用，如果你需要出现滚动条或者确保你的代码不会出现滚动条就使用吧。 
+
+## 6.父级div 也一起浮动 
+代码如下:
+```
+<style type="text/css"> 
+.div1{background:#000080;border:1px solid red;/*解决代码*/width:98%;margin-bottom:10px;float:left} 
+.div2{background:#800080;border:1px solid red;height:100px;width:98%;/*解决代码*/clear:both} 
+.left{float:left;width:20%;height:200px;background:#DDD} 
+.right{float:right;width:30%;height:80px;background:#DDD} 
+</style> 
+<div class="div1"> 
+<div class="left">Left</div> 
+<div class="right">Right</div> 
+</div> 
+<div class="div2"> 
+div2 
+</div> 
+```
+ - 原理：所有代码一起浮动，就变成了一个整体 
+
+ - 优点：没有优点 
+
+ - 缺点：会产生新的浮动问题。 
+
+ - 建议：不推荐使用，只作了解。 
+
+## 7.父级div定义 display:table 
+代码如下:
+```
+<style type="text/css"> 
+.div1{background:#000080;border:1px solid red;/*解决代码*/width:98%;display:table;margin-bottom:10px;} 
+.div2{background:#800080;border:1px solid red;height:100px;width:98%;} 
+.left{float:left;width:20%;height:200px;background:#DDD} 
+.right{float:right;width:30%;height:80px;background:#DDD} 
+</style> 
+<div class="div1"> 
+<div class="left">Left</div> 
+<div class="right">Right</div> 
+</div> 
+<div class="div2"> 
+div2 
+</div> 
+```
+ - 原理：将div属性变成表格 
+
+ - 优点：没有优点 
+
+ - 缺点：会产生新的未知问题。 
+
+ - 建议：不推荐使用，只作了解。 
+
+## 8.结尾处加 br标签 clear:both 
+代码如下:
+```
+<style type="text/css"> 
+.div1{background:#000080;border:1px solid red;margin-bottom:10px;zoom:1} 
+.div2{background:#800080;border:1px solid red;height:100px} 
+.left{float:left;width:20%;height:200px;background:#DDD} 
+.right{float:right;width:30%;height:80px;background:#DDD} 
+.clearfloat{clear:both} 
+</style> 
+<div class="div1"> 
+<div class="left">Left</div> 
+<div class="right">Right</div> 
+<br class="clearfloat" /> 
+</div> 
+<div class="div2"> 
+div2 
+</div> 
+```
+ - 原理：父级div定义zoom:1来解决IE浮动问题，结尾处加 br标签 clear:both 
+
+ - 建议：不推荐使用，只作了解。
