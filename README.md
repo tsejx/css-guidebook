@@ -1,3 +1,19 @@
-# css-article
+﻿# CSS 笔记整理
 
-This repository is collecting article about css.
+# CSS 知识结构
+1. 概要、选择器、特殊性与刻度单位
+
+2. 盒子模型、边距折叠、内联与块级标签
+
+3. BFC、定位、浮动、垂直居中
+
+4. 页面布局的多种方法(Flex布局)
+
+5. Web Font与Sprite
+
+6. CSS3新特性（阴影、动画、渐变等）
+
+7. 前端预处理技术（Less、Sass、CoffeScript）
+
+8. 浏览器兼容与前端性能优化
+

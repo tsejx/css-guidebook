@@ -1,0 +1,71 @@
+css如何实现垂直水平居中？
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS垂直居中</title>
+<style>
+    .wrapper{
+        width: 500px;
+        height: 500px;
+        background-color: #666;
+        /*方式一，方式二 绝对定位的方式*/
+        /*position: relative;*/
+        /*方式三 基于属性计算*/
+        /*overflow: hidden;*/
+        /*方式四: 基于vertical-align属性*/
+        /*text-align: center;*/
+        /*方式五: 使用弹性盒子*/
+        /*display: flex;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+        /*方式六 基于块级内联元素的特性*/
+        line-height: 550px; /*.wrapper.height+1/2*box.height*/
+        text-align: center;
+    }
+
+    .box{
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        /*方式一*/
+        /*position: absolute;*/
+        /*left:0;*/
+        /*right: 0;*/
+        /*top:0;*/
+        /*bottom:0;*/
+        /*margin: auto;*/
+        /*方式二*/
+        /*position: absolute;*/
+        /*left: 50%;*/
+        /*top: 50%;*/
+        /*margin-left: -50px; !*1/2的width*!*/
+        /*margin-top: -50px; !*1/2的height*!*/
+        /*方式三*/
+        /*margin: calc(50% - 50px) auto;*/
+        /*方式四*/
+        /*display: inline-block;*/
+        /*vertical-align: middle;*/
+        /*margin: 0 auto;*/
+        /*方式六*/
+        display: inline-block;
+    }
+
+    /*方式四的辅助元素*/
+    /*.help{*/
+        /*width: 0;*/
+        /*height: 100%;*/
+        /*display: inline-block;*/
+        /*vertical-align: middle;*/
+    /*}*/
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="box"></div>
+    <!--方式四-->
+    <!--<div class="help"></div>-->
+</div>
+</body>
+</html>
