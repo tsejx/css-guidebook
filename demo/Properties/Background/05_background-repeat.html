@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>背景Background-repeat</title>
+<link rel="stylesheet" type="text/css" href="demo.css">
+<style type="text/css">
+	.demo{
+		width:555px;height:123px;
+		background-image: url(red.png);
+	}
+	/* 背景图像将在水平方向重复 */
+	.demo-1{
+		background-repeat: repeat-x ;
+	}
+	/* 背景图像将在垂直方向重复。 */
+	.demo-2{
+		background-repeat: repeat-y ;
+	}
+	.demo-3{
+		background-repeat: space ;
+	}
+	.demo-4{
+		background-repeat: round ;
+	}
+	/* 背景图像将仅显示一次。 */
+	.demo-5{
+		background-repeat: no-repeat ;
+	}
+</style>
+</head>
+<body>
+	<div class="demo demo-1"></div>
+	<div class="demo demo-2"></div>
+	<div class="demo demo-3"></div>
+	<div class="demo demo-4"></div>
+	<div class="demo demo-5"></div>
+</body>
+</html>

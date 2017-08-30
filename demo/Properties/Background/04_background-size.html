@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>背景Background-size</title>
+<link rel="stylesheet" type="text/css" href="demo.css">
+<style type="text/css">
+  .demo{
+    background-image: url(red.png);
+    background-repeat: no-repeat;
+  }
+  /* background-size: length|percentage|cover|contain; */
+  /* length
+    设置背景图像的高度和宽度。
+    第一个值设置宽度，第二个值设置高度。
+    如果只设置一个值，则第二个值会被设置为 "auto"。 */
+  .demo-1{
+    background-size: 50px 50px ;
+  }
+  /* percentage
+    以父元素的百分比来设置背景图像的宽度和高度。
+    第一个值设置宽度，第二个值设置高度。
+    如果只设置一个值，则第二个值会被设置为 "auto"。 */
+  .demo-2{
+    background-size: 10% 10% ;
+  }
+  /* cover
+    把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。
+    背景图像的某些部分也许无法显示在背景定位区域中。 */
+  .demo-3{
+    background-size: cover ;
+  }
+  /* contain 把图像图像扩展至最大尺寸，以使其宽度和高度完全适应内容区域。 */
+  .demo-4{
+    background-size: contain ;
+  }
+</style>
+</head>
+<body>
+<div class="demo demo-1"></div>
+<div class="demo demo-2"></div>
+<div class="demo demo-3"></div>
+<div class="demo demo-4"></div>
+</body>
+</html>

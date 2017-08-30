@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>背景Background-repeat</title>
+<link rel="stylesheet" type="text/css" href="demo.css">
+<style type="text/css">
+  .demo{
+    padding: 25px;
+    border:10px dotted #000000;
+    background-image: url(red.png);
+    background-repeat: no-repeat;
+  }
+  /* padding-box 背景图像相对于内边距框来定位。 */
+  .demo-1{
+    background-origin: padding-box ;
+  }
+  /* border-box 背景图像相对于边框盒来定位。 */
+  .demo-2{
+    background-origin: border-box ;
+  }
+  /* content-box 背景图像相对于内容框来定位。 */
+  .demo-3{
+    background-origin: content-box ;
+  }
+</style>
+</head>
+<body>
+<div class="demo demo-1">padding-box</div>
+<div class="demo demo-2">border-box</div>
+<div class="demo demo-3">content-box</div>
+</body>
+</html>

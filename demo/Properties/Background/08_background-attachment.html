@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>背景Background-attachment</title>
+<link rel="stylesheet" type="text/css" href="demo.css">
+<style type="text/css">
+	.demo{
+		overflow: auto;
+		background-image: url(red.png);
+		background-repeat: no-repeat;
+	}
+	/* 默认值。背景图像会随着页面其余部分的滚动而移动。 */
+	.demo-1{
+		background-attachment: scroll;
+	}
+  /* 背景随内容得滚动而滚动 */
+	.demo-2{
+		background-attachment: local;
+	}
+	/* 当页面的其余部分滚动时，背景图像不会移动。 */
+	.demo-3{
+		background-attachment: fixed;
+	}
+</style>
+</head>
+<body>
+<h1>CSS background-attachment 属性</h1>
+<h3>background-attachment 属性设置背景图像是否固定或者随着页面的其余部分滚动。</h3>
+<div class="demo demo-1">
+	<p>demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo</p>
+</div>
+<div class="demo demo-2">
+	<p>demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo</p>
+</div>
+<div class="demo demo-3">
+	<p>demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo demo</p>
+</div>
+</body>
+</html>
