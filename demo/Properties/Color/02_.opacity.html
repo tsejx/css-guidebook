@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>透明度Opacity</title>
+<style>
+h1 {
+  margin: 10px 0;
+  font-size: 16px;
+}
+.test,
+.test2 {
+  width: 300px;
+  height: 150px;
+  padding: 10px;
+}
+.test {
+  background:#050;
+}
+.test2 {
+  margin: -120px 0 0 50px;
+  background: #000;
+  color: #fff;
+  filter: alpha(opacity=50);/* for IE8 and earlier */
+  opacity: .5;/* for IE9 and other browsers */
+}
+</style>
+</head>
+<body>
+<h1>下例是一个半透明的效果：</h1>
+<div class="test">不透明度为100%的box</div>
+<div class="test2">不透明度为50%的box</div>
+<div>filter: alpha(opacity=50);/* for IE8 and earlier */</div>
+<div>opacity: .5;/* for IE9 and other browsers */</div>
+</body>
+</html>
