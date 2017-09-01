@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>边框Border-color</title>
+<style>
+div {
+  padding:10px;
+  border-width:1px;
+  border-style:solid;
+}
+div + div {
+  margin-top: 10px;
+}
+.test{
+  border-color:#000;
+}
+.test2{
+  border-color:#000 #f00;
+}
+.test3{
+  border-color:#000 #f00 #090;
+}
+.test4{
+  border-color:#000 #f00 #090 #0ff;
+}
+</style>
+</head>
+<body>
+<div class="test">提供1个参数</div>
+<div class="test2">提供2个参数</div>
+<div class="test3">提供3个参数</div>
+<div class="test4">提供4个参数</div>
+</body>
+</html>

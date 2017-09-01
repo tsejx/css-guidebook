@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>边框圆角效果border-bottom-left-radius</title>
+<style>
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  margin: 10px 0 0 0;
+  padding: 10px;
+  background: #bbb;
+}
+.test .one {
+  border-bottom-left-radius: 30px;
+}
+.test .two {
+  border-bottom-left-radius: 10px 30px;
+}
+</style>
+</head>
+<body>
+<ul class="test">
+  <li class="one">水平与垂直半径相同时<br />border-bottom-left-radius:30px;</li>
+  <li class="two">水平与垂直半径不同时<br />border-bottom-left-radius:10px 30px;</li>
+</ul>
+</body>
+</html>
