@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>过渡transition</title>
+<style>
+h1{
+  font-size:16px;
+}
+.test{
+  overflow:hidden;
+  width:100%;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+/* transition：<single-transition>[,<single-transition>]* <single-transition> = [ none | <single-transition-property> ] || <time> || <single-transition-timing-function> || <time> */
+
+/* <' transition-property '>： 检索或设置对象中的参与过渡的属性 */
+
+/* <' transition-duration '>： 检索或设置对象过渡的持续时间 */
+
+/* <' transition-timing-function '>： 检索或设置对象中过渡的动画类型 */
+
+/* <' transition-delay '>： 检索或设置对象延迟过渡的时间 */
+
+.test li{
+  float:left;
+  width:100px;
+  height:100px;
+  margin:0 5px;
+  border:1px solid #ddd;
+  background-color:#eee;
+  text-align:center;
+  -webkit-transition:background-color .5s ease-in;
+  -moz-transition:background-color .5s ease-in;
+  transition:background-color .5s ease-in;
+}
+.test li:nth-child(1):hover{
+  background-color:#bbb;
+}
+.test li:nth-child(2):hover{
+  background-color:#999;
+}
+.test li:nth-child(3):hover{
+  background-color:#630;
+}
+.test li:nth-child(4):hover{
+  background-color:#090;
+}
+.test li:nth-child(5):hover{
+  background-color:#f00;
+}
+
+/* 复合属性(缩写方式与拆分方式) */
+.transition {
+  border-color: .5s ease-in .1s;
+  background-color: .5s ease-in .1s;
+  color: .5s ease-in .1s;
+}
+.transition {
+  transition-property: border-color, background-color , color;
+  transition-duration: .5s, .5s, .5s;
+  transition-timing-function: ease-in, ease-in, ease-in;
+  transition-delay: .1s, .1s, .1s;
+}
+/* 如果定义了多个过渡的属性，而其他属性只有一个参数值，则表明所有需要过渡的属性都应用同一个参数值。据此可以对上面的例子进行缩写： */
+.transition {
+  transition-property: border-color, background-color , color;
+  transition-duration: .5s;
+  transition-timing-function: ease-in;
+  transition-delay: .1s;
+}
+/* 如果需要定义多个过渡属性且不想指定具体是哪些属性过渡，同时其他属性只有一个参数值，据此可以对上面的例子进行缩写： */
+
+/* 缩写方式 */
+.transition {
+  transition: all .5s ease-in .1s;
+}
+.transition {
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: ease-in;
+  transition-delay: .1s;
+}
+</style>
+</head>
+<body>
+<h1>请将鼠标移动到下面的矩形上：</h1>
+<ul class="test">
+  <li>背景色过渡</li>
+  <li>背景色过渡</li>
+  <li>背景色过渡</li>
+  <li>背景色过渡</li>
+  <li>背景色过渡</li>
+</ul>
+</body>
+</html>
