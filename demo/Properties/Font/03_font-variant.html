@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>字体font-variant</title>
+<style>
+
+/* font-variant：normal | small-caps */
+
+/* normal：正常的字体 */
+
+/* small-caps：小型的大写字母字体 */
+
+.test li {
+  margin: 15px 0;
+  border: 1px solid #000;
+}
+.small-caps span {
+  font-variant: small-caps;
+}
+</style>
+</head>
+<body>
+<ul class="test">
+  <li>
+    <strong>将文本转换为小型的大写字母</strong>
+    <div>原　文： HOW DO YOU DO & <span>how do you do.</span></div>
+    <div class="small-caps">转换后： HOW DO YOU DO & <span>how do you do.</span></div>
+  </li>
+</ul>
+</body>
+</html>

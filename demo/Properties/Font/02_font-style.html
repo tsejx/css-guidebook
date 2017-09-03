@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>字体font-style</title>
+<style>
+
+/* font-style：normal | italic | oblique */
+
+/* normal：指定文本字体样式为正常的字体 */
+
+/* italic：指定文本字体样式为斜体。对于没有设计斜体的特殊字体，如果要使用斜体外观将应用oblique */
+
+/* oblique：指定文本字体样式为倾斜的字体。人为的使文字倾斜，而不是去选取字体中的斜体字 */
+
+.test p{
+  margin:15px 0;
+  border:1px solid #000;
+}
+.normal p{
+  font-style:normal;
+}
+.italic p{
+  font-style:italic;
+}
+.oblique p{
+  font-style:oblique;
+}
+</style>
+</head>
+<body>
+<ul class="test">
+  <li class="normal">
+    <strong>正常的字体：</strong>
+    <p>本段文字将显示为正常的字体。</p>
+  </li>
+  <li class="italic">
+    <strong>斜体：</strong>
+    <p>本段文字将显示为斜体。</p>
+  </li>
+  <li class="oblique">
+    <strong>倾斜的字体：</strong>
+    <p>本段文字将显示为倾斜的字体。</p>
+  </li>
+</ul>
+</body>
+</html>
