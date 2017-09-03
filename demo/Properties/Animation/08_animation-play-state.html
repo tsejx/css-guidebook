@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>animation-play-state</title>
+<link rel="stylesheet" href="demo.css"/>
+<style type="text/css">
+
+/* 检索或设置对象动画的状态 */
+
+/* animation-play-state：<single-animation-play-state>[,<single-animation-play-state>]* <single-animation-play-state> = running | paused */
+
+/* running：运动 */
+
+/* paused：暂停 */
+
+.m-demo{width:600px;height:200px;outline:2px dashed;margin:20px auto;}
+.m-demo pre{width:100px;height:100px;padding:0;line-height:100px;border-radius:50%;text-align:center;font-size:20px;}
+.m-demo pre{-webkit-animation:abc 2s both infinite;padding:30px 0;line-height:20px;}
+.m-demo-1:hover pre{-webkit-animation-play-state:paused;}
+.m-demo-2 pre{-webkit-animation-play-state:paused;}
+.m-demo-2:hover pre{-webkit-animation-play-state:running;}
+@-webkit-keyframes abc{
+    0%{left:0;top:0;}
+    50%{left:250px;top:100px;}
+    100%{left:500px;top:0;}
+}
+</style>
+</head>
+<body>
+<div class="m-demo m-demo-1">
+    <pre>hover to<br>paused</pre>
+</div>
+<div class="m-demo m-demo-2">
+    <pre>hover to<br>running</pre>
+</div>
+</body>
+</html>

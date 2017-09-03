@@ -1,0 +1,5 @@
+html,body,pre{margin:0;padding:0;border:0;}
+body{font:12px/1.14 "Consolas",monospace;color:#333;background:#fff;}
+
+.m-demo{position:relative;width:300px;height:300px;margin:100px auto;background:rgba(119,147,36,0.5);}
+.m-demo pre{position:absolute;top:0;left:0;box-sizing:border-box;width:100%;height:100%;padding:10px;margin:0;font-size:38px;line-height:1.5;color:#fff;white-space:pre-wrap;word-break:break-all;background:rgba(119,147,36,0.75);}
