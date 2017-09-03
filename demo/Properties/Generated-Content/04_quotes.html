@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>生成内容quotes</title>
+<style>
+q:lang(en){
+  quotes:'[' ']' "<" ">";
+}
+q:lang(zh-cmn-Hans){
+  quotes:"«" "»" '"' '"';
+}
+</style>
+</head>
+<body>
+  <p lang="en"><q>Quote me <q>Quote me</q> Quote me!</q></p>
+  <p lang="zh-cmn-Hans"><q>Quote me <q>Quote me</q> Quote me!</q></p>
+</body>
+</html>
