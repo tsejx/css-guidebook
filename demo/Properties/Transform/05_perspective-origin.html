@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>转换perspective-origin</title>
+<style>
+
+/* perspective-origin：[ <percentage> | <length> | left | center① | right ] [ <percentage> | <length> | top | center② | bottom ]? */
+
+/* <percentage>：用百分比指定透视点坐标值，相对于元素宽度。可以为负值。 */
+/* <length>：用长度值指定透视点坐标值。可以为负值。 */
+/* left：指定透视点的横坐标为left */
+/* center①：指定透视点的横坐标为center */
+/* right：指定透视点的横坐标为right */
+/* top：指定透视点的纵坐标为top */
+/* center②：指定透视点的纵坐标为center */
+/* bottom：指定透视点的纵坐标为bottom */
+
+.wrapper {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #000;
+    -webkit-perspective: 150px;
+    perspective: 150px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.w1 {
+    -webkit-perspective-origin: top;
+    perspective-origin: top;
+}
+.w2 {
+    -webkit-perspective-origin: bottom;
+    perspective-origin: bottom;
+}
+.wrapper > div {
+    width: 180px;
+    height: 120px;
+    margin: 40px 10px;
+    background-color: #ccc;
+    -webkit-transform: rotatex(90deg);
+    transform: rotatex(90deg);
+}
+</style>
+</head>
+<body>
+<div class="wrapper w1">
+    <div>1</div>
+</div>
+<div class="wrapper w2">
+    <div>2</div>
+</div>
+</body>
+</html>

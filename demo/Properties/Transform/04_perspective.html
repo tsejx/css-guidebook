@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<style>
+
+/* perspective：none | <length> */
+
+/* none：不指定透视 */
+/* <length>：指定观察者距离「z=0」平面的距离，为元素及其内容应用透视变换。不允许负值 */
+
+.wrapper {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    border: 1px solid #000;
+    -webkit-perspective: 50px;
+    perspective: 50px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-animation: test 10s infinite;
+    animation: test 10s infinite;
+}
+.wrapper > div {
+    width: 180px;
+    height: 120px;
+    margin: 40px 10px;
+    background-color: #ccc;
+    -webkit-transform: rotatex(45deg);
+    transform: rotatex(45deg);
+}
+@-webkit-keyframes test {
+    from {
+        -webkit-perspective: 50px;
+    }
+    to {
+        -webkit-perspective: 300px;
+    }
+}
+@keyframes test {
+    from {
+        perspective: 50px;
+    }
+    to {
+        perspective: 300px;
+    }
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <div>1</div>
+</div>
+</body>
+</html>

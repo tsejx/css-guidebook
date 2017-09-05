@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>转换transform-style</title>
+<style>
+
+/* transform-style：flat | preserve-3d */
+
+/* flat：指定子元素位于此元素所在平面内 */
+/* preserve-3d：指定子元素定位在三维空间内 */
+
+body {
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+.cube {
+    position: relative;
+    font-size: 80px;
+    width: 2em;
+    margin: 1.5em auto;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateX(-30deg) rotateY(30deg);
+    transform: rotateX(-30deg) rotateY(30deg);
+}
+.cube > div {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    background: rgba(0, 0, 0, .1);
+    border: 1px solid #999;
+    color: white;
+    text-align: center;
+    line-height: 2em;
+}
+.front {
+    -webkit-transform: translateZ(1em);
+    transform: translateZ(1em);
+}
+.top {
+    -webkit-transform: rotateX(90deg) translateZ(1em);
+    transform: rotateX(90deg) translateZ(1em);
+}
+.right {
+    -webkit-transform: rotateY(90deg) translateZ(1em);
+    transform: rotateY(90deg) translateZ(1em);
+}
+.left {
+    -webkit-transform: rotateY(-90deg) translateZ(1em);
+    transform: rotateY(-90deg) translateZ(1em);
+}
+.bottom {
+    -webkit-transform: rotateX(-90deg) translateZ(1em);
+    transform: rotateX(-90deg) translateZ(1em);
+}
+.back {
+    -webkit-transform: rotateY(-180deg) translateZ(1em);
+    transform: rotateY(-180deg) translateZ(1em);
+}
+</style>
+</head>
+<body>
+<div class="cube">
+    <div class="front">1</div>
+    <div class="back">2</div>
+    <div class="right">3</div>
+    <div class="left">4</div>
+    <div class="top">5</div>
+    <div class="bottom">6</div>
+</div>
+</body>
+</html>
