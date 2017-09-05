@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>表格border-collapse</title>
+<style>
+  h1{
+    font-size:16px;
+    font-family:Arial;
+  }
+  /* 独立边框 */
+  .separate{
+    border-collapse:separate;
+  }
+  /* 相邻边被合并 */
+  .collapse{
+    border-collapse:collapse;
+  }
+</style>
+</head>
+<body>
+  <h1>separate: 边框独立</h1>
+  <table border="1" class="separate">
+  <tbody>
+    <tr>
+      <td>独立边框</td>
+      <td>独立边框</td>
+      <td>独立边框</td>
+    </tr>
+    <tr>
+      <td>独立边框</td>
+      <td>独立边框</td>
+      <td>独立边框</td>
+    </tr>
+  </tbody>
+  </table>
+
+  <h1>collapse: 相邻边被合并</h1>
+  <table border="1" class="collapse">
+  <tbody>
+    <tr>
+      <td>合并边框</td>
+      <td>合并边框</td>
+      <td>合并边框</td>
+    </tr>
+    <tr>
+      <td>合并边框</td>
+      <td>合并边框</td>
+      <td>合并边框</td>
+    </tr>
+  </tbody>
+  </table>
+</body>
+</html>
