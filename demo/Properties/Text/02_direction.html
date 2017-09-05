@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>书写模式direction</title>
+<meta name="author" content="Joy Du(飘零雾雨), dooyoe@gmail.com, www.doyoe.com" />
+<style>
+
+/* 检索或设置文本流的方向。 */
+
+/* direction：ltr | rtl */
+
+/* ltr：文本流从左到右。 */
+
+/* rtl：文本流从右到左。 */
+
+.test p{
+  width:320px;
+  margin:15px 0;
+  order:1px solid #000;
+}
+.ltr p{
+  direction:ltr;
+}
+.rtl p{
+  direction:rtl;
+  unicode-bidi:bidi-override;
+}
+</style>
+</head>
+<body>
+<ul class="test">
+  <li class="ltr">
+    <strong>ltr：</strong>
+    <p>本段文字将按照从左到右的方向进行流动。</p>
+  </li>
+  <li class="rtl">
+    <strong>rtl：</strong>
+    <p>本段文字将按照从右到左的方向进行流动。</p>
+  </li>
+</ul>
+</body>
+</html>

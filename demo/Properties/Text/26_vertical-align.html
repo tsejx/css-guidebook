@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>文本vertical-align</title>
+<style>
+
+/* 设置或检索内联元素在行框内的垂直对其方式。 */
+
+/* vertical-align：baseline | sub | super | top | text-top | middle | bottom | text-bottom | <percentage> | <length> */
+
+/* baseline：将支持valign特性的对象的内容与基线对齐 */
+
+/* sub垂直对齐文本的下标 */
+
+/* super：垂直对齐文本的上标 */
+
+/* top：将支持valign特性的对象的内容与对象顶端对齐 */
+
+/* text-top：将支持valign特性的对象的文本与对象顶端对齐 */
+
+/* middle：将支持valign特性的对象的内容与对象中部对齐 */
+
+/* bottom：将支持valign特性的对象的文本与对象底端对齐 */
+
+/* text-bottom：将支持valign特性的对象的文本与对象顶端对齐 */
+
+/* <percentage>用百分比指定由基线算起的偏移量。可以为负值。基线对于百分数来说就是0%。 */
+
+/* <length>：用长度值指定由基线算起的偏移量。可以为负值。基线对于数值来说为0。（CSS2） */
+
+.test p{
+  border:1px solid #000;
+  font-size:16px;
+  line-height:2;
+}
+.test a{
+  margin-left:5px;
+  font-size:12px;
+}
+.baseline a{
+  vertical-align:baseline;
+}
+.sub a{
+  vertical-align:sub;
+}
+.super a{
+  vertical-align:super;
+}
+.top a{
+  vertical-align:top;
+}
+.text-top a{
+  vertical-align:text-top;
+}
+.middle a{
+  vertical-align:middle;
+}
+.bottom a{
+  vertical-align:bottom;
+}
+.text-bottom a{
+  vertical-align:text-bottom;
+}
+.length a{
+  vertical-align:10px;
+}
+</style>
+</head>
+<body>
+<ul class="test">
+  <li class="baseline">
+    <strong>与基线对齐</strong>
+    <p>参考内容<a href="?">基线对齐</a></p>
+  </li>
+  <li class="sub">
+    <strong>与参考内容的下标对齐</strong>
+    <p>参考内容<a href="?">下标对齐</a></p>
+  </li>
+  <li class="super">
+    <strong>与参考内容的上标对齐</strong>
+    <p>参考内容<a href="?">上标对齐</a></p>
+  </li>
+  <li class="top">
+    <strong>对象的内容与对象顶端对齐</strong>
+    <p>参考内容<a href="?">要对齐的内容</a></p>
+  </li>
+  <li class="text-top">
+    <strong>对象的文本与对象顶端对齐</strong>
+    <p>参考内容<a href="?">要对齐的内容</a></p>
+  </li>
+  <li class="middle">
+    <strong>对象的内容与对象中部对齐</strong>
+    <p>参考内容<a href="?">要对齐的内容</a></p>
+  </li>
+  <li class="bottom">
+    <strong>对象的内容与对象底端对齐</strong>
+    <p>参考内容<a href="?">要对齐的内容</a></p>
+  </li>
+  <li class="text-bottom">
+    <strong>对象的文本与对象顶端对齐</strong>
+    <p>参考内容<a href="?">要对齐的内容</a></p>
+  </li>
+  <li class="length">
+    <strong>与基线算起的偏移量</strong>
+    <p>参考内容<a href="?">偏移量对齐</a></p>
+  </li>
+</ul>
+</body>
+</html>

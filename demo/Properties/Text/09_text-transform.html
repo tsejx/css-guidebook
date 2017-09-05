@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>文本text-transform</title>
+<style>
+.capitalize span{
+  text-transform:capitalize;
+}
+.uppercase span{
+  text-transform:uppercase;
+}
+.lowercase span{
+  text-transform:lowercase;
+}
+</style>
+</head>
+<body>
+<ul class="test">
+  <li>
+    <strong>将每个单词的首字母转换成大写</strong>
+    <div>原　文： <span>how do you do.</span></div>
+    <div class="capitalize">转换后： <span>how do you do.</span></div>
+  </li>
+  <li>
+    <strong>转换成大写</strong>
+    <div>原　文： <span>how do you do.</span></div>
+    <div class="uppercase">转换后： <span>how do you do.</span></div>
+  </li>
+  <li>
+    <strong>转换成小写</strong>
+    <div>原　文： <span>HOW ARE YOU.</span></div>
+    <div class="lowercase">转换后： <span>HOW ARE YOU.</span></div>
+  </li>
+</ul>
+</body>
+</html>

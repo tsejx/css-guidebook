@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>文本word-spacing</title>
+<style>
+
+/* 检索或设置对象中的单词之间的最小，最大和最佳间隙。 */
+
+/* normal：默认间隔 */
+
+/* <length>：用长度值指定间隔。可以为负值。 */
+
+/* <percentage>：用百分比指定间隔。可以为负值。（CSS3） */
+
+.test p{
+  border:1px solid #000;
+}
+.normal p{
+  word-spacing:normal;
+}
+.length p{
+  word-spacing:20px;
+}
+</style>
+</head>
+<body>
+<ul class="test">
+  <li class="normal">
+    <strong>默认间隔</strong>
+    <p>how are you!</p>
+  </li>
+  <li class="length">
+    <strong>自定义的间隔大小</strong>
+    <p>how are you!</p>
+  </li>
+</ul>
+</body>
+</html>

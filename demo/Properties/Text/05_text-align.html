@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>文本text-align</title>
+<style>
+
+/* text-align：start | end | left | right | center | justify | match-parent | justify-all */
+
+/* left：内容左对齐。 */
+
+/* center：内容居中对齐。 */
+
+/* right：内容右对齐。 */
+
+/* justify：内容两端对齐，但对于强制打断的行（被打断的这一行）及最后一行（包括仅有一行文本的情况，因为它既是第一行也是最后一行）不做处理。（CSS3） */
+
+/* start：内容对齐开始边界。（CSS3） */
+
+/* end：内容对齐结束边界。（CSS3） */
+
+/* match-parent：这个值和 inherit 表现一致，只是该值继承的 start 或 end 关键字是针对父母的 <' direction '> 值并计算的，计算值可以是 left 和 right 。（CSS3） */
+
+/* justify-all：效果等同于 justify，但还会让最后一行也两端对齐。（CSS3） */
+
+.test p{
+  border:1px solid #000;
+}
+.left p{
+  text-align:left;
+}
+.center p{
+  text-align:center;
+}
+.right p{
+  text-align:right;
+}
+.justify p{
+  width:200px;
+  text-align:justify;
+}
+.start p{
+  text-align:start;
+}
+.end p{
+  text-align:end;
+}
+</style>
+</head>
+<body>
+<ul class="test">
+  <li class="left">
+    <strong>left</strong>
+    <p>我是左对齐内容</p>
+  </li>
+  <li class="center">
+    <strong>center</strong>
+    <p>我是居中对齐内容</p>
+  </li>
+  <li class="right">
+    <strong>right</strong>
+    <p>我是右对齐内容</p>
+  </li>
+  <li class="justify">
+    <strong>justify</strong>
+    <p>我 是一段可以两端对齐的文字， 你 仔细看看， 我 的对齐方式都贴着 容器左右的边缘。</p>
+  </li>
+  <li class="start">
+    <strong>start</strong>
+    <p>start效果</p>
+  </li>
+  <li class="end">
+    <strong>end</strong>
+    <p>end效果</p>
+  </li>
+</ul>
+</body>
+</html>
