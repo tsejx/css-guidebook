@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>轮廓outline-style</title>
+<style>
+
+/* outline-style：none | dotted | dashed | solid | double | groove | ridge | inset | outset */
+
+/* none：无轮廓。与任何指定的 <' outline-width '> 值无关 */
+/* dotted：点状轮廓。 */
+/* dashed：虚线轮廓。 */
+/* solid：实线轮廓 */
+/* double：双线轮廓。两条单线与其间隔的和等于指定的 <' outline-width '> 值 */
+/* groove：3D凹槽轮廓。 */
+/* ridge：3D凸槽轮廓。 */
+/* inset：3D凹边轮廓。 */
+/* outset：3D凸边轮廓。 */
+
+.test{
+  width:200px;
+  padding:10px;
+  outline-width:1px;
+  outline-style:dashed;
+  outline-color:#f00;
+  border:3px solid #333;
+}
+</style>
+</head>
+<body>
+<div class="test">注意边框线外面的虚线轮廓<br />outline-style:dashed;</div>
+</body>
+</html>

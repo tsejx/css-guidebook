@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>轮廓outline-width</title>
+<style>
+
+/* outline-width：<length> | thin | medium | thick */
+
+/* <length>：用长度值来定义轮廓的厚度。不允许负值 */
+/* medium：定义默认宽度的轮廓。 */
+/* thin：定义比默认宽度细的轮廓。 */
+/* thick：定义比默认宽度粗的轮廓。 */
+
+.test{
+  width:200px;
+  padding:10px;
+  outline-width:10px;
+  outline-style:solid;
+  outline-color:#f00;
+  border:3px solid #333;
+}
+</style>
+</head>
+<body>
+<div class="test">注意边框线外面的红色轮廓<br />outline-width:10px;</div>
+</body>
+</html>
