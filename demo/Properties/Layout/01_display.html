@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>display</title>
+<style>
+
+/* display：none | inline | block | list-item | inline-block | table | inline-table | table-caption | table-cell | table-row | table-row-group | table-column | table-column-group | table-footer-group | table-header-group | run-in | box | inline-box | flexbox | inline-flexbox | flex | inline-flex */
+
+/* none：隐藏对象。与visibility属性的hidden值不同，其不为被隐藏的对象保留其物理空间 */
+/* inline：指定对象为内联元素。 */
+/* block：指定对象为块元素。 */
+/* list-item：指定对象为列表项目。 */
+/* inline-block：指定对象为内联块元素。（CSS2） */
+/* table：指定对象作为块元素级的表格。类同于html标签<table>（CSS2） */
+/* inline-table：指定对象作为内联元素级的表格。类同于html标签<table>（CSS2） */
+/* table-caption：指定对象作为表格标题。类同于html标签<caption>（CSS2） */
+/* table-cell：指定对象作为表格单元格。类同于html标签<td>（CSS2） */
+/* table-row：指定对象作为表格行。类同于html标签<tr>（CSS2） */
+/* table-row-group：指定对象作为表格行组。类同于html标签<tbody>（CSS2） */
+/* table-column：指定对象作为表格列。类同于html标签<col>（CSS2） */
+/* table-column-group：指定对象作为表格列组显示。类同于html标签<colgroup>（CSS2） */
+/* table-header-group：指定对象作为表格标题组。类同于html标签<thead>（CSS2） */
+/* table-footer-group：指定对象作为表格脚注组。类同于html标签<tfoot>（CSS2） */
+/* run-in：根据上下文决定对象是内联对象还是块级对象。（CSS3） */
+/* box：将对象作为弹性伸缩盒显示。（伸缩盒最老版本）（CSS3） */
+/* inline-box：将对象作为内联块级弹性伸缩盒显示。（伸缩盒最老版本）（CSS3） */
+/* flexbox：将对象作为弹性伸缩盒显示。（伸缩盒过渡版本）（CSS3） */
+/* inline-flexbox：将对象作为内联块级弹性伸缩盒显示。（伸缩盒过渡版本）（CSS3） */
+/* flex：将对象作为弹性伸缩盒显示。（伸缩盒最新版本）（CSS3） */
+/* inline-flex：将对象作为内联块级弹性伸缩盒显示。（伸缩盒最新版本）（CSS3） */
+/* * CSS3新增属性可能存在描述错误及变更，仅供参考，持续更新 */
+
+/* 设置或检索对象是否及如何显示。 */
+/* 如果display设置为none，float及position属性定义将不生效； */
+/* 如果position既不是static也不是relative或者float不是none或者元素是根元素，当display:inline-table时，display的计算值为table；当display:inline | inline-block | run-in | table-* 系时，display的计算值为block，其它情况为指定值； */
+
+body{
+  font:14px/1.5 georgia,simsun,arial;
+}
+h1{
+  margin:10px 0;font-size:20px;
+}
+ul{
+  margin:0;padding:0;list-style:none;
+}
+.table{
+  display:table;
+  border-collapse:collapse;
+  border:1px solid #ccc;
+}
+.table-caption{
+  display:table-caption;
+  margin:0;padding:0;font-size:16px;
+}
+.table-column-group{
+  display:table-column-group;
+}
+.table-column{
+  display:table-column;
+  width:100px;
+}
+.table-row-group{
+  display:table-row-group;
+}
+.table-row{
+  display:table-row;
+}
+.table-row-group .table-row:hover,
+.table-footer-group .table-row:hover{
+  background:#f6f6f6;
+}
+.table-cell{
+  display:table-cell;
+  padding:0 5px;
+  border:1px solid #ccc;
+}
+.table-header-group{
+  display:table-header-group;
+  background:#eee;
+  font-weight:bold;
+}
+.table-footer-group{
+  display:table-footer-group;
+}
+</style>
+</head>
+<body>
+<h1>display构造的table小例子，IE7及以下浏览器不支持本示例</h1>
+<div class="table">
+  <h2 class="table-caption">花名册：</h2>
+  <div class="table-column-group">
+    <div class="table-column"></div>
+    <div class="table-column"></div>
+    <div class="table-column"></div>
+  </div>
+  <div class="table-header-group">
+    <ul class="table-row">
+      <li class="table-cell">序号</li>
+      <li class="table-cell">姓名</li>
+      <li class="table-cell">年龄</li>
+    </ul>
+  </div>
+  <div class="table-footer-group">
+    <ul class="table-row">
+      <li class="table-cell">footer</li>
+      <li class="table-cell">footer</li>
+      <li class="table-cell">footer</li>
+    </ul>
+  </div>
+  <div class="table-row-group">
+    <ul class="table-row">
+      <li class="table-cell">1</li>
+      <li class="table-cell">John</li>
+      <li class="table-cell">19</li>
+    </ul>
+    <ul class="table-row">
+      <li class="table-cell">2</li>
+      <li class="table-cell">Mark</li>
+      <li class="table-cell">21</li>
+    </ul>
+    <ul class="table-row">
+      <li class="table-cell">3</li>
+      <li class="table-cell">Kate</li>
+      <li class="table-cell">26</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

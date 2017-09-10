@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>布局clear</title>
+<style>
+
+/* clear：none | left | right | both */
+
+/* none：允许两边都可以有浮动对象 */
+/* both：不允许有浮动对象 */
+/* left：不允许左边有浮动对象 */
+/* right：不允许右边有浮动对象 */
+
+.test {
+  float: right;
+  background: #eee;
+}
+.test2 {
+  clear: right;
+  background: #ddd;
+}
+</style>
+</head>
+<body>
+<div class="test">我将出现在屏幕右方</div>
+<div class="test2">注意我出现的位置</div>
+</body>
+</html>
