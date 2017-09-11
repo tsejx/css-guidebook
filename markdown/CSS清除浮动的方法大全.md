@@ -1,4 +1,4 @@
-# CSS清除浮动的方法大全
+﻿# CSS清除浮动的方法大全
 
 
 在各种浏览器中显示效果也有可能不相同，这样让清除浮动更难了，下面总结8种清除浮动的方法，测试已通过 ie chrome firefox opera 
@@ -13,17 +13,38 @@
 ```javascript
  
   <style type="text/css"> 
-  .div1{background:#000080;border:1px solid red;/*解决代码*/height:200px;} 
-  .div2{background:#800080;border:1px solid red;height:100px;margin-top:10px} 
-  .left{float:left;width:20%;height:200px;background:#DDD} 
-  .right{float:right;width:30%;height:80px;background:#DDD} 
+  .div1{
+    background:#000080;
+    border:1px solid red;
+    /*解决代码*/
+    height:200px;
+  } 
+  .div2{
+    background:#800080;
+    border:1px solid red;
+    height:100px;
+    margin-top:10px
+  } 
+  .left{
+    float:left;
+    width:20%;
+    height:200px;
+    background:#DDD
+  } 
+  .right{
+    float:right;
+    width:30%;
+    height:80px;
+    background:#DDD
+  } 
   </style> 
+  
   <div class="div1"> 
-  <div class="left">Left</div> 
-  <div class="right">Right</div> 
+    <div class="left">Left</div> 
+    <div class="right">Right</div> 
   </div> 
   <div class="div2"> 
-  div2 
+    div2 
   </div> 
 
 ```
@@ -40,20 +61,41 @@
 代码如下:
 ```
 <style type="text/css"> 
-.div1{background:#000080;border:1px solid red} 
-.div2{background:#800080;border:1px solid red;height:100px;margin-top:10px} 
-.left{float:left;width:20%;height:200px;background:#DDD} 
-.right{float:right;width:30%;height:80px;background:#DDD} 
+.div1{
+  background:#000080;
+  border:1px solid red
+} 
+.div2{
+  background:#800080;
+  border:1px solid red;
+  height:100px;
+  margin-top:10px
+} 
+.left{
+  float:left;
+  width:20%;
+  height:200px;
+  background:#DDD
+} 
+.right{
+  float:right;
+  width:30%;
+  height:80px;
+  background:#DDD
+} 
 /*清除浮动代码*/ 
-.clearfloat{clear:both} 
+.clearfloat{
+  clear:both
+} 
 </style> 
+
 <div class="div1"> 
-<div class="left">Left</div> 
-<div class="right">Right</div> 
-<div class="clearfloat"></div> 
+  <div class="left">Left</div> 
+  <div class="right">Right</div> 
+  <div class="clearfloat"></div> 
 </div> 
 <div class="div2"> 
-div2 
+  div2 
 </div> 
 ```
 - 原理：添加一个空div，利用css提高的clear:both清除浮动，让父级div能自动获取到高度 
@@ -68,20 +110,46 @@ div2 
 代码如下:
 ```
 <style type="text/css"> 
-.div1{background:#000080;border:1px solid red;} 
-.div2{background:#800080;border:1px solid red;height:100px;margin-top:10px} 
-.left{float:left;width:20%;height:200px;background:#DDD} 
-.right{float:right;width:30%;height:80px;background:#DDD} 
+.div1{
+  background:#000080;
+  border:1px solid red;
+} 
+.div2{
+  background:#800080;
+  border:1px solid red;
+  height:100px;
+  margin-top:10px
+ } 
+.left{
+  float:left;
+  width:20%;
+  height:200px;
+  background:#DDD
+} 
+.right{
+  float:right;
+  width:30%;
+  height:80px;
+  background:#DDD
+} 
 /*清除浮动代码*/ 
-.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0} 
-.clearfloat{zoom:1} 
+.clearfloat:after{
+  display:block;
+  clear:both;
+  content:"";
+  visibility:hidden;
+  height:0
+} 
+.clearfloat{
+  zoom:1
+} 
 </style> 
 <div class="div1 clearfloat"> 
-<div class="left">Left</div> 
-<div class="right">Right</div> 
+    <div class="left">Left</div> 
+    <div class="right">Right</div> 
 </div> 
 <div class="div2"> 
-div2 
+    div2 
 </div> 
 ```
  - 原理：IE8以上和非IE浏览器才支持:after，原理和方法2有点类似，zoom(IE转有属性)可解决ie6,ie7浮动问题 
@@ -96,17 +164,39 @@ div2 
 代码如下:
 ```
 <style type="text/css"> 
-.div1{background:#000080;border:1px solid red;/*解决代码*/width:98%;overflow:hidden} 
-.div2{background:#800080;border:1px solid red;height:100px;margin-top:10px;width:98%} 
-.left{float:left;width:20%;height:200px;background:#DDD} 
-.right{float:right;width:30%;height:80px;background:#DDD} 
+.div1{
+  background:#000080;
+  border:1px solid red;
+  /*解决代码*/
+  width:98%;
+  overflow:hidden
+} 
+.div2{
+  background:#800080;
+  border:1px solid red;
+  height:100px;
+  margin-top:10px;
+  width:98%
+} 
+.left{
+  float:left;
+  width:20%;
+  height:200px;
+  background:#DDD
+} 
+.right{
+  float:right;
+  width:30%;
+  height:80px;
+  background:#DDD
+} 
 </style> 
 <div class="div1"> 
-<div class="left">Left</div> 
-<div class="right">Right</div> 
+  <div class="left">Left</div> 
+  <div class="right">Right</div> 
 </div> 
 <div class="div2"> 
-div2 
+  div2 
 </div> 
 ```
  - 原理：必须定义width或zoom:1，同时不能定义height，使用overflow:hidden时，浏览器会自动检查浮动区域的高度 
@@ -121,17 +211,38 @@ div2 
 代码如下:
 ```
 <style type="text/css"> 
-.div1{background:#000080;border:1px solid red;/*解决代码*/width:98%;overflow:auto} 
-.div2{background:#800080;border:1px solid red;height:100px;margin-top:10px;width:98%} 
-.left{float:left;width:20%;height:200px;background:#DDD} 
-.right{float:right;width:30%;height:80px;background:#DDD} 
+.div1{
+  background:#000080;
+  border:1px solid red;
+  /*解决代码*/width:98%;
+  overflow:auto
+} 
+.div2{
+  background:#800080;
+  border:1px solid red;
+  height:100px;
+  margin-top:10px;
+  width:98%
+} 
+.left{
+  float:left;
+  width:20%;
+  height:200px;
+  background:#DDD
+} 
+.right{
+  float:right;
+  width:30%;
+  height:80px;
+  background:#DDD
+} 
 </style> 
 <div class="div1"> 
-<div class="left">Left</div> 
-<div class="right">Right</div> 
+  <div class="left">Left</div> 
+  <div class="right">Right</div> 
 </div> 
 <div class="div2"> 
-div2 
+  div2 
 </div> 
 ```
  - 原理：必须定义width或zoom:1，同时不能定义height，使用overflow:auto时，浏览器会自动检查浮动区域的高度 
@@ -146,17 +257,41 @@ div2 
 代码如下:
 ```
 <style type="text/css"> 
-.div1{background:#000080;border:1px solid red;/*解决代码*/width:98%;margin-bottom:10px;float:left} 
-.div2{background:#800080;border:1px solid red;height:100px;width:98%;/*解决代码*/clear:both} 
-.left{float:left;width:20%;height:200px;background:#DDD} 
-.right{float:right;width:30%;height:80px;background:#DDD} 
+.div1{
+  background:#000080;
+  border:1px solid red;
+  /*解决代码*/
+  width:98%;
+  margin-bottom:10px;
+  float:left
+} 
+.div2{
+  background:#800080;
+  border:1px solid red;
+  height:100px;
+  width:98%;
+  /*解决代码*/
+  clear:both
+} 
+.left{
+  float:left;
+  width:20%;
+  height:200px;
+  background:#DDD
+} 
+.right{
+  float:right;
+  width:30%;
+  height:80px;
+  background:#DDD
+} 
 </style> 
 <div class="div1"> 
-<div class="left">Left</div> 
-<div class="right">Right</div> 
+  <div class="left">Left</div> 
+  <div class="right">Right</div> 
 </div> 
 <div class="div2"> 
-div2 
+  div2 
 </div> 
 ```
  - 原理：所有代码一起浮动，就变成了一个整体 
@@ -171,17 +306,38 @@ div2 
 代码如下:
 ```
 <style type="text/css"> 
-.div1{background:#000080;border:1px solid red;/*解决代码*/width:98%;display:table;margin-bottom:10px;} 
-.div2{background:#800080;border:1px solid red;height:100px;width:98%;} 
-.left{float:left;width:20%;height:200px;background:#DDD} 
-.right{float:right;width:30%;height:80px;background:#DDD} 
+.div1{
+  background:#000080;
+  border:1px solid red;
+  /*解决代码*/width:98%;
+  display:table;
+  margin-bottom:10px;
+} 
+.div2{
+  background:#800080;
+  border:1px solid red;
+  height:100px;
+  width:98%;
+} 
+.left{
+  float:left;
+  width:20%;
+  height:200px;
+  background:#DDD
+} 
+.right{
+  float:right;
+  width:30%;
+  height:80px;
+  background:#DDD
+} 
 </style> 
 <div class="div1"> 
-<div class="left">Left</div> 
-<div class="right">Right</div> 
+  <div class="left">Left</div> 
+  <div class="right">Right</div> 
 </div> 
 <div class="div2"> 
-div2 
+  div2 
 </div> 
 ```
  - 原理：将div属性变成表格 
@@ -196,19 +352,40 @@ div2 
 代码如下:
 ```
 <style type="text/css"> 
-.div1{background:#000080;border:1px solid red;margin-bottom:10px;zoom:1} 
-.div2{background:#800080;border:1px solid red;height:100px} 
-.left{float:left;width:20%;height:200px;background:#DDD} 
-.right{float:right;width:30%;height:80px;background:#DDD} 
-.clearfloat{clear:both} 
+.div1{
+  background:#000080;
+  border:1px solid red;
+  margin-bottom:10px;
+  zoom:1
+} 
+.div2{
+  background:#800080;
+  border:1px solid red;
+  height:100px
+} 
+.left{
+  float:left;
+  width:20%;
+  height:200px;
+  background:#DDD
+} 
+.right{
+  float:right;
+  width:30%;
+  height:80px;
+  background:#DDD
+} 
+.clearfloat{
+  clear:both
+} 
 </style> 
 <div class="div1"> 
-<div class="left">Left</div> 
-<div class="right">Right</div> 
+  <div class="left">Left</div> 
+  <div class="right">Right</div> 
 <br class="clearfloat" /> 
 </div> 
 <div class="div2"> 
-div2 
+  div2 
 </div> 
 ```
  - 原理：父级div定义zoom:1来解决IE浮动问题，结尾处加 br标签 clear:both 

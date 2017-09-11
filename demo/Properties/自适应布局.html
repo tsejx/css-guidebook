@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定宽+自适应宽</title>
+ 
+    <style type="text/css">
+        /*方法一：弹性布局*/
+        .parent1 {
+            display: flex;
+            height: 300px;
+        }
+        .side1 {
+            width: 200px;
+            height: 100%;
+            background-color: #c00000;
+            margin-right: 10px;
+        }
+        .main1 {
+            flex: 1;
+            background-color: #4f81bd;
+        }
+ 
+        /*方法二：浮动*/
+        .side2 {
+            width: 200px;
+            height: 300px;
+            background-color: #c00000;
+            float: left;
+        }
+        .main2 {
+            height: 300px;
+            margin-left: 210px;
+            background-color: #4f81bd;
+        }
+ 
+        /*方法三：绝对定位*/
+        .parent3 {
+            height: 300px;
+            position: relative;
+        }
+        .side3 {
+            width: 200px;
+            height: 100%;
+            background-color: #c00000;
+        }
+        .main3 {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 210px;
+            top: 0;
+            background-color: #4f81bd;
+        }
+    </style>
+</head>
+<body>
+     
+    <div class="parent1">
+        <div class="side1">侧栏</div>
+        <div class="main1">主栏</div>
+    </div>
+    <br>
+ 
+    <div class="parent2">
+        <div class="side2">侧栏</div>
+        <div class="main2">主栏</div>
+    </div>
+    <br>
+ 
+    <div class="parent3">
+        <div class="side3">侧栏</div>
+        <div class="main3">主栏</div>
+    </div>
+</body>
+</html>
