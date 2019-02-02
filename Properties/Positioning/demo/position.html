@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position</title>
+    <style>
+        html * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            height: 2000px;
+        }
+
+        section div {
+            width: 100px;
+            height: 100px;
+            background: pink;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bold;
+        }
+
+        .section-sticky {
+            height: 500px;
+            border: 2px dotted black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- static -->
+    <section>
+        <style media="screen">
+            .static {
+                position: static;
+                /* 定位偏移属性不会被应用 */
+                top: 100px;
+                left: 100px;
+            }
+        </style>
+        <div class="static">Static</div>
+    </section>
+
+    <!-- absolute -->
+    <section>
+        <style media="screen">
+            .absolute {
+                position: absolute;
+                top: 100px;
+                left: 100px;
+            }
+        </style>
+        <div class="absolute">Absolute</div>
+    </section>
+
+    <!-- relative -->
+    <section id="relative">
+        <style media="screen">
+            .relative {
+                position: relative;
+                top: 200px;
+                left: 200px;
+            }
+        </style>
+        <!-- 相对于其父元素 #relative 的左上角起点 向下偏移 100px 向左偏移 100px -->
+        <div class="relative">Relative</div>
+    </section>
+
+    <!-- fixed -->
+    <section>
+        <style media="screen">
+            .fixed {
+                position: fixed;
+                right: 0;
+                top: 0;
+            }
+        </style>
+        <div class="fixed">Fixed</div>
+    </section>
+
+    <!-- sticky -->
+    <section class="section-sticky">
+        <style media="screen">
+            .sticky {
+                position: sticky;
+                position: -webkit-sticky;
+                top: 0;
+                left: 300px;
+            }
+        </style>
+        <div class="sticky">Sticky</div>
+    </section>
+
+</body>
+
+</html>
