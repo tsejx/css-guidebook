@@ -4,7 +4,7 @@
 版本: CSS2
 ---
 
-## left
+## `left`
 
 `left` 属性定义了元素左外边距与其包含块左边界之间的偏移。[🔍详细文档](http://css.doyoe.com/properties/positioning/left.htm)
 

@@ -4,7 +4,7 @@
 版本: CSS2
 ---
 
-## bottom
+## `bottom`
 
 `bottom` 属性定义了元素底外边距与其包含块底边界之间的偏移。[🔍详细文档](http://css.doyoe.com/properties/positioning/bottom.htm)
 

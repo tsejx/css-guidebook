@@ -4,7 +4,7 @@
 版本: CSS2
 ---
 
-## top
+## `top`
 
 `top` 属性定义了元素上外边距与其包含块上边界之间的偏移。[🔍详细文档](http://css.doyoe.com/properties/positioning/top.htm)
 

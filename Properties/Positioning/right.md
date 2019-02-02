@@ -4,7 +4,7 @@
 版本: CSS2
 ---
 
-## right
+## `right`
 
 `right` 属性定义了元素右外边距与其包含块右边界之间的偏移。[🔍详细文档](http://css.doyoe.com/properties/positioning/right.htm)
 
