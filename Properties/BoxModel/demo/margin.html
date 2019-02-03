@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Margin</title>
+    <style type="text/css">
+        .parent {
+            width: 300px;
+            line-height: 1.8;
+            border: 1px dashed black;
+        }
+
+        .sample {
+            height: 150px;
+            background-color: pink;
+        }
+
+        .after {
+            width: 300px;
+            height: 150px;
+            background-color: skyblue;
+        }
+
+        .parent4 {
+            border: none;
+            outline: 1px dashed blue;
+            background-color: #ddd;
+        }
+
+
+        .normal {
+            margin: 20px;
+        }
+
+        .bro {
+            margin: 30px 20px 10px 0;
+        }
+
+        .collapse1 {
+            margin-bottom: 40px;
+        }
+
+        .collapse2 {
+            margin-top: 20px;
+        }
+
+        .bottom {
+            margin-bottom: 20px;
+        }
+
+        .parent4 {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="sample normal">margin: 20px;</div>
+    </div>
+    <br>
+    <div class="parent">
+        <div class="sample bro">margin: 30px 20px 10px 0;</div>
+        <div class="after">after</div>
+    </div>
+    <br>
+    <div class="parent">
+        <div class="sample collapse1">margin-bottom: 40px;</div>
+        <div class="sample collapse2">margin-top: 20px;</div>
+    </div>
+    <br>
+    <div class="parent parent4">
+        margin-bottom: 40px;
+        <div class="sample bottom">margin-bottom: 20px;</div>
+    </div>
+    <div class="after">after</div>
+</body>
+
+</html>
