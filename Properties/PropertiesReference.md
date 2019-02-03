@@ -106,7 +106,7 @@
 | -------------------- | -------------------------------------- | ------------------------------------------------------------ |
 | `text-indent`        | 文本缩进                               | `<length>`                                                   |
 | `text-overflow`      | 是否使用省略标记文本溢出               | `clip \| ellipsis`                                           |
-| `vertical-align`     | 内容对齐方式                           | `baseline \| sub \| super \| top \| text-top \| middle | bottom \| text-bottom \| <length>` |
+| `vertical-align`     | 内容对齐方式                           | `baseline \| sub \| super \| top \| text-top \| middle \| bottom \| text-bottom \| <length>` |
 | `text-align`         | 文本居中                               | `left \| right \| center \| justify`                         |
 | `layout-flow`        | 文本流动和方向                         | `horizontal \| vertical-ideographic`                         |
 | `writing-mode`       | 书写方向                               | `lr-tb \| tb-rl`                                             |
@@ -156,7 +156,7 @@
 
 ⚠️ **注意：**`content` 属性值
 
-`attr(alt) \| counter(name) \| counter(name, list-style-type) \| counters(name, string) \| counters(name, string, list-style-type) \| no-close-quote \| no-open-quote \| close-quote \| open-quote \| <string> \| url(url)`
+`attr(alt) | counter(name) | counter(name, list-style-type) | counters(name, string) | counters(name, string, list-style-type) | no-close-quote | no-open-quote | close-quote | open-quote | <string> | url(url)`
 
 ### 列表 List
 
@@ -178,5 +178,5 @@
 
 ⚠️ **注意：**
 
-`auto \| crosshair \| default \| hand \| move \| help \| wait \| text \| w-resize \| s-resize \| n-resize \| e-resize \| ne-resize \| sw-resize \| se-resize \| nw-resize \| pointer \| url(url)`
+`auto | crosshair | default | hand | move | help | wait | text | w-resize | s-resize | n-resize | e-resize | ne-resize | sw-resize | se-resize | nw-resize | pointer | url(url)`
 
