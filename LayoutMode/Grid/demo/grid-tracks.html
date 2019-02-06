@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid Track 网格轨道</title>
+    <style>
+        html {
+            width: 100%;
+            height: auto;
+        }
+
+        body {
+            margin: 50px;
+        }
+
+        .container {
+            margin: 50px;
+        }
+
+        .title {
+            height: 50px;
+            font-weight: bold;
+            text-align: left;
+            line-height: 50px;
+        }
+
+        .item {
+            background-color: #444;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 150%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <style media="screen">
+            .grid-tracks {
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: 100px 100px 100px;
+                background-color: #fff;
+                color: #444;
+            }
+
+            .tr-a {
+                grid-column: 1 / 3;
+                grid-row: 1;
+            }
+
+            .tr-b {
+                grid-column: 3;
+                grid-row: 1 / 3;
+            }
+
+            .tr-c {
+                grid-column: 1;
+                grid-row: 2;
+            }
+
+            .tr-d {
+                grid-column: 2;
+                grid-row: 2;
+            }
+        </style>
+        <h2 class="title">基于网格线布局网格轨道</h2>
+        <div class="grid-tracks">
+            <div class="item tr-a">A</div>
+            <div class="item tr-b">B</div>
+            <div class="item tr-c">C</div>
+            <div class="item tr-d">D</div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <style media="screen">
+            .grid-span {
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: 100px 100px 100px;
+                background-color: #fff;
+                color: #444;
+            }
+
+            .sp-a {
+                grid-column: 1 / span 2;
+                grid-row: 1;
+            }
+
+            .sp-b {
+                grid-column: 3;
+                grid-row: 1 / span 2;
+            }
+
+            .sp-c {
+                grid-column: 1;
+                grid-row: 2;
+            }
+
+            .sp-d {
+                grid-column: 2;
+                grid-row: 2;
+            }
+        </style>
+        <h2 class="title">基于网格线布局网格轨道，使用 span 关键字</h2>
+        <div class="grid-span">
+            <div class="item sp-a">A</div>
+            <div class="item sp-b">B</div>
+            <div class="item sp-c">C</div>
+            <div class="item sp-d">D</div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <style media="screen">
+            .grid-named {
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: [col1-start] 100px [col2-start] 100px [col3-start] 100px [col3-end];
+                grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+                background-color: #fff;
+                color: #444;
+            }
+
+            .na-a {
+                grid-column: col1-start / col3-start;
+                grid-row: row1-start;
+            }
+
+            .na-b {
+                grid-column: col3-start;
+                grid-row: row1-start / row2-end;
+            }
+
+            .na-c {
+                grid-column: col1-start;
+                grid-row: row2-start;
+            }
+
+            .na-d {
+                grid-column: col2-start;
+                grid-row: row2-start;
+            }
+        </style>
+        <h2 class="title">使用命名的网格线布局</h2>
+        <div class="grid-named">
+            <div class="item na-a">A</div>
+            <div class="item na-b">B</div>
+            <div class="item na-c">C</div>
+            <div class="item na-d">D</div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <style media="screen">
+            .grid-named-span {
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px;
+                grid-template-rows: [row] auto [row] auto [row];
+                background-color: #fff;
+                color: #444;
+            }
+
+            .npa-a {
+                grid-column: col / span 2;
+                grid-row: row;
+            }
+
+            .npa-b {
+                grid-column: col 3 / span 2;
+                grid-row: row;
+            }
+
+            .npa-c {
+                grid-column: col;
+                grid-row: row 2;
+            }
+
+            .npa-d {
+                grid-column: col 2 / span 3;
+                grid-row: row 2;
+            }
+
+            .npa-e {
+                grid-column: col / span 4;
+                grid-row: row 3;
+            }
+        </style>
+        <h2 class="title">使用命名的网格线，及 span 关键字布局的示例</h2>
+        <div class="grid-named-span">
+            <div class="item npa-a">A</div>
+            <div class="item npa-b">B</div>
+            <div class="item npa-c">C</div>
+            <div class="item npa-d">D</div>
+        </div>
+    </div>
+
+    <div class="repeat">
+        <style media="screen">
+            .grid-named-span {
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: repeat(4, [col] 100px);
+                grid-template-rows: repeat(3, [row] auto);
+                background-color: #fff;
+                color: #444;
+            }
+
+            .rp-a {
+                grid-column: col / span 2;
+                grid-row: row;
+            }
+
+            .rp-b {
+                grid-column: col 3 / span 2;
+                grid-row: row;
+            }
+
+            .rp-c {
+                grid-column: col;
+                grid-row: row 2;
+            }
+
+            .rp-d {
+                grid-column: col 2 / span 3;
+                grid-row: row 2;
+            }
+
+            .rp-e {
+                grid-column: col / span 4;
+                grid-row: row 3;
+            }
+        </style>
+        <h2 class="title">使用 repeat 函数用来表示重复创建相同定义的网格，本例还具有命名网格线</h2>
+        <div class="grid-named-span">
+            <div class="item rp-a">A</div>
+            <div class="item rp-b">B</div>
+            <div class="item rp-c">C</div>
+            <div class="item rp-d">D</div>
+            <div class="item rp-e">E</div>
+        </div>
+    </div>
+</body>
+
+</html>

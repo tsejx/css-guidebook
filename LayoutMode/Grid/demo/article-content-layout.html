@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Article Content Layout 文章内容布局</title>
+    <style>
+        article {
+            display: grid;
+            grid-template-columns:
+                [full-start] minmax(1em, 1fr)
+                [main-start] minmax(0, 56em) [main-end]
+                minmax(1em, 1fr) [full-end];
+            grid-gap: 1em;
+        }
+
+        section {
+            grid-column: main;
+        }
+
+        figure {
+            grid-column: full;
+        }
+
+        /* Demo Specific Styles */
+        body {
+            padding: 2em 0;
+        }
+
+        article > * {
+            background-color: #eaeaea;
+            padding: 2em;
+        }
+
+        figure {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <article>
+        <section>
+            <h1>Article Title</h1>
+            <p>Sed autem necessitatibus quibusdam rerum suscipit aspernatur. Aut voluptatem animi rerum vero et et. Explicabo vel pariatur dolorem voluptas blanditiis quia magni eos. Ab temporibus nam tempora.</p>
+            <p>Pariatur consequatur blanditiis voluptatem. Error in esse temporibus quia. Perferendis molestiae velit deleniti deserunt. Provident qui ullam adipisci optio. Molestias similique et deserunt sint molestias autem non autem. Nemo itaque repellat assumenda nostrum qui eos porro dolorum.</p>
+        </section>
+        <figure>
+            <img src="http://via.placeholder.com/1500x450?text=Image">
+        </figure>
+        <section>
+            <p>Ea a assumenda rerum. Omnis ut voluptatem asperiores eius omnis laborum et. Pariatur et eos expedita eos sint modi est ut. Rerum molestiae magni quasi dolorum consequatur harum molestiae. Aut sunomnis atque deserunt molestiae. Repellendus aut unde impedit fugiat quia qui.</p>
+            <p>Saepe voluptas officia corporis sed. Consequatur nam aperiam enim necessitatibus non doloribus quis ullam. Qui aut quisquam voluptatem neque quidem harum.</p>
+            <p>Sed autem necessitatibus quibusdam rerum suscipit aspernatur. Aut voluptatem animi rerum vero et et. Explicabo vel pariatur dolorem voluptas blanditiis quia magni eos. Ab temporibus nam tempora.</p>
+            <p>Pariatur consequatur blanditiis voluptatem. Error in esse temporibus quia. Perferendis molestiae velit deleniti deserunt. Provident qui ullam adipisci optio. Molestias similique et deserunt sint molestias autem non autem. Nemo itaque repellat assumenda nostrum qui eos porro dolorum.</p>
+        </section>
+    </article>
+</body>
+
+</html>

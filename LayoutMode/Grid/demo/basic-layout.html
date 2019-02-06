@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basic Layout 基本网格布局</title>
+    <style>
+        html {
+            width: 100%;
+            height: auto;
+        }
+
+        body {
+            margin: 50px;
+        }
+
+        .container {
+            margin: 50px;
+        }
+
+        .title {
+            height: 50px;
+            font-weight: bold;
+            text-align: left;
+            line-height: 50px;
+        }
+
+        .item {
+            background-color: #444;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 150%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid">
+        <style media="screen">
+            .basic {
+                display: grid;
+                grid-template-columns: 100px 100px 100px;
+                grid-gap: 10px;
+                background-color: #fff;
+                color: #444;
+            }
+        </style>
+        <h2 class="title">最基本的网格布局</h2>
+        <div class="basic">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+            <div class="item">D</div>
+            <div class="item">E</div>
+            <div class="item">F</div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <style media="screen">
+            .numberic {
+                display: grid;
+                grid-template-columns: 100px 100px 100px;
+                grid-gap: 10px;
+                background-color: #fff;
+                color: #444;
+            }
+
+            .nu-a {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+
+            .nu-b {
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+
+            .nu-c {
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+
+            .nu-d {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+
+            .nu-e {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+
+            .nu-f {
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+        </style>
+        <h2 class="title">基于网格线的位置展示，使用数字编号的网格线</h2>
+        <div class="numberic">
+            <div class="item nu-a">A</div>
+            <div class="item nu-b">B</div>
+            <div class="item nu-c">C</div>
+            <div class="item nu-d">D</div>
+            <div class="item nu-e">E</div>
+            <div class="item nu-f">F</div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <style media="screen">
+            .simple {
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: 100px 100px 100px;
+                background-color: #fff;
+                color: #444;
+            }
+
+            .si-a {
+                grid-column: 2 / 3;
+                grid-row: 1 / 2;
+            }
+
+            .si-b {
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+            }
+
+            .si-c {
+                grid-column: 3 / 4;
+                grid-row: 2 / 3;
+            }
+
+            .si-d {
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+            }
+
+            .si-e {
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+            }
+
+            .si-f {
+                grid-column: 3 / 4;
+                grid-row: 1 / 2;
+            }
+        </style>
+        <h2 class="title">基于网格线的位置布局，使用 grid-row 和 grid-column 简写</h2>
+        <div class="simple">
+            <div class="item si-a">A</div>
+            <div class="item si-b">B</div>
+            <div class="item si-c">C</div>
+            <div class="item si-d">D</div>
+            <div class="item si-e">E</div>
+            <div class="item si-f">F</div>
+        </div>
+    </div>
+
+    <div class="grid">
+        <style media="screen">
+            .grid-area {
+                display: grid;
+                grid-gap: 10px;
+                grid-template-columns: 100px 100px 100px;
+                background-color: #fff;
+                color: 444;
+            }
+
+            .ar-a {
+                grid-area: 1 / 2 / 2 / 3;
+            }
+
+            .ar-b {
+                grid-area: 2 / 2 / 3 / 3;
+            }
+
+            .ar-c {
+                grid-area: 2 / 3 / 3 / 4;
+            }
+
+            .ar-d {
+                grid-area: 1 / 1 / 2 / 2;
+            }
+
+            .ar-e {
+                grid-area: 2 / 1 / 3 / 2;
+            }
+
+            .ar-f {
+                grid-area: 1 / 3 / 2 / 4;
+            }
+        </style>
+        <h2 class="title">基于网格线的位置布局，使用 grid-area 简写</h2>
+        <div class="grid-area">
+            <div class="item ar-a">A</div>
+            <div class="item ar-b">B</div>
+            <div class="item ar-c">C</div>
+            <div class="item ar-d">D</div>
+            <div class="item ar-e">E</div>
+            <div class="item ar-f">F</div>
+        </div>
+    </div>
+</body>
+
+</html>

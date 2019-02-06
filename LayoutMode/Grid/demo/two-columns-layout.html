@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Two Columns Layout - 两列布局</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 10vw 30vw 10vw;
+            grid-gap: 1em;
+        }
+
+        header,
+        footer {
+            grid-column: 1 / span 5;
+        }
+
+        main {
+            grid-column: 1 / span 3;
+        }
+
+        aside {
+            grid-column: span 2;
+        }
+
+        @media (max-width: 700px) {
+
+            main,
+            aside {
+                grid-column: 1 / span 5;
+            }
+        }
+
+        /* Demo Specific Styles */
+        body {
+            margin: 0 auto;
+            max-width: 56em;
+            padding: 1em 0;
+        }
+
+        header,
+        main,
+        aside,
+        footer {
+            background: #eaeaea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <header>
+            Header
+        </header>
+
+        <main>
+            Content
+        </main>
+
+        <aside>
+            Aside
+        </aside>
+
+        <footer>
+            Footer
+        </footer>
+    </div>
+</body>
+
+</html>
