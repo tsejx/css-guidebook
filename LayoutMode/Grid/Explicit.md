@@ -46,7 +46,7 @@ grid {
 
 ```css
 grid {
-	display: grid;
+    display: grid;
     grid-template-rows: 50px 100px;
     grid-template-columns: 50px 100px 150px;
 }
