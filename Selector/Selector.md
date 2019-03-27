@@ -78,3 +78,9 @@
 | `E::selection`                       | 设置对象被选择时的颜色。                                     |
 
 ⚠️ CSS3 将伪对象选择符（Pseudo-Element Selectors）前面的单个冒号（`:`）修改为双冒号（`::`）用以区别伪类选择符（Pseudo-Classes Selectors），但以前的写法仍然有效。
+
+---
+
+**参考资料：**
+
+* [W3C Selectors Level 3](https://www.w3.org/TR/selectors-3/)
