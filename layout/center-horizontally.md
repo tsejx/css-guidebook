@@ -1,0 +1,125 @@
+# 水平居中
+
+## 内联元素
+
+利用 `text-align: center` 可以实现块级元素内部的内联元素水平居中。
+
+**适用对象：**
+
+* 内联元素 `line`
+* 内联块 `inline-block`
+* 内联表 `inline-table`
+* `inline-flex` 元素
+
+```css
+.parent {
+  text-align: center;
+}
+```
+
+**优点**
+
+- 简单快捷，兼容性好
+
+**缺点**
+
+- 只对行内内容有效
+- 属性会继承影响到后代行内内容
+- 如果子元素宽度大于父元素宽度则无效，但是后代行内内容中宽度小雨设置 `text-align` 属性的元素宽度的时候，也会继承水平居中
+
+## 块级元素
+
+通过固定宽度块级元素的 `margin-left` 和 `margin-right` 设成 `auto`，就可以使块级元素水平居中。
+
+```css
+.child {
+  /* width: fit-content */
+  margin: 0 auto;
+}
+```
+
+## 多块级元素
+
+### inline-block
+
+如果一行中有两个或两个以上的块级元素，通过设置块级元素的显示类型为 `inline-block` 和父容器的 `text-align` 属性从而使多块级元素水平居中。
+
+```css
+.parent {
+    text-align: center;
+}
+
+.child {
+    display: inline-block;
+}
+```
+
+**优点**
+
+* 简单易理解，兼容性好
+
+**缺点**
+
+* 只对行内内容有效
+* 属性会继承影响到后代行内内容
+* 块级改为 `inline-block` 换行、空格会产生元素间隔
+
+### flexbox
+
+利用弹性布局，实现水平居中，其中 `justify-content` 用于设置弹性盒子元素在主轴方向上的对齐方式。
+
+```css
+.parent {
+  display: flex;
+  justify-content: center;
+}
+```
+
+**优点：** 适用于任意个元素
+
+**缺点：** PC 端兼容性不好
+
+### absolute - transform
+
+```css
+.child {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+```
+
+**优点：** 不用回流
+
+### absolute - margin
+
+```css
+.child {
+  position: absolute;
+  width: 固定值;
+  left: 50%;
+  margin-left: -0.5宽度;
+}
+```
+
+**优点**
+
+* 兼容性好
+* 不管块级还是行内元素都可以实现
+
+**缺点**
+
+* 脱离文档流
+* 使用 `margin-left` 需要知道宽度值
+
+### absolute - direction
+
+```css
+.child {
+  position: absolute;
+  width: 固定值;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+```
