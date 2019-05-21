@@ -1,8 +1,8 @@
 # BFC
 
-块级格式化上下文（Block Fromatting Context，BFC），指一个隔离的独立的块级渲染区域，是Web页面的可视化CSS渲染的一部分，是布局过程中生成块级盒子的区域，也是浮动元素与其他元素的交互限定区域。
+块级格式化上下文（Block Fromatting Context，BFC），指一个隔离的独立的块级渲染区域，是 Web 页面的可视化 CSS 渲染的一部分，是布局过程中生成块级盒子的区域，也是浮动元素与其他元素的交互限定区域。
 
->  相关：IFC 为内联元素格式化上下文
+> 相关：IFC 为内联元素格式化上下文
 
 ## 原理
 
@@ -72,7 +72,7 @@
         Floated div
     </div>
     <p>
-        Quae hic ut ab perferendis sit quod architecto, 
+        Quae hic ut ab perferendis sit quod architecto,
         dolor debitis quam rem provident aspernatur tempora
         expedita.
     </p>
@@ -81,7 +81,7 @@
 
 ### 多列布局设定
 
-如果我们创建一个占满整个容器宽度的多列布局，在某些浏览器中最后一列有时候会掉到下一行。这可能是因为浏览器四舍五入了列宽从而所有列的总宽度会超出容器。但如果我们在多列布局中的最后一列里创建一个新的BFC，它将总是占据其他列先占位完毕后剩下的空间。
+如果我们创建一个占满整个容器宽度的多列布局，在某些浏览器中最后一列有时候会掉到下一行。这可能是因为浏览器四舍五入了列宽从而所有列的总宽度会超出容器。但如果我们在多列布局中的最后一列里创建一个新的 BFC，它将总是占据其他列先占位完毕后剩下的空间。
 
 **示例**
 
@@ -100,11 +100,11 @@
     float: left;
     margin: 0 1%;
 }
-/*  Establishing a new block formatting 
+/*  Establishing a new block formatting
     context in the last column */
 .column:last-child {
     float: none;
-    overflow: hidden; 
+    overflow: hidden;
 }
 ```
 
