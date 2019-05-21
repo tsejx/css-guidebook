@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>三栏布局 | CSS-Guidebook</title>
+    <meta name="description" content="">
+    <link rel="icon" href="favicon.ico">
+    
+    <link rel="preload" href="/CSS-Guidebook/assets/css/0.styles.4984b6aa.css" as="style"><link rel="preload" href="/CSS-Guidebook/assets/js/app.c0a392ba.js" as="script"><link rel="preload" href="/CSS-Guidebook/assets/js/2.d8bbf4b3.js" as="script"><link rel="preload" href="/CSS-Guidebook/assets/js/26.ec47af90.js" as="script"><link rel="prefetch" href="/CSS-Guidebook/assets/js/10.8229452e.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/11.bfde0607.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/12.5b90b8f1.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/13.282198d5.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/14.3986a8d6.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/15.a3234b63.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/16.2e3a584a.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/17.fa6ba606.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/18.0522dea5.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/19.99e1a650.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/20.a3c96dba.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/21.37d0ae7a.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/22.a497ad34.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/23.c0ce02c1.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/24.1cd21617.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/25.8d63a1f5.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/27.d9752fc1.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/28.73d24fbb.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/29.e48a556f.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/3.89418e11.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/30.9a28b34a.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/31.de66a6bf.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/32.8f28a290.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/33.af79a272.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/34.d7cd85a9.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/35.eb7d6171.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/36.6dd8c3a2.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/37.dca51832.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/38.d44e4200.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/39.59742005.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/4.453bf445.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/40.e18cb30f.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/41.9855ab16.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/5.1ccaab42.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/6.2c6a325a.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/7.0abd9b8a.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/8.037f6218.js"><link rel="prefetch" href="/CSS-Guidebook/assets/js/9.0963b0aa.js">
+    <link rel="stylesheet" href="/CSS-Guidebook/assets/css/0.styles.4984b6aa.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/CSS-Guidebook/" class="home-link router-link-active"><img src="/CSS-Guidebook/favicon.png" alt="CSS-Guidebook" class="logo"> <span class="site-name can-hide">CSS-Guidebook</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"> <a href="https://github.com/tsejx/CSS-Guidebook" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"> <a href="https://github.com/tsejx/CSS-Guidebook" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>基本概念</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/CSS-Guidebook/basement/selector.html" class="sidebar-link">选择符</a></li><li><a href="/CSS-Guidebook/basement/specificity.html" class="sidebar-link">优先级</a></li><li><a href="/CSS-Guidebook/basement/values-and-units.html" class="sidebar-link">取值与单位</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>属性</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/CSS-Guidebook/properties/location.html" class="sidebar-link">定位</a></li><li><a href="/CSS-Guidebook/properties/size.html" class="sidebar-link">尺寸</a></li><li><a href="/CSS-Guidebook/properties/decoration.html" class="sidebar-link">修饰</a></li><li><a href="/CSS-Guidebook/properties/content.html" class="sidebar-link">内容</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>页面布局</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/CSS-Guidebook/layout/box-model.html" class="sidebar-link">盒模型</a></li><li><a href="/CSS-Guidebook/layout/bfc.html" class="sidebar-link">BFC</a></li><li><a href="/CSS-Guidebook/layout/center-horizontally.html" class="sidebar-link">水平居中</a></li><li><a href="/CSS-Guidebook/layout/center-vertically.html" class="sidebar-link">垂直居中</a></li><li><a href="/CSS-Guidebook/layout/center-both-vertically-and-horizontally.html" class="sidebar-link">水平垂直居中</a></li><li><a href="/CSS-Guidebook/layout/flex-box.html" class="sidebar-link">弹性布局</a></li><li><a href="/CSS-Guidebook/layout/double-columns-layout.html" class="sidebar-link">双栏布局</a></li><li><a href="/CSS-Guidebook/layout/three-columns-layout.html" class="active sidebar-link">三栏布局</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/CSS-Guidebook/layout/three-columns-layout.html#实现方式" class="sidebar-link">实现方式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/CSS-Guidebook/layout/three-columns-layout.html#浮动布局" class="sidebar-link">浮动布局</a></li><li class="sidebar-sub-header"><a href="/CSS-Guidebook/layout/three-columns-layout.html#绝对定位" class="sidebar-link">绝对定位</a></li><li class="sidebar-sub-header"><a href="/CSS-Guidebook/layout/three-columns-layout.html#弹性布局" class="sidebar-link">弹性布局</a></li><li class="sidebar-sub-header"><a href="/CSS-Guidebook/layout/three-columns-layout.html#表格布局" class="sidebar-link">表格布局</a></li><li class="sidebar-sub-header"><a href="/CSS-Guidebook/layout/three-columns-layout.html#网格布局" class="sidebar-link">网格布局</a></li></ul></li><li class="sidebar-sub-header"><a href="/CSS-Guidebook/layout/three-columns-layout.html#圣杯布局" class="sidebar-link">圣杯布局</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/CSS-Guidebook/layout/three-columns-layout.html#浮动布局-2" class="sidebar-link">浮动布局</a></li><li class="sidebar-sub-header"><a href="/CSS-Guidebook/layout/three-columns-layout.html#弹性布局-2" class="sidebar-link">弹性布局</a></li><li class="sidebar-sub-header"><a href="/CSS-Guidebook/layout/three-columns-layout.html#网格布局-2" class="sidebar-link">网格布局</a></li></ul></li><li class="sidebar-sub-header"><a href="/CSS-Guidebook/layout/three-columns-layout.html#双飞翼布局" class="sidebar-link">双飞翼布局</a></li></ul></li><li><a href="/CSS-Guidebook/layout/multi-columns-layout.html" class="sidebar-link">多栏布局</a></li><li><section class="sidebar-group is-sub-group depth-1"><p class="sidebar-heading"><span>网格布局</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/CSS-Guidebook/layout/grid/application.html" class="sidebar-link">CSS Grid 布局应用</a></li><li><a href="/CSS-Guidebook/layout/grid/explicit.html" class="sidebar-link">显式网格属性</a></li><li><a href="/CSS-Guidebook/layout/grid/grid.html" class="sidebar-link">网格布局</a></li><li><a href="/CSS-Guidebook/layout/grid/implicit.html" class="sidebar-link">隐式网格属性</a></li><li><a href="/CSS-Guidebook/layout/grid/terminology.html" class="sidebar-link">网格布局术语</a></li></ul></section></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>预编译语言</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/CSS-Guidebook/precompilation/less.html" class="sidebar-link">Less</a></li><li><a href="/CSS-Guidebook/precompilation/sass.html" class="sidebar-link">Sass</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="content default"><h1 id="三栏布局"><a href="#三栏布局" aria-hidden="true" class="header-anchor">#</a> 三栏布局</h1> <p>三栏布局，这里实现的是两侧栏固定宽度，中间栏自适应。</p> <h2 id="实现方式"><a href="#实现方式" aria-hidden="true" class="header-anchor">#</a> 实现方式</h2> <h3 id="浮动布局"><a href="#浮动布局" aria-hidden="true" class="header-anchor">#</a> 浮动布局</h3> <ul><li>HTML 结构中，中间栏元素置于同级末尾</li> <li>两侧栏设置浮动布局 <code>float: left</code> 和 <code>float: right</code></li> <li>两侧栏设置固定宽度 <code>width</code></li></ul> <p>⚠️ <strong>注意：</strong></p> <ul><li>因为浮动脱离文档流，所以中间栏一定要放到最后面</li> <li>如果有文字出现，布局就会错乱，导致扩展性不好</li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>parent<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>left<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>center<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.left</span> <span class="token punctuation">{</span>
+    <span class="token property">float</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.right</span> <span class="token punctuation">{</span>
+    <span class="token property">float</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="绝对定位"><a href="#绝对定位" aria-hidden="true" class="header-anchor">#</a> 绝对定位</h3> <ul><li>三栏设置绝对定位 <code>position: absolute</code></li> <li>两侧栏设置固定宽度 <code>width</code></li> <li>两侧分别设置至两侧边距 <code>left: 0</code> 和 <code>right: 0</code></li> <li>中间栏左右边距设置为上面的固定宽度 <code>left: width</code> 和 <code>right: width</code></li></ul> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.left, .right, .center</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> absolute<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.left</span> <span class="token punctuation">{</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.right</span> <span class="token punctuation">{</span>
+    <span class="token property">right</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.center</span> <span class="token punctuation">{</span>
+    <span class="token property">left</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+    <span class="token property">right</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="弹性布局"><a href="#弹性布局" aria-hidden="true" class="header-anchor">#</a> 弹性布局</h3> <ul><li>容器弹性布局 <code>display: flex</code></li> <li>两侧栏设置固定宽度 <code>width</code></li> <li>中间栏设置占主轴空间 <code>flex: 1</code></li></ul> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.parent</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.left,
+.right</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.center</span> <span class="token punctuation">{</span>
+    <span class="token property">flex</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="表格布局"><a href="#表格布局" aria-hidden="true" class="header-anchor">#</a> 表格布局</h3> <ul><li>容器布局 <code>display: table</code></li> <li>容器设置宽度 <code>width: 100%</code></li> <li>容器设置固定高度 <code>height</code></li> <li>三栏 <code>display: table-cell</code></li> <li>两侧栏设置固定宽度 <code>width</code></li></ul> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.parent</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> table<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.left, .right, .center</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> table-cell<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.left, .right</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="网格布局"><a href="#网格布局" aria-hidden="true" class="header-anchor">#</a> 网格布局</h3> <ul><li>容器布局 <code>display: grid</code></li> <li>容器宽度 <code>width: 100%</code></li> <li>容器分栏，两侧固定，中间自适应 <code>grid-template-columns: width auto width</code></li> <li>容器分列固定高度 <code>grid-template-rows</code></li></ul> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">.parent</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+    <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> 100px auto 100px<span class="token punctuation">;</span>
+    <span class="token property">grid-template-rows</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="圣杯布局"><a href="#圣杯布局" aria-hidden="true" class="header-anchor">#</a> 圣杯布局</h2> <p>圣杯布局（Holy Grail）：随着页面宽度的变化，三栏布局中的中间栏区域优先自适应渲染，两侧区域宽度固定不变。</p> <p>圣杯布局要求：</p> <ul><li><code>header</code> 和 <code>footer</code> 各自占领屏幕所有宽度，高度固定</li> <li>中间的 <code>container</code> 是一个三栏布局，且三列等高</li> <li>三栏布局两侧宽度固定不变，中间部分自适应填充整个区域</li> <li>中间部分的高度是三栏中最高的区域的高度，并且优先加载</li></ul> <p>会出现的问题：</p> <ul><li>当面板中间栏部分比两边的子面板宽度小的时候，布局就会乱掉</li> <li>解决方案：<a href="#%E5%8F%8C%E9%A3%9E%E7%BF%BC%E5%B8%83%E5%B1%80">双飞翼布局</a></li></ul> <h3 id="浮动布局-2"><a href="#浮动布局-2" aria-hidden="true" class="header-anchor">#</a> 浮动布局</h3> <p>🛠 <strong>实现方式：</strong></p> <ul><li>定义 <code>header</code> 和 <code>footer</code> 样式，使之横向撑满</li> <li>在 <code>container</code> 中的三列设为浮动和相对定位，<code>center</code> 要放最前面，<code>footer</code> 清除浮动</li> <li>三列左右两列各自设定固定宽度，<code>center</code> 设置 <code>width: 100%</code> 占满容器</li> <li>因为浮动原因，<code>center</code> 占满容器，两侧区域被挤下去</li> <li>容器设置 <code>padding-left</code> 为左侧区域腾出展示空间，相对应设置 <code>padding-right</code> 为右侧区域腾出空间</li> <li>左侧区域需要设置 <code>margin-left: -100%</code> 和  <code>right</code> 为自身宽度，回到上一行最左侧</li> <li>右侧区域需要设置 <code>margin-right</code> 为自身宽度，回到上一行最右侧</li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">&gt;</span></span>Header<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>center<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Main Content<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>nav</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>left<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Nav<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>nav</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>aside</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Sidebar<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>aside</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">&gt;</span></span>Footer<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">body</span> <span class="token punctuation">{</span>
+    <span class="token comment">/* 设置最小宽度 */</span>
+    <span class="token property">min-width</span><span class="token punctuation">:</span> 550px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">header,
+footer</span> <span class="token punctuation">{</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 60px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">footer</span> <span class="token punctuation">{</span>
+    <span class="token property">clear</span><span class="token punctuation">:</span> both<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.container</span> <span class="token punctuation">{</span>
+    <span class="token property">padding-left</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+    <span class="token property">padding-right</span><span class="token punctuation">:</span> 250px<span class="token punctuation">;</span>
+    <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.center,
+.left,
+.right</span> <span class="token punctuation">{</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+    <span class="token property">float</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.center</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.left</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+    <span class="token property">right</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> -100%<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.right</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 250px<span class="token punctuation">;</span>
+    <span class="token property">margin-right</span><span class="token punctuation">:</span> -250px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>文字溢出问题：</strong></p> <ul><li><p>问题：如果某列内容过多，文字会溢出</p></li> <li><p>解决方案；等高布局</p></li></ul> <h3 id="弹性布局-2"><a href="#弹性布局-2" aria-hidden="true" class="header-anchor">#</a> 弹性布局</h3> <p>🛠 <strong>实现方式：</strong></p> <ul><li>定义 <code>header</code> 和 <code>footer</code> 样式，使之横向撑满</li> <li><code>container</code> 中的 <code>left</code>、<code>center</code>、<code>right</code> 依次排布即可</li> <li>设置 <code>container</code> 为弹性布局 <code>display: flex</code></li> <li><code>left</code> 和 <code>right</code> 区域定宽，<code>center</code> 设置为 <code>flex: 1</code> 即可</li></ul> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">body</span> <span class="token punctuation">{</span>
+    <span class="token property">min-width</span><span class="token punctuation">:</span> 550px<span class="token punctuation">;</span> <span class="token comment">/* 2x leftContent width + rightContent width */</span>
+<span class="token punctuation">}</span>
+<span class="token selector">header, footer</span> <span class="token punctuation">{</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 60px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.container</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> flex<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.left, .right, .centrt</span> <span class="token punctuation">{</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.left, .right</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 250px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">.center</span> <span class="token punctuation">{</span>
+    <span class="token property">flex</span><span class="token punctuation">:</span> 1<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><a href="https://codepen.io/cameron-townsend/pen/qZrLpE?editors=1100" target="_blank" rel="noopener noreferrer">CodePen<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="网格布局-2"><a href="#网格布局-2" aria-hidden="true" class="header-anchor">#</a> 网格布局</h3> <p>🛠 <strong>实现方式：</strong></p> <ul><li>将整个布局抽象为九个方块，<code>header</code> 和 <code>footer</code> 分别占三个，其余各占一个，并为其命名</li> <li>将命名区域赋值给各个元素选择器 <code>grid-area</code></li> <li>设置各列宽度 <code>grid-template-rows</code></li> <li>设置各行高度 <code>grid-template-columns</code></li></ul> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">body</span> <span class="token punctuation">{</span>
+    <span class="token property">display</span><span class="token punctuation">:</span> grid<span class="token punctuation">;</span>
+    <span class="token property">grid-template-areas</span><span class="token punctuation">:</span>
+        <span class="token string">&quot;header header header&quot;</span>
+        <span class="token string">&quot;left center right&quot;</span>
+        <span class="token string">&quot;footer footer footer&quot;</span><span class="token punctuation">;</span>
+    <span class="token comment">/* 列 1 和列 3 方块宽度固定 列 2 方块宽度自适应*/</span>
+    <span class="token property">grid-template-columns</span><span class="token punctuation">:</span> 250px 1fr 250px<span class="token punctuation">;</span>
+    <span class="token comment">/* 行 1 和 行 3 方块高度固定 行 2 方块高度自适应 */</span>
+    <span class="token property">grid-template-rows</span><span class="token punctuation">:</span> 60px 1fr 60px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">header</span> <span class="token punctuation">{</span>
+    <span class="token property">grid-area</span><span class="token punctuation">:</span> header<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">footer</span> <span class="token punctuation">{</span>
+    <span class="token property">grid-area</span><span class="token punctuation">:</span> footer<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.left</span> <span class="token punctuation">{</span>
+    <span class="token property">grid-area</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.center</span> <span class="token punctuation">{</span>
+    <span class="token property">grid-area</span><span class="token punctuation">:</span> center<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.right</span> <span class="token punctuation">{</span>
+    <span class="token property">grid-area</span><span class="token punctuation">:</span> right<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="双飞翼布局"><a href="#双飞翼布局" aria-hidden="true" class="header-anchor">#</a> 双飞翼布局</h2> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>main<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>center<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>content<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>left<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">header,
+footer</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 300px<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">footer</span> <span class="token punctuation">{</span>
+    <span class="token property">clear</span><span class="token punctuation">:</span> both<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.main</span> <span class="token punctuation">{</span>
+    <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.center, .left, .right</span> <span class="token punctuation">{</span>
+    <span class="token property">float</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 100vh - 100px * 2<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.center</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.left</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> -100%<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.right</span> <span class="token punctuation">{</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 250px<span class="token punctuation">;</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> -250px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token selector">.content</span> <span class="token punctuation">{</span>
+    <span class="token property">margin-left</span><span class="token punctuation">:</span> 200px<span class="token punctuation">;</span>
+    <span class="token property">margin-right</span><span class="token punctuation">:</span> 250px<span class="token punctuation">;</span>
+    <span class="token property">height</span><span class="token punctuation">:</span> 500px<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><a href="https://codepen.io/itagn/pen/XxpVqP" target="_blank" rel="noopener noreferrer">🖥 演示代码<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>双飞翼布局与圣杯布局对比**</p> <p>两者解决的问题一半是相同的，也就是三栏全部浮动，但左右两栏加上负 <code>margin</code> 让其跟中间栏并排，以形成三栏布局。</p> <p>不同在于解决中间栏内容不被遮挡的解决方案上。圣杯布局通过父容器设置 <code>padding-left</code> 和 <code>padding-right</code> 后，将左右两栏用相对布局并分别配合 <code>right</code> 和 <code>left</code> 属性，以便让左右两栏移动后不遮挡中间栏。</p> <p>双飞翼布局，为了中间栏不被遮挡，直接在中间栏内部创建子容器用于放置内容，在该子容器里用 <code>margin-left</code> 和 <code>margin-right</code> 为左右两栏区域留出位置。</p> <ul><li>双飞翼给中间栏添加了父标签通过 <code>margin</code> 给中间内容展示区域腾出空间</li> <li>圣杯采用 <code>padding</code>，而双飞翼采用 <code>margin</code>，解决圣杯布局文字溢出问题</li> <li>双飞翼不用设置相对定位，以及对应的 <code>left</code> 和 <code>right</code> 值</li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最近更新时间: </span> <span class="time">5/21/2019, 4:42:36 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/CSS-Guidebook/layout/double-columns-layout.html" class="prev">
+          双栏布局
+        </a></span> <span class="next"><a href="/CSS-Guidebook/layout/multi-columns-layout.html">
+          多栏布局
+        </a>
+        →
+      </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/CSS-Guidebook/assets/js/app.c0a392ba.js" defer></script><script src="/CSS-Guidebook/assets/js/2.d8bbf4b3.js" defer></script><script src="/CSS-Guidebook/assets/js/26.ec47af90.js" defer></script>
+  </body>
+</html>
