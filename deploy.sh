@@ -12,6 +12,6 @@ git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:tsejx/CSS-GuideBook.git master:gh-pages
+git push -f git@github.com:tsejx/CSS-Guidebook.git master:gh-pages
 
 cd -
