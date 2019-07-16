@@ -10,7 +10,6 @@ module.exports = {
   // ga: 'UA-138047269-1',
   // serviceWorker: true,
   port: 3000,
-
   themeConfig: {
     repo: 'tsejx/CSS-Guidebook',
     logo: '/favicon.png',
@@ -33,7 +32,18 @@ module.exports = {
       {
         title: '属性',
         collapsable: false,
-        children: ['location', 'size', 'decoration', 'content'].map(r => setPrefix('properties', r)),
+        children: [
+          'location',
+          'box',
+          'decoration',
+          'content',
+          'background',
+        ].map(r => setPrefix('properties', r)),
+      },
+      {
+        title: '规则',
+        collapsable: false,
+        children: ['import', 'font-face', 'media', 'keyframes'].map(r => setPrefix('rules', r)),
       },
       {
         title: '页面布局',
@@ -48,7 +58,6 @@ module.exports = {
             'flex-box',
             'double-columns-layout',
             'three-columns-layout',
-            'multi-columns-layout',
           ].map(r => setPrefix('layout', r)),
           {
             title: '网格布局',
