@@ -8,7 +8,7 @@
     "lint:md": "lint-md *.md",
     "lint:fix": "lint-md *.md --fix",
     "build": "yarn run dumi build",
-    "deploy": "bash deploy.sh"
+    "deploy": "bash ./scripts/deploy.sh"
   },
   "repository": {
     "type": "git",
