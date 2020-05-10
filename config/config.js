@@ -5,7 +5,7 @@ export default {
   base: '/css-guidebook/',
   publicPath: '/css-guidebook/',
   favicon: './favicon.ico',
-  logo: './favicon.svg',
+  logo: 'http://img.mrsingsing.com/css-guidebook-favicon.png',
   exportStatic: {},
   navs: [
     null,
