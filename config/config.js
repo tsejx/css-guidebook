@@ -1,4 +1,4 @@
-export default {
+const config = {
   mode: 'site',
   title: 'CSS Guidebook',
   description: 'CSS 完全知识体系',
@@ -15,3 +15,9 @@ export default {
     },
   ],
 };
+
+if (process.env.NODE_ENV !== 'development') {
+  config.ssr = {};
+}
+
+export default base;
