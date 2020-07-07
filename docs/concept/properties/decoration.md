@@ -14,7 +14,7 @@ nav:
 * box-shadow
 * outline
 
-# BoxShadow
+# box-shadow
 
 营造层次感(立体感)
 

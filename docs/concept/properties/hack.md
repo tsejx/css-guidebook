@@ -113,26 +113,6 @@ Firefox 下，`event` 对象有 `pageX`、`pageY` 属性,但是没有 `x`、`y` 
 
 PNG24 位的图片在 IE6 浏览器上出现背景，解决方案是做成 PNG8
 
-## IE6 BUG
-
-1. 双边距 BUG float 引起的 使用 display
-
-2. 3 像素问题 使用 float 引起的 使用 dislpay:inline -3px
-
-3. 超链接 hover 点击后失效 使用正确的书写顺序 link visited hover active
-
-4. Ie z-index 问题 给父级添加 position:relative
-
-5. Png 透明 使用 js 代码 改
-
-6. Min-height 最小高度 !Important 解决’
-
-7. select 在 ie6 下遮盖 使用 iframe 嵌套
-
-8. 为什么没有办法定义 1px 左右的宽度容器(IE6 默认的行高造成的，使用 over:hidden,zoom:0.08 line-height:1px)
-
-9. ie 6 不支持!important
-
 ## 为什么要初始化 CSS 样式
 
 因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对 CSS 初始化往往会出现浏览器之间的页面显示差异。当然，初始化样式会对 SEO 有一定的影响，但鱼和熊掌不可兼得，但力求影响最小的情况下初始化。

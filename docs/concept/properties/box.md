@@ -13,7 +13,7 @@ nav:
 
 - box-sizing
 - display
-- width / height
+- width & height
 - margin
 - padding
 - border
@@ -31,7 +31,7 @@ nav:
 | list-item    | 此元素会作为列表显示。                                       |
 | table        | 此元素会作为块级表格来显示（类似 table），表格前后带有换行符 |
 
-## width/height
+## width & height
 
 块级元素的流体特性主要体现在水平方向上。
 
@@ -58,7 +58,6 @@ a {
 `<a>` 标签元素 display 属性默认为 inline，因此设置 `display: block` 使其块状化绝对没有问题，但后面设置的 `width: 100%` 则会使其失去了流动性。
 
 所谓流动性并非看上去的宽度 100% 显示那么简单，而是一种 margin/border/padding/content 内容区域自动分配水平空间的机制。
-
 
 #### 格式化宽度
 
@@ -90,8 +89,8 @@ div {
 
 若外部容器宽度为 240 像素，内部元素宽度设为 0，`inline-block` 元素的宽度根据其内部的图文表现。
 
-* 东亚文字最小宽度为每个汉字的宽度
-* 西方最小宽度由特定的连续的英文字符单元决定。并非所有的英文字符都会组成连续单元，一般会终止于空格（普通空格）、短横线、问号以及其他非英文字符等。
+- 东亚文字最小宽度为每个汉字的宽度
+- 西方最小宽度由特定的连续的英文字符单元决定。并非所有的英文字符都会组成连续单元，一般会终止于空格（普通空格）、短横线、问号以及其他非英文字符等。
 
 ## border
 
@@ -110,5 +109,8 @@ div {
 }
 ```
 
+---
 
-https://github.com/jobbole/awesome-css-cn
+**参考资料：**
+
+- [awesome-css-cn](https://github.com/jobbole/awesome-css-cn)

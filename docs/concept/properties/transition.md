@@ -11,16 +11,19 @@ nav:
 
 # 过渡
 
-比如我们平时用到的 `:hoever`、`:focus`、`:checked`、媒体查询或者 JavaScript。
+过渡 `transition` 是 CSS3 中具有颠覆性的特征之一，我们可以在不实用 Flash 动画或 JavaScript 的情况下，当元素从一种样式变换为另一种样式时为元素添加效果。
 
-我们来分析这一整个过程，首先 transition 给元素设置的过渡属性是 transform，当鼠标移入元素时，元素的 transform 发生变化，那么这个时候就触发了 transition，产生了动画，当鼠标移出时，transform 又发生变化，这个时候还是会触发 transition，产生动画，所以 transition 产生动画的条件是 transition 设置的 property 发生变化，这种动画的特点是需要“一个驱动力去触发”，有着以下几个不足：
+要实现这一点，必须规定两项内容：
 
-需要事件触发，所以没法在网页加载时自动发生
-是一次性的，不能重复发生，除非一再触发
-只能定义开始状态和结束状态，不能定义中间状态，也就是说只有两个状态
-一条 transition 规则，只能定义一个属性的变化，不能涉及多个属性。
+- 规定您希望把效果添加到哪个 CSS 属性上
+- 规定效果的时长
 
-* transition-property 规定设置过渡效果的 CSS 属性的名称
-* transition-duration 规定完成过渡效果需要多少秒或毫秒
-* transition-timing-function 规定速度效果的速度曲线
-* transtion-delay 定义过渡效果何时开始
+## 过渡属性
+
+| 属性                         | 说明                                                 |
+| :--------------------------- | :--------------------------------------------------- |
+| `transition`                 | 所有过渡属性的简写属性                               |
+| `transition-property`        | 过渡属性名称，规定设置过渡效果的 CSS 属性的名称      |
+| `transition-duration`        | 持续时间，规定完成过渡效果需要多少秒或毫秒，默认为 0 |
+| `transition-timing-function` | 速度曲线，规定速度效果的速度曲线，默认为 `ease`      |
+| `transition-delay`           | 延迟间隔，定义过渡效果何时开始，默认为 0             |

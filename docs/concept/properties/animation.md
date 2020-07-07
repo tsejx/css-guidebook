@@ -11,106 +11,118 @@ nav:
 
 # 动画
 
-- name 用来调用@keyframes 定义好的动画，与@keyframes 定义的动画名称一致
-- duration 指定元素播放动画所持续的时间
-- timing-function 规定速度效果的速度曲线，是针对每一个小动画所在时间范围的变换速率
-- delay 定义在浏览器开始执行动画之前等待的时间，值整个 animation 执行之前等待的时间
-- iteration-count 定义动画的播放次数，可选具体次数或者无限(infinite)
-- direction 设置动画播放方向：normal(按时间轴顺序),reverse(时间轴反方向运行),alternate(轮流，即来回往复进行),alternate-reverse(动画先反运行再正方向运行，并持续交替运行)
-- play-state 控制元素动画的播放状态，通过此来控制动画的暂停和继续，两个值：running(继续)，paused(暂停)
-- fill-mode 控制动画结束后，元素的样式，有四个值：none(回到动画没开始时的状态)，forwards(动画结束后动画停留在结束状态)，backwords(动画回到第一帧的状态)，both(根据 animation-direction 轮流应用 forwards 和 backwards 规则)，注意与 iteration-count 不要冲突(动画执行无限次)
+`animation` 是个简写属性，语法如下：
 
-* animation-name 关键帧名称
-* animation-duration 持续时间
-* animation-timing-function 设置动画如何完成一个周期
-* animation-delay 延迟间隔
-* animation-iteration-count 播放次数
-* animation-direction 轮流反向播放动画
+```
+animation: name duration function delay count direction;
 
-animation-fill-mode
-
-- none
-- forwards 动画结束后，动画将应用该属性
-- backwards 动画将应用在 animation-delay 定义期间启动动画的第一次迭代的关键帧中定义的属性值
-- both 动画遵循 forwards 和 backwards 的规则
-
-animation-play-state
-
-initial
-inherit
-
-http://cssanimate.com/
-http://www.shouce.ren/example/show/s/6869
-
-- ease 默认模式，慢快慢
-- linear 匀速
-- ease-in 由慢到快（加速）
-- ease-out 由快到慢（减速）
-- ease-in-out （开始）很慢-快-变慢-很慢（结束）
-- backgroung-position 属性能够定位到你需要的图标，x 横轴 正数向右边，负数向右；y 轴，正数向下，负数向上
-
-animation: name duration function delay count;
-
-//语法:
-animation:动画名称 动画时间 运动曲线 何时开始 播放次数 是否反方向;
-/\*
-默认情况下，动画执行完毕都会恢复原样
-参数 1：动画名
-参数 2：动画持续时间
-参数 3：延迟时间
-参数 4：动画曲线 steps linear 这些
-参数 5：动画次数
-参数 6：是否恢复原样，默认为恢复，加一个 forwards 就代表不恢复(就变成动画最终的样子)
-参数 7：alternate：加这个东西就代表让元素恢复的时候也有动画效果
-恢复的时候也算一次动画，所有如果为 2，那么一次到动画目的一次返回就没了
-normal：默认值就是用动画效果到最终目的
-reverse：先闪现最终目的，再用动画效果回到最初的值
-alternate-rever：相当于就是 reverse，只是比 reverse 多了一个动画恢复
-
-关于几个值，除了名字，动画时间，延时有严格顺序要求其它随意.
-\*/
-
-```css
-   //规定动画语法:from...to...定义的是从开始到结束两个状态
-
-   @keyframes 动画名称 {
-	  from{ 开始位置 }  0%
-	  to{  结束  }  100%
-	}
-
-  //规定各个阶段不同的状态的动画(不只有开始于结束状态)
-  @keyframes 动画名称 {
-	    0% {  }
-	    n1% {   }
-	    n2% {   }
-	    n3% {   }
-	    n4% {   }
-	    .........
-	    100% {  }
-  }
+animation: 动画名称 动画时间 运动曲线 何时开始 播放次数 是否反方向;
 ```
 
-```css
-@keyframes goback {
-  0% {
-  }
-  49% {
-    transform: translateX(1000px);
-  }
-  55% {
-    transform: translateX(1000px) rotateY(180deg);
-  }
-  95% {
-    transform: translateX(0) rotateY(180deg);
-  }
-  100% {
-    transform: translateX(0) rotateY(0deg);
-  }
+## 动画属性
+
+| 属性                        | 说明                                                                         |
+| :-------------------------- | :--------------------------------------------------------------------------- |
+| `animation`                 | 所有动画属性的简写属性，除了 `animation-play-state` 属性                     |
+| `animation-name`            | 关键帧名称，规定 `@keyframes` 动画的名称，与 `@keyframes` 定义的动画名称一致 |
+| `animation-duration`        | 持续时间，规定元素播放动画所持续的时间，默认为 0                             |
+| `animation-timing-function` | 速度曲线，规定速度效果的速度曲线，默认为 `ease`                              |
+| `animation-delay`           | 延迟间隔，规定执行动画前的等待时间，默认为 0                                 |
+| `animation-iteration-count` | 播放次数，规定动画的播放次数，可选具体次数或者无限（infinite），默认为 1     |
+| `animation-direction`       | 是否轮流反向播放动画，规定动画是否在下个周期逆向播放，默认为 `normal`        |
+| `animation-play-state`      | 播放状态，规定动画的播放状态，用此来控制动画的暂停和继续                     |
+| `animation-fill-mode`       | 播放后样式，控制动画结束后的元素样式                                         |
+
+**animation-timing-function 属性的可选值**
+
+| 可选值                  | 说明                                                           |
+| :---------------------- | :------------------------------------------------------------- |
+| `linear`                | 线性效果，动画从头到尾的速率是相同的                           |
+| `ease`                  | 缓解效果（慢快慢），动画以低速开始，然后加快，结束前变慢       |
+| `ease-in`               | 渐显效果（由慢到快），动画以低速开始，然后逐渐加快             |
+| `ease-out`              | 渐隐效果（由快到慢），动画以快速开始，然后逐渐减慢             |
+| `ease-in-out`           | 渐显渐隐效果（很慢-慢-快-慢-很慢）                             |
+| `step-start`            | 马上转跳到动画结束状态                                         |
+| `step-end`              | 保持动画开始状态，直到动画执行时间结束，马上转跳到动画结束状态 |
+| `steps()`               | 控制时间函数（详细说明看下文）                                 |
+| `cubic-bezier(a,b,c,d)` | 在 cubic-bezier 函数中自己的值，可能的值是从 0 到 1 的数值     |
+
+**animation-direction 属性的可选值**
+
+| 可选值              | 说明                                     |
+| :------------------ | :--------------------------------------- |
+| `normal`            | 按时间轴顺序                             |
+| `reverse`           | 时间轴反方向运行                         |
+| `alternate`         | 轮流，即来回往复进行                     |
+| `alternate-reverse` | 动画先反运行再正方向运行，并持续交替运行 |
+
+**animation-play-state 属性的可选值**
+
+| 可选值    | 说明     |
+| :-------- | :------- |
+| `running` | 继续状态 |
+| `paused`  | 暂停状态 |
+
+**animation-fill-mode 属性的可选值**
+
+| 可选值      | 说明                                                         |
+| :---------- | :----------------------------------------------------------- |
+| `none`      | 回到动画没开始时的状态                                       |
+| `forwards`  | 动画结束后动画停留在结束状态                                 |
+| `backwords` | 动画回到第一帧的状态                                         |
+| `both`      | 根据 animation-direction 轮流应用 forwards 和 backwards 规则 |
+
+> ⚠️ **注意**：注意与 `iteration-count` 不能冲突（动画执行无限次）
+
+## 控制时间函数
+
+`animation-timing-function` 是控制时间的函数，在取值中除了常用的三次贝塞尔曲线意外，还有个让人比较困惑的 `steps()` 函数。
+
+`animation` 默认以 `ease` 方式过渡，它会在每个关键帧之间插入补间动画，所以动画效果是连贯性的。
+
+除了 `ease`、`linear`、`cubic-bezier` 之类的过渡函数都会为其插入补间。但有些效果不需要补间，只需要关键帧之间的跳跃，这时应该使用 `steps` 过渡方式。
+
+理解 steps 函数：
+
+steps 函数指定一个阶跃函数
+
+1. 第一个参数指定了时间函数中的间隔数量（必须是正整数）
+2. 第二个参数可选，接受 `start` 和 `end` 两个值，指定在每个间隔的起点或是重点发生越阶变化，默认为 `end`
+
+<code src="../../demo/properties/animation/steps/index.jsx"/>
+
+## 动画支持检测
+
+```js
+let animation = false,
+  animationString = 'animation',
+  keyframePrefix = '',
+  domPrefixes = ['Webkit', 'Moz', 'O', 'ms', 'Khtml'],
+  prefix = '',
+  element = document.createElement('div');
+
+if (element.style.animationName !== undefined) {
+  animation = true;
 }
 
-//在规定动画的时候,可以有多个过程节点用来描述动画的状态.
-//上面的例子中:goback动画就是在不同的时间点位置不同.
+if (animation === false) {
+  for (let i = 0; i < domPrefixes.length; i++) {
+    if (element.style[domPrefixes[i] + 'AnimationName'] !== undefined) {
+      prefix = domPrefixes[i];
+      animationString = prefix + 'Animation';
+      ketframePrefix = '-' + prefix.toLowerCase() + '-';
+      animation = true;
+      break;
+    }
+  }
+}
 ```
 
+---
 
-https://blog.csdn.net/weixin_42839080/article/details/81546292
+**参考资料：**
+
+- [🛠 CSS Animation beta](http://cssanimate.com/)
+- [🛠 Browser Hacks](http://browserhacks.com/)
+- [🛠 CSS3 动画工具](http://www.shouce.ren/example/show/s/6869)
+- [📝 CSS3 动画合集：帧动画、补间动画、呼吸动画](https://blog.csdn.net/weixin_42839080/article/details/81546292)
