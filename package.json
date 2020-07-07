@@ -4,6 +4,7 @@
   "description": "A technical mannual about CSS knowledge",
   "main": "index.js",
   "scripts": {
+    "start": "yarn run dev",
     "dev": "yarn run dumi dev --port=8060",
     "lint:md": "lint-md *.md",
     "lint:fix": "lint-md *.md --fix",
@@ -24,7 +25,7 @@
   "license": "MIT",
   "homepage": "https://tsejx.github.io/css-guidebook/",
   "devDependencies": {
-    "dumi": "^1.0.20",
+    "dumi": "^1.0.31",
     "lint-md": "^0.2.0"
   }
 }
