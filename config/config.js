@@ -20,4 +20,4 @@ if (process.env.NODE_ENV !== 'development') {
   config.ssr = {};
 }
 
-export default base;
+export default config;
