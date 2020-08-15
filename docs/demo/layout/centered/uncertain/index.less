@@ -1,0 +1,22 @@
+@import '../../../common.less';
+
+.both-uncertain {
+  &-common {
+    width: 100px;
+    height: 100px;
+    background: @bg-container;
+  }
+
+  &-parent {
+    position: relative;
+  }
+
+  &-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: content-box; /* 需要使用标准盒模型 */
+    background: @bg-item;
+  }
+}

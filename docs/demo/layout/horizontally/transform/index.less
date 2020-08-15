@@ -1,0 +1,20 @@
+@import '../../../common.less';
+
+.hor-transform {
+  &-common {
+    width: 100px;
+    height: 100px;
+    background: @bg-container;
+  }
+
+  &-parent {
+    position: relative;
+  }
+
+  &-child {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: @bg-item;
+  }
+}

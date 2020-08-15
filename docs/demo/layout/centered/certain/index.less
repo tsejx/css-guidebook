@@ -1,0 +1,50 @@
+@import '../../../common.less';
+
+.both-negative {
+  &-common {
+    width: 100px;
+    height: 100px;
+    background: #bae7ff;
+  }
+
+  &-parent {
+    position: relative;
+  }
+
+  &-child {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-top: calc(-0.5 * 50px);
+    margin-left: calc(-0.5 * 50px);
+    box-sizing: content-box; /* 需要使用标准盒模型 */
+    background: @bg-item;
+  }
+}
+
+.both-auto {
+  &-common {
+    width: 100px;
+    height: 100px;
+    background: @bg-container;
+  }
+
+  &-parent {
+    position: relative;
+  }
+
+  &-child {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    box-sizing: content-box; /* 需要使用标准盒模型 */
+    background: @bg-item;
+  }
+}

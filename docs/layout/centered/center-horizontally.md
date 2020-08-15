@@ -17,16 +17,12 @@ nav:
 
 **适用对象：**
 
-* 内联元素 `line`
-* 内联块 `inline-block`
-* 内联表 `inline-table`
-* `inline-flex` 元素
+- 内联元素 `line`
+- 内联块 `inline-block`
+- 内联表 `inline-table`
+- `inline-flex` 元素
 
-```css
-.parent {
-  text-align: center;
-}
-```
+<code src="../../demo/layout/horizontally/inline/index.tsx" />
 
 **优点**
 
@@ -49,88 +45,56 @@ nav:
 }
 ```
 
+<code src="../../demo/layout/horizontally/block/index.tsx" />
+
 ## 多块级元素
 
-### inline-block
+### 内联块实现
 
 如果一行中有两个或两个以上的块级元素，通过设置块级元素的显示类型为 `inline-block` 和父容器的 `text-align` 属性从而使多块级元素水平居中。
 
-```css
-.parent {
-    text-align: center;
-}
-
-.child {
-    display: inline-block;
-}
-```
+<code src="../../demo/layout/horizontally/multi-inline/index.tsx" />
 
 **优点**
 
-* 简单易理解，兼容性好
+- 简单易理解，兼容性好
 
 **缺点**
 
-* 只对行内内容有效
-* 属性会继承影响到后代行内内容
-* 块级改为 `inline-block` 换行、空格会产生元素间隔
+- 只对行内内容有效
+- 属性会继承影响到后代行内内容
+- 块级改为 `inline-block` 换行、空格会产生元素间隔
 
-### flexbox
+### 弹性布局
 
-利用弹性布局，实现水平居中，其中 `justify-content` 用于设置弹性盒子元素在主轴方向上的对齐方式。
+利用弹性布局，实现水平居中，其中 `align-items` 用于设置弹性盒子元素在主轴方向上的对齐方式。
 
-```css
-.parent {
-  display: flex;
-  justify-content: center;
-}
-```
+<code src="../../demo/layout/horizontally/flex/index.tsx" />
 
 **优点：** 适用于任意个元素
 
 **缺点：** PC 端兼容性不好
 
-### absolute - transform
+### 固定宽度-外边距偏移
 
-```css
-.child {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-```
-
-**优点：** 不用回流
-
-### absolute - margin
-
-```css
-.child {
-  position: absolute;
-  width: 固定值;
-  left: 50%;
-  margin-left: -0.5宽度;
-}
-```
+<code src="../../demo/layout/horizontally/margin/index.tsx" />
 
 **优点**
 
-* 兼容性好
-* 不管块级还是行内元素都可以实现
+- 兼容性好
+- 不管块级还是行内元素都可以实现
 
 **缺点**
 
-* 脱离文档流
-* 使用 `margin-left` 需要知道宽度值
+- 脱离文档流
+- 使用 `margin-left` 需要知道宽度值
 
-### absolute - direction
+### 固定宽度-外边距适配
 
-```css
-.child {
-  position: absolute;
-  width: 固定值;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-}
-```
+<code src="../../demo/layout/horizontally/direction/index.tsx" />
+
+### 未知宽度
+
+<code src="../../demo/layout/horizontally/transform/index.tsx" />
+
+**优点：** 不用回流

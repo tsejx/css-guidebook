@@ -1,0 +1,25 @@
+@import '../../../common.less';
+
+.hor-margin {
+  &-common {
+    width: 100px;
+    height: 100px;
+    background: @bg-container;
+  }
+
+  &-parent {
+    position: relative;
+  }
+
+  &-child {
+    position: absolute;
+    // 定位元素固定宽度
+    width: 50px;
+    // 相对于父元素的左边距向右偏移
+    left: 50%;
+    // 使用负 margin 校正居中元素固定宽度一半
+    // margin-left: calc(-0.5 * 50px)
+    margin-left: -25px;
+    background: @bg-item;
+  }
+}

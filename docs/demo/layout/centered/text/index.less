@@ -1,0 +1,21 @@
+@import '../../../common.less';
+
+.both-text {
+  &-common {
+    width: 100px;
+    background: @bg-container;
+  }
+
+  &-parent {
+    height: 100px;
+    text-align: center;
+    line-height: 100px; /* 等于 parent 的 height */
+  }
+
+  &-child {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: initial; /* 这样 child 内的文字就不会超出跑到下面 */
+    background: @bg-item;
+  }
+}

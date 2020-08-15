@@ -1,0 +1,23 @@
+@import '../../../common.less';
+
+.unscrollable {
+  &-common {
+    width: 100px;
+    height: 100px;
+    background: @bg-container;
+  }
+
+  &-parent {
+    position: relative;
+  }
+
+  &-child {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    // 固定高度
+    height: 50px;
+    margin: auto 0;
+    background: @bg-item;
+  }
+}

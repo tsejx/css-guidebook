@@ -1,0 +1,19 @@
+@import '../../../common.less';
+
+.both-flex {
+  &-common {
+    width: 100px;
+    height: 100px;
+    background: @bg-container;
+  }
+
+  &-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-child {
+    background: @bg-item;
+  }
+}

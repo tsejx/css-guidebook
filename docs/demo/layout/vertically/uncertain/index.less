@@ -1,0 +1,20 @@
+@import '../../../common.less';
+
+.uncertain {
+  &-common {
+    width: 100px;
+    height: 100px;
+    background: @bg-container;
+  }
+
+  &-parent {
+    position: relative;
+  }
+
+  &-child {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: @bg-item;
+  }
+}

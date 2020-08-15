@@ -1,0 +1,17 @@
+@import '../../../common.less';
+
+.both-grid {
+  &-common {
+    width: 100px;
+    height: 100px;
+    background: @bg-container;
+  }
+
+  &-parent {
+    display: grid;
+  }
+  &-child {
+    margin: auto;
+    background: @bg-item;
+  }
+}

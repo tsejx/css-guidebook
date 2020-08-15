@@ -1,0 +1,24 @@
+@import '../../../common.less';
+
+.scrollable {
+  &-common {
+    width: 100px;
+    height: 100px;
+    background: @bg-container;
+  }
+
+  &-parent {
+    position: relative;
+  }
+
+  &-child {
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    // 相当于 -0.5 * 当前元素高度
+    // 亦可用 calc(-0.5 * 50px)
+    // margin-top: calc(-0.5 * 50px);
+    margin-top: -25px;
+    background: @bg-item;
+  }
+}

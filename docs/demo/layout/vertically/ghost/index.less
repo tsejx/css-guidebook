@@ -1,0 +1,22 @@
+.ghost {
+  &-common {
+    width: 100px;
+    height: 100px;
+    background: #bae7ff;
+  }
+
+  &-parent {
+    position: relative;
+  }
+
+  &-child,
+  &-parent::before {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &-parent::before {
+    content: ' ';
+    height: 100%;
+  }
+}

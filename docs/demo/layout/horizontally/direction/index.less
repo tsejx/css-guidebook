@@ -1,0 +1,23 @@
+@import '../../../common.less';
+
+.hor-direction {
+  &-common {
+    width: 100px;
+    height: 100px;
+    background: @bg-container;
+  }
+
+  &-parent {
+    position: relative;
+  }
+
+  &-child {
+    position: absolute;
+    // 居中元素需自定义固定宽度
+    width: 50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: @bg-item;
+  }
+}
