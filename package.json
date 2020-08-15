@@ -25,7 +25,12 @@
   "license": "MIT",
   "homepage": "https://tsejx.github.io/css-guidebook/",
   "devDependencies": {
-    "dumi": "^1.0.31",
-    "lint-md": "^0.2.0"
+    "dumi": "^1.0.34",
+    "lint-md": "^0.2.0",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "ahooks": "^2.4.0",
+    "antd": "^4.5.4"
   }
 }
