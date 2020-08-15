@@ -1,0 +1,21 @@
+@import '../../../common.less';
+
+.align-items {
+  .flex-container;
+
+  display: flex;
+  width: 500px;
+  height: 200px;
+
+  .item {
+    .flex-item;
+    .centered;
+
+    width: 50px;
+    line-height: 50px;
+  }
+
+  .item:nth-child(2) {
+    line-height: 100px;
+  }
+}
