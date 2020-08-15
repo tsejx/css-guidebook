@@ -14,6 +14,16 @@ const config = {
       path: 'https://github.com/tsejx/css-guidebook',
     },
   ],
+  extraBabelPlugins: [
+    [
+      'import',
+      {
+        libraryName: 'antd',
+        libraryDirectory: 'es',
+        style: 'css',
+      },
+    ],
+  ],
 };
 
 if (process.env.NODE_ENV !== 'development') {
