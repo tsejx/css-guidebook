@@ -1,0 +1,34 @@
+@import '../../../common.less';
+
+.overflow-auto {
+  &-clear-float {
+    overflow: auto;
+  }
+
+  &-box1 {
+    width: 200px;
+    margin-bottom: 10px;
+    background: @bg-container;
+
+    .left {
+      float: left;
+      width: 25%;
+      height: 50px;
+      background: @bg-left;
+    }
+
+    .right {
+      float: right;
+      width: 25%;
+      height: 75px;
+      background: @bg-right;
+    }
+  }
+
+  &-box2 {
+    .centered;
+    width: 200px;
+    height: 100px;
+    background: @bg-secondary;
+  }
+}
