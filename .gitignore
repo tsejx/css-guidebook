@@ -2,7 +2,8 @@
 node_modules
 dist/
 yarn-error.log
-.umi/
+.umi
+.umi-production
 .temp/
 todo/
 yarn.lock
