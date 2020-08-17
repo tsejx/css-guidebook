@@ -7,6 +7,7 @@ const config = {
   favicon: './favicon.ico',
   logo: 'http://img.mrsingsing.com/css-guidebook-favicon.png',
   exportStatic: {},
+  dynamicImport: {},
   navs: [
     null,
     {
