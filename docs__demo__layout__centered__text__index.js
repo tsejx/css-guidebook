@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[26],{C1z0:function(e,t,a){"use strict";a.r(t);var n=a("q1tI"),o=a.n(n),c=(a("IWM3"),()=>o.a.createElement("div",{className:"both-text-common both-text-parent"},o.a.createElement("div",{className:"both-text-child"},"Hello world!")));t["default"]=()=>o.a.createElement(c,null)},IWM3:function(e,t,a){}}]);

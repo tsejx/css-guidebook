@@ -1,0 +1,1 @@
+.centered{display:flex;justify-content:center;align-items:center}.flex-container{background-color:#bae7ff}.flex-item{margin:10px;background-color:#f1c40f}.uncertain-common{width:100px;height:100px;background:#bae7ff}.uncertain-parent{position:relative}.uncertain-child{position:absolute;top:50%;transform:translateY(-50%);background:#f1c40f}

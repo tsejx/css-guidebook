@@ -1,0 +1,1 @@
+.centered{display:flex;justify-content:center;align-items:center}.flex-container{background-color:#bae7ff}.flex-item{margin:10px;background-color:#f1c40f}.scrollable-common{width:100px;height:100px;background:#bae7ff}.scrollable-parent{position:relative}.scrollable-child{position:absolute;top:50%;height:50px;margin-top:-25px;background:#f1c40f}

@@ -1,0 +1,1 @@
+.ghost-common{width:100px;height:100px;background:#bae7ff}.ghost-parent{position:relative}.ghost-child,.ghost-parent:before{display:inline-block;vertical-align:middle}.ghost-parent:before{content:" ";height:100%}
