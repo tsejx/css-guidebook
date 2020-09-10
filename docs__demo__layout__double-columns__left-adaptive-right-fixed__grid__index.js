@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[31],{"5E24":function(e,a,t){"use strict";t.r(a);var n=t("q1tI"),l=t.n(n),c=(t("GHy9"),()=>l.a.createElement("div",{className:"larf-grid"},l.a.createElement("div",{className:"left"},"left"),l.a.createElement("div",{className:"right"},"right")));a["default"]=()=>l.a.createElement(c,null)},GHy9:function(e,a,t){}}]);
