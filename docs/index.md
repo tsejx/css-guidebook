@@ -6,7 +6,7 @@ hero:
   desc: 📚 CSS 知识图谱 新特性、属性、布局、响应式、动画
   actions:
     - text: 立即开始
-      link: /concept/basement/selector
+      link: /concept/selector
 features:
   - icon: https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png
     title: 完整体系
