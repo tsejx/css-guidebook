@@ -1,12 +1,12 @@
 ---
-title: 弹性布局
-order: 6
-group:
-  title: 基础布局
-  order: 5
 nav:
   title: 布局
   order: 2
+group:
+  title: 基础布局
+  order: 5
+title: 弹性布局
+order: 6
 ---
 
 # 弹性布局

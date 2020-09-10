@@ -10,11 +10,11 @@ nav:
 
 页面上显示的每个元素（包括内联元素）都可以看作一个盒子，即盒模型。
 
-盒模型由四部分组成，从内到外分别是：`content padding border margin`
+盒模型由四部分组成，从内到外分别是：`content -> padding -> border -> margin`
 
 <!-- ![](../screenshots/box-model.png) -->
 
-## 相关术语阐述
+## 名词解释
 
 ### 包含块
 
@@ -34,7 +34,10 @@ nav:
 
 盒模型分为 **W3C 标准盒模型** 和 **IE 怪异盒模型**。
 
-如果 CSS 里面写一个盒 `width: 100px`，标准盒模型显示出来，就是 `100px`，`内容 + padding + border = 100px`；但是 IE 怪异盒模型显示出来，是大于等于 `100px`，因为 `100px` 仅仅是 `内容` 的宽度，最终显示出来的是 `100px + padding + border`。
+如果 CSS 里面写一个盒 `width: 100px`：
+
+- 标准盒模型显示出来，就是 `100px`，`内容 + padding + border = 100px`
+- 但是 IE 怪异盒模型显示出来，是大于等于 `100px`，因为 `100px` 仅仅是 `内容` 的宽度，最终显示出来的是 `100px + padding + border`
 
 ### 标准盒模型
 

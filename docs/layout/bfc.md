@@ -40,7 +40,7 @@ nav:
 
 ### 解决边距重叠问题
 
-当相邻元素都设置了 `margin` 边距时，重叠边缘的 `margin` 会塌陷到其中的最大值，这种情况称作外边距折叠（Collapsing Margins）。
+当相邻元素都设置了 `margin` 边距时，重叠边缘的 `margin` 会塌陷到其中的最大值，这种情况称作 **外边距折叠（Collapsing Margins）**。
 
 **折叠结果的规则计算：**
 
