@@ -1,0 +1,26 @@
+@import '../../../../common.less';
+
+.lfra-position {
+  position: relative;
+
+  .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%; /* 左边栏宽度固定 */
+    background: @bg-blue;
+  }
+
+  .right {
+    position: absolute;
+    top: 0;
+    left: 30%; /* 需要大于等于左边栏宽度 width */
+    right: 0;
+    background: @bg-cyan;
+  }
+
+  .left,
+  .right {
+    text-align: center;
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../../common.less';
+
+.flexible-responsive-layout {
+  .parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    background-color: @bg-blue;
+  }
+
+  .child {
+    flex: 1 1 150px; /*  flex-grow: 1 ，表示自动延展到最大宽度 */
+    flex: 0 1 150px; /*  No stretching: */
+    margin: 5px;
+    background-color: @bg-yellow;
+
+    .centered;
+  }
+}

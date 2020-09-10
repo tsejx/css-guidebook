@@ -1,0 +1,18 @@
+@import '../../../../common.less';
+
+.lfra-float-margin {
+  .left {
+    float: left;
+    width: 25%; /* 左边栏宽度固定 */
+    background: @bg-blue;
+  }
+  .right {
+    margin-left: 30%; /* 需大于等于左边栏宽度以避免被左边栏遮挡 */
+    background: @bg-cyan;
+  }
+
+  .left,
+  .right {
+    .centered;
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../../common.less';
+
+.triple-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 25% auto 30%;
+  grid-column-gap: 5%;
+
+  .left {
+    background: @bg-blue;
+  }
+
+  .right {
+    background: @bg-cyan;
+  }
+
+  .center {
+    background: @bg-orange;
+  }
+
+  .left,
+  .right,
+  .center {
+    text-align: center;
+  }
+}

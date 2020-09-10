@@ -1,0 +1,24 @@
+@import '../../../../common.less';
+
+.lfra-float-margin-fix {
+  .left {
+    float: left;
+    width: 25%; /* 左边栏宽度固定 */
+    background: @bg-blue;
+  }
+  .right {
+    float: right;
+    width: 100%;
+    margin-left: -30%; /* 绝对值大于等于定宽元素 width 才能上移一行 */
+
+    .right-content {
+      margin-left: 30%; /* 大于等于定宽元素 width 才不会遮挡定宽元素 */
+      background: @bg-cyan;
+    }
+  }
+
+  .left,
+  .right-content {
+    text-align: center;
+  }
+}

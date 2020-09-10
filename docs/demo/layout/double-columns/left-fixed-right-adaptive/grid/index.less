@@ -1,0 +1,21 @@
+@import '../../../../common.less';
+
+.lfra-grid {
+  display: grid;
+  grid-template-columns: 25% auto;
+  grid-column-gap: 5%; /* 网格间隔 */
+  width: 100%;
+
+  .left {
+    background: @bg-blue;
+  }
+
+  .right {
+    background: @bg-cyan;
+  }
+
+  .left,
+  .right {
+    text-align: center;
+  }
+}

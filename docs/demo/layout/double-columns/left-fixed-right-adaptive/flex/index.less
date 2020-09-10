@@ -1,0 +1,21 @@
+@import '../../../../common.less';
+
+.lfra-flex {
+  display: flex;
+
+  .left {
+    width: 25%; /* 左边栏宽度固定 */
+    background: @bg-blue;
+  }
+
+  .right {
+    flex: 1; /* 均分父元素剩余空间 */
+    margin-left: 5%;
+    background: @bg-cyan;
+  }
+
+  .left,
+  .right {
+    text-align: center;
+  }
+}

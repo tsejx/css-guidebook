@@ -7,6 +7,7 @@ import React from 'react';
 import './index.less';
 
 const App = () => (
+  // HTML 结构实现
   <div className="flexible-auto-fill">
     <div className="header">header</div>
     <div className="main">main</div>

@@ -1,0 +1,27 @@
+@import '../../../common.less';
+
+.triple-table {
+  display: table;
+  width: 100%;
+
+  .left {
+    width: 25%;
+    background: @bg-blue;
+  }
+
+  .right {
+    width: 30%;
+    background: @bg-cyan;
+  }
+
+  .center {
+    background: @bg-orange;
+  }
+
+  .left,
+  .right,
+  .center {
+    display: table-cell;
+    text-align: center;
+  }
+}

@@ -1,0 +1,19 @@
+@import '../../../../common.less';
+
+.larf-grid {
+  display: grid;
+  grid-template-columns: auto 25%; /* 25% 为固定宽度元素 */
+  grid-column-gap: 5%; /* 网格间隔 */
+
+  .left {
+    background: @bg-blue;
+  }
+  .right {
+    background: @bg-cyan;
+  }
+
+  .left,
+  .right {
+    text-align: center;
+  }
+}

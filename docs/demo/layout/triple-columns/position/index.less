@@ -1,0 +1,30 @@
+@import '../../../common.less';
+
+.triple-position {
+  position: relative;
+
+  .left {
+    left: 0;
+    width: 25%;
+    background: @bg-blue;
+  }
+
+  .right {
+    right: 0;
+    width: 30%;
+    background: @bg-cyan;
+  }
+
+  .center {
+    left: 30%;
+    right: 35%;
+    background: @bg-orange;
+  }
+
+  .left,
+  .right,
+  .center {
+    position: absolute;
+    text-align: center;
+  }
+}

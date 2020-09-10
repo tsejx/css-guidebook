@@ -1,0 +1,22 @@
+@import '../../../../common.less';
+
+.larf-float-margin {
+  padding-left: 300px;
+
+  .left {
+    float: left;
+    width: 100%;
+    margin-left: -300px; /* 绝对值为右边栏固定宽度元素的 width */
+    background: @bg-blue;
+  }
+  .right {
+    float: right;
+    width: 250px;
+    background: @bg-cyan;
+  }
+
+  .left,
+  .right {
+    text-align: center;
+  }
+}

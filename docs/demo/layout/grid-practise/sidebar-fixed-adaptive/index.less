@@ -1,0 +1,23 @@
+@import '../../../common.less';
+
+.grid-sidebar-fixed-adaptive {
+  width: 500px;
+
+  .parent {
+    display: grid;
+    grid-template-columns: minmax(150px, 25%) 1fr;
+    background: @bg-blue;
+  }
+
+  .child:nth-child(1) {
+    height: 200px;
+    margin: 8px;
+    background: @bg-yellow;
+  }
+
+  .child:nth-child(2) {
+    height: 200px;
+    margin: 8px;
+    background: @bg-yellow;
+  }
+}

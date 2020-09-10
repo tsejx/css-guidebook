@@ -1,0 +1,42 @@
+@import '../../../common.less';
+
+.holy-grail-flex {
+  /* 设置最小宽度，左右边栏的宽度总和 */
+  min-width: 55%;
+
+  header {
+    background: @bg-red;
+  }
+
+  footer {
+    background: @bg-purple;
+  }
+
+  .container {
+    display: flex;
+
+    .left {
+      width: 25%;
+      background: @bg-blue;
+    }
+
+    .right {
+      width: 30%;
+      background: @bg-cyan;
+    }
+
+    .center {
+      flex: 1;
+      margin: 0 5%;
+      background: @bg-orange;
+    }
+  }
+
+  header,
+  footer,
+  .left,
+  .right,
+  .center {
+    text-align: center;
+  }
+}

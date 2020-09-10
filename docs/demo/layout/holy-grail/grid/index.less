@@ -1,0 +1,47 @@
+@import '../../../common.less';
+
+.holy-grail-grid {
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'left center right'
+    'footer footer footer';
+  /* 列 1 和列 3 方块宽度固定 列 2 方块宽度自适应*/
+  grid-template-columns: 25% 1fr 30%;
+  /* 行 1 和 行 3 方块高度固定 行 2 方块高度自适应 */
+  grid-template-rows: auto 1fr auto;
+  grid-column-gap: 5%;
+
+  header {
+    grid-area: header;
+    background: @bg-red;
+  }
+
+  footer {
+    grid-area: footer;
+    background: @bg-purple;
+  }
+
+  .left {
+    grid-area: left;
+    background: @bg-blue;
+  }
+
+  .right {
+    grid-area: right;
+    background: @bg-cyan;
+  }
+
+  .center {
+    grid-area: center;
+    background: @bg-orange;
+  }
+
+  header,
+  footer,
+  .left,
+  .right,
+  .center {
+    text-align: center;
+  }
+}

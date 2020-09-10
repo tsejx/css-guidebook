@@ -1,0 +1,29 @@
+@import '../../../common.less';
+
+.triple-float {
+  overflow: hidden;
+
+  .left {
+    float: left;
+    width: 25%;
+    background: @bg-blue;
+  }
+
+  .right {
+    float: right;
+    width: 30%;
+    background: @bg-cyan;
+  }
+
+  .center {
+    margin-left: 30%;
+    margin-right: 35%;
+    background: @bg-orange;
+  }
+
+  .left,
+  .right,
+  .center {
+    text-align: center;
+  }
+}

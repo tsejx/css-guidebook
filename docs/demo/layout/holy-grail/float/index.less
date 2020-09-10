@@ -1,0 +1,59 @@
+@import '../../../common.less';
+
+.holy-grail-float {
+  /* 设置最小宽度 */
+  min-width: 550px;
+
+  //
+  .container {
+    // 左边栏固定宽度
+    padding-left: 200px;
+    // 右边栏固定宽度
+    padding-right: 300px;
+    overflow: hidden;
+
+    .left {
+      width: 200px;
+      right: 200px;
+      // 关键点：左外边距偏移整个中间栏的宽度
+      margin-left: -100%;
+      background: @bg-blue;
+    }
+
+    .right {
+      width: 300px;
+      // 关键点：右外边距偏移自身固定宽度
+      margin-right: -300px;
+      background: @bg-cyan;
+    }
+
+    .center {
+      width: 100%;
+      background: @bg-orange;
+    }
+
+    .left,
+    .right,
+    .center {
+      position: relative;
+      float: left;
+    }
+  }
+
+  header {
+    background: @bg-red;
+  }
+
+  footer {
+    clear: both;
+    background: @bg-purple;
+  }
+
+  header,
+  footer,
+  .left,
+  .right,
+  .center {
+    text-align: center;
+  }
+}

@@ -1,0 +1,50 @@
+@import '../../../common.less';
+
+.double-wings {
+  header {
+    background: @bg-red;
+  }
+
+  footer {
+    background: @bg-purple;
+  }
+
+  .container {
+    overflow: hidden;
+    .left,
+    .right,
+    .center {
+      float: left;
+    }
+
+    .left {
+      width: 25%;
+      margin-left: -100%;
+      background: @bg-blue;
+    }
+
+    .right {
+      width: 30%;
+      margin-left: -30%;
+      background: @bg-cyan;
+    }
+
+    .center {
+      width: 100%;
+    }
+
+    .content {
+      margin-left: 30%;
+      margin-right: 35%;
+      background: @bg-orange;
+    }
+  }
+
+  header,
+  footer,
+  .left,
+  .right,
+  .center {
+    text-align: center;
+  }
+}

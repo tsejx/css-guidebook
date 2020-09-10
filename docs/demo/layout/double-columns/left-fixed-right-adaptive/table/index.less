@@ -1,0 +1,21 @@
+@import '../../../../common.less';
+
+.lfra-table {
+  display: table;
+  width: 100%;
+
+  .left {
+    width: 25%; /* 左边栏宽度固定 */
+    background: @bg-blue;
+  }
+
+  .right {
+    background: @bg-cyan;
+  }
+
+  .left,
+  .right {
+    display: table-cell;
+    text-align: center;
+  }
+}
