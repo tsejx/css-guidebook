@@ -1,6 +1,6 @@
 /**
- * title: 未知宽高偏移
- * desc:
+ * title: 未知垂直居中元素的宽高进行偏移
+ * desc: 相对于父元素容器左边距和上边距坐标偏移 50%，使用 `transform + translate` 将垂直居中元素自身偏移负 50%，使用标准盒模型
  */
 
 import React from 'react';

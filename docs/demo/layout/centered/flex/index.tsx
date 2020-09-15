@@ -1,6 +1,6 @@
 /**
  * title: 弹性布局
- * desc:
+ * desc: 父元素设置为弹性布局容器，并将 `justify-content` 和 `align-items` 设置为 `center` 居中
  */
 
 import React from 'react';

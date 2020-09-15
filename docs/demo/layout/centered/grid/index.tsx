@@ -1,6 +1,6 @@
 /**
  * title: 网格布局
- * desc:
+ * desc: 父元素设置为网格布局容器，垂直居中元素设置外边距 `margin` 为自适应 `auto` 即可
  */
 
 import React from 'react';
