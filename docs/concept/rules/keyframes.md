@@ -1,15 +1,15 @@
 ---
-title: '@keyframes'
-order: 3
-group:
-  title: 规则
-  order: 3
 nav:
   title: 基础
   order: 1
+group:
+  title: 规则
+  order: 3
+title: '@keyframes 关键帧'
+order: 3
 ---
 
-# `@keyframes`
+# @keyframes 关键帧
 
 `@keyframes` 规则用于指定动画名称和动画效果。
 

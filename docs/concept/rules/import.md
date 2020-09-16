@@ -1,15 +1,15 @@
 ---
-title: '@import'
-order: 2
-group:
-  title: 规则
-  order: 3
 nav:
   title: 基础
   order: 1
+group:
+  title: 规则
+  order: 3
+title: '@import 样式导入'
+order: 2
 ---
 
-# `@import`
+# @import 样式导入
 
 `@import` 规则用于指定导入的外部样式表及目标媒体。
 

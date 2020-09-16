@@ -18,6 +18,8 @@ nav:
 
 每个元素的左外边距与包含块的左边界相接触（从左往右，否则相反），即使存在浮动也是如此，这说明 BFC 的子元素不会超出它的包含块
 
+特点：
+
 1. 在 BFC 的垂直方向上，边距会发生重叠
 2. BFC 区域不会与浮动区域重叠
 3. BFC 在页面上是一个隔离的独立容器，与容器外的其他元素互不影响
@@ -44,9 +46,9 @@ nav:
 
 **折叠结果的规则计算：**
 
-* 两个相邻的外边距都是正数时，折叠结果是它们两者之间较大的值。
-* 两个相邻的外边距都是负数时，折叠结果是两者绝对值的较大值。
-* 两个外边距一正一负时，折叠结果是两者的相加的和。
+- 两个相邻的外边距都是正数时，折叠结果是它们两者之间较大的值。
+- 两个相邻的外边距都是负数时，折叠结果是两者绝对值的较大值。
+- 两个外边距一正一负时，折叠结果是两者的相加的和。
 
 这种情况产生的根本原理就是两个相邻的元素均处于同一个 BFC，符合属于同一个 BFC 的两个相邻元素的 `margin` 会发生重叠的规则。
 
@@ -76,14 +78,11 @@ nav:
 
 ```html
 <div class="container">
-    <div class="floated">
-        Floated div
-    </div>
-    <p>
-        Quae hic ut ab perferendis sit quod architecto,
-        dolor debitis quam rem provident aspernatur tempora
-        expedita.
-    </p>
+  <div class="floated">Floated div</div>
+  <p>
+    Quae hic ut ab perferendis sit quod architecto, dolor debitis quam rem provident aspernatur
+    tempora expedita.
+  </p>
 </div>
 ```
 
@@ -95,24 +94,24 @@ nav:
 
 ```html
 <div class="container">
-    <div class="column">Column 1</div>
-    <div class="column">Column 2</div>
-    <div class="column">Column 3</div>
+  <div class="column">Column 1</div>
+  <div class="column">Column 2</div>
+  <div class="column">Column 3</div>
 </div>
 ```
 
 ```css
 .column {
-    width: 31.33%;
-    background-color: green;
-    float: left;
-    margin: 0 1%;
+  width: 31.33%;
+  background-color: green;
+  float: left;
+  margin: 0 1%;
 }
 /*  Establishing a new block formatting
     context in the last column */
 .column:last-child {
-    float: none;
-    overflow: hidden;
+  float: none;
+  overflow: hidden;
 }
 ```
 
@@ -120,4 +119,4 @@ nav:
 
 **参考资料：**
 
-* [📝 什么是 BFC](https://www.cnblogs.com/libin-1/p/7098468.html)
+- [📝 什么是 BFC](https://www.cnblogs.com/libin-1/p/7098468.html)
