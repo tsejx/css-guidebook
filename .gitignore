@@ -7,3 +7,4 @@ todo/
 yarn.lock
 .umi/
 .umi-production/
+.git/
