@@ -1,6 +1,6 @@
 /**
- * title: 父级元素浮动
- * desc: 所有代码一起浮动，就变成了一个整体
+ * title: 设置父元素浮动触发 BFC
+ * desc: 将包裹浮动元素的父元素设置为浮动元素，从而触发 BFC
  */
 
 import React from 'react';

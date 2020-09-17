@@ -1,6 +1,6 @@
 /**
- * title: overflow auto 清除浮动
- * desc: 浮动元素的父元素必须定义 `width` 或 `zoom` 设定为 1，同时不能定义高度 `height`，使用 `overflow` 设定为 `auto` 时，浏览器会自动检查浮动区域的高度
+ * title: 使用 overflow-auto  触发 BFC
+ * desc: 定义父元素的 `overflow` 为 `auto`，`width` 或 `zoom` 设定为 1，同时不能定义容器高度，父元素触发实现 BFC
  */
 
 import React from 'react';

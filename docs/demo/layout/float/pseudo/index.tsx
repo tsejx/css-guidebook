@@ -1,6 +1,6 @@
 /**
- * title: 伪类清除浮动
- * desc: IE8 以上和非 IE 浏览器才支持 `:after`，原理和方法 2 有点类似，`zoom` 可解决 IE6、IE7 浮动问题
+ * title: 父元素设置伪类
+ * desc: 原理与添加空标签类似，伪类会在父元素尾部添加一个子元素，内容为空并设置为隐藏不可见
  */
 
 import React from 'react';

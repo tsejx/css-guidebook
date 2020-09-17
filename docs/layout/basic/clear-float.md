@@ -17,7 +17,7 @@ order: 5
 
 浮动会使当前标签产生向上浮的效果，同时会影响到前后标签、父级标签的位置及 width height 属性。而且同样的代码，在各种浏览器中显示效果也有可能不相同，这样让清除浮动更难了。解决浮动引起的问题有多种方法，但有些方法在浏览器兼容性方面还有问题。
 
-## 父元素固定高度
+## 父元素设置固定高度
 
 <code src="../../demo/layout/float/height/index.tsx" />
 
@@ -26,7 +26,7 @@ order: 5
 
 **建议：**不推荐使用，只建议高度固定的布局时使用
 
-## 空标签清除浮动
+## 添加空标签子元素
 
 结尾处加空 `div` 标签 `clear: both`。
 
@@ -37,7 +37,15 @@ order: 5
 
 **建议：**不推荐使用，但此方法是以前主要使用的一种清除浮动方法
 
-## 伪类清除浮动
+## 添加 br 标签作为空标签
+
+原理其实和第二种方法一样，只是这里的空标签使用的是 `<br/>` 标签。
+
+<code src="../../demo/layout/float/clear-br/index.tsx" />
+
+**建议：**不推荐使用，只作了解。
+
+## 父元素设置伪类作为空标签
 
 父级块级元素定义 伪类 `:after` 和 `zoom`。
 
@@ -48,7 +56,7 @@ order: 5
 
 **建议：**推荐使用，建议定义公共类，以减少 CSS 代码。
 
-## overflow: hidden 清除浮动
+## 使用 overflow-hidden 触发 BFC
 
 父级 `div` 定义 `overflow: hidden`。
 
@@ -59,7 +67,7 @@ order: 5
 
 **建议：**只推荐没有使用 `position` 或对 `overflow: hidden` 理解比较深的开发者使用。
 
-## overflow:auto  清除浮动
+## 使用 overflow-auto  触发 BFC
 
 <code src="../../demo/layout/float/overflow-auto/index.tsx" />
 
@@ -68,7 +76,7 @@ order: 5
 
 **建议：**不推荐使用，如果你需要出现滚动条或者确保你的代码不会出现滚动条就使用吧。
 
-## 父级元素浮动
+## 设置父元素浮动触发 BFC
 
 <code src="../../demo/layout/float/parent-float/index.tsx" />
 
@@ -77,7 +85,7 @@ order: 5
 
 **建议：**不推荐使用，只作了解。
 
-## 父级定义表格元素
+## 设置父级为表格元素触发 BFC
 
 <code src="../../demo/layout/float/parent-table/index.tsx" />
 
@@ -85,11 +93,3 @@ order: 5
 - 缺点：会产生新的未知问题。
 
 **建议：**不推荐使用，只作了解。
-
-## br 标签清除浮动
-
-原理其实和第二种方法一样，只是这里的空标签使用的是 `<br/>` 标签。
-
-<code src="../../demo/layout/float/clear-br/index.tsx" />
-
-- 建议：不推荐使用，只作了解。

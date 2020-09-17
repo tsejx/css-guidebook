@@ -8,8 +8,10 @@
   &-clear-float:after {
     display: block;
     height: 0;
+    // 确保空白字符是非浮动的独立区块
     clear: both;
     content: '';
+    // 伪类内容不可见
     visibility: hidden;
   }
 

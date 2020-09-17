@@ -1,5 +1,6 @@
 /**
- * title: br 标签清除浮动
+ * title: 添加 br 标签作为空标签
+ * desc: 与添加空标签原理一致，使用 br 作为空标签，同样需要设置 `clear` 为 `both`
  */
 
 import React from 'react';

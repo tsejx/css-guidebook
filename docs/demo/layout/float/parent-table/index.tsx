@@ -1,6 +1,6 @@
 /**
- * title: 父级定义表格元素
- * desc: 将父级元素变成表格元素
+ * title: 设置父级为表格元素触发 BFC
+ * desc: 将父级元素变成表格元素，从而触发 BFC
  */
 
 import React from 'react';
