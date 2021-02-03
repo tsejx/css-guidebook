@@ -1,0 +1,24 @@
+@font-size: 20px;
+@line-height: 1.4;
+@lines-to-show: 2;
+
+.paragraph {
+  display: block;
+  max-width: 250px;
+  /* 字体大小、行高和展示的行数的乘积为容器高度 */
+  height: @font-size* @line-height* @lines-to-show;
+  font-size: @font-size;
+  line-height: @line-height;
+  border: 2px dashed #2196f3;
+}
+
+.text-ellipsis {
+  /* 作为弹性伸缩盒子模型显示。 */
+  display: -webkit-box;
+  /* 设置伸缩盒子的子元素排列方式--从上到下垂直排列 */
+  -webkit-box-orient: vertical;
+  /* 显示的行 */
+  -webkit-line-clamp: @lines-to-show;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,31 @@
+.paragraph {
+  width: 250px;
+  max-height: 40px;
+  line-height: 20px;
+  border: 2px dashed #2196f3;
+  overflow: hidden;
+}
+
+.paragraph::before {
+  float: left;
+  width: 20px;
+  height: 40px;
+  content: '';
+}
+
+.paragraph .text {
+  float: right;
+  width: 100%;
+  margin-left: -20px;
+  word-break: break-all;
+}
+
+.paragraph::after {
+  float: right;
+  content: '...';
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 100%;
+  transform: translate(-100%, -100%);
+}

@@ -1,0 +1,24 @@
+.paragraph {
+  position: relative;
+  width: 200px;
+  /* 设置要显示的行数只需要将 height 设为 line-height 的整数倍即可 */
+  height: 60px;
+  line-height: 30px;
+  border: 2px dashed #2196f3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* 设置文本为两端对齐 */
+  text-align: justify;
+}
+
+.paragraph:after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /* 将省略号的大小设置为1个字体大小 */
+  width: 1em;
+  padding: 0 -40px 0 0;
+  content: '...';
+  /* 设置背景，将最后一个字覆盖掉 */
+  background: #fff;
+}

@@ -107,6 +107,19 @@ $font-size: 16px;
 }
 ```
 
+变量用 `#{}` 包裹：
+
+```scss
+$ipt: input;
+$btm: bottom;
+
+.#{$ipt} {
+  // 这里输出 .input{}*
+  // 这里输出 padding-bottom: 5rem;
+  padding-#{$btm}: 5rem;
+}
+```
+
 ### 数据类型
 
 共有六种数据类型，包括数字、字符串、颜色、布尔值、空值、数组和 Maps。
@@ -411,3 +424,10 @@ $gutter-width: 10px;
 ```
 
 与 mixin 相同，也可以传递若干个全局变量给函数作为参数。一个函数可以含有多条语句，需要调用 `@return` 输出结果。
+
+---
+
+**参考资料：**
+
+- [Sass Guidelines（中文版）](https://www.kancloud.cn/kancloud/sass-guidelin/48049)
+- [定义好的变量名](https://www.sass.hk/skill/sass67.html)
