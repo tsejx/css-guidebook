@@ -1,6 +1,6 @@
 ---
-title: Less
-order: 1
+title: Less - 语法
+order: 2
 group:
   title: 预编译
   order: 2
@@ -9,7 +9,7 @@ nav:
   order: 3
 ---
 
-# Less
+# Less - 语法
 
 ## 变量 Variables
 

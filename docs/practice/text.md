@@ -2,9 +2,6 @@
 nav:
   title: 应用
   order: 4
-group:
-  title: 特殊形状
-  order: 1
 title: 文本内容
 order: 2
 ---
@@ -83,8 +80,16 @@ order: 2
 
 <code src="../demo/practice/text/multiline-text-with-ellipsis-float/index.tsx" />
 
+### 原生 JavaScript 实现方案
+
+开源方案：
+
+- [Clamp.js](https://github.com/josephschmitt/Clamp.js)
+- [jQuery.dotdotdot]()
+
 ---
 
 **参考资料：**
 
 - [可能是最全的「文本溢出截断省略」方案合集](https://www.zoo.team/article/text-overflow)
+- [纯 CSS 实现多行文字截断](https://github.com/happylindz/blog/issues/12)

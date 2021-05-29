@@ -36,8 +36,8 @@ nav:
 
 如果 CSS 里面写一个盒 `width: 100px`：
 
-- 标准盒模型显示出来，就是 `100px`，`内容 + padding + border = 100px`
-- 但是 IE 怪异盒模型显示出来，是大于等于 `100px`，因为 `100px` 仅仅是 `内容` 的宽度，最终显示出来的是 `100px + padding + border`
+- 标准盒模型显示出来，是大于等于 `100px`，因为 `100px` 仅仅是 `内容` 的宽度，最终显示出来的是 `100px + padding + border`
+- 但是 IE 怪异盒模型显示出来，就是 `100px`，`内容 + padding + border = 100px`
 
 ### 标准盒模型
 
@@ -61,26 +61,26 @@ nav:
 
 ### content-box
 
-* `padding` 和 `border` 不被包含在定义的 `width` 和 `height` 之内。
+- `padding` 和 `border` 不被包含在定义的 `width` 和 `height` 之内。
 
-* 对象的实际宽度等于设置的 `width` 值和 `border`、`padding` 之和，即 ( `Element width = width + border + padding` )
+- 对象的实际宽度等于设置的 `width` 值和 `border`、`padding` 之和，即 ( `Element width = width + border + padding` )
 
-* 此属性表现为标准模式下的盒模型。
+- 此属性表现为标准模式下的盒模型。
 
 ### border-box
 
-* `padding` 和 `border` 被包含在定义的 `width` 和 `height` 之内。
+- `padding` 和 `border` 被包含在定义的 `width` 和 `height` 之内。
 
-* 对象的实际宽度就等于设置的 `width` 值，即使定义有 `border` 和 `padding` 也不会改变对象的实际宽度，即 ( `Element width = width` )
+- 对象的实际宽度就等于设置的 `width` 值，即使定义有 `border` 和 `padding` 也不会改变对象的实际宽度，即 ( `Element width = width` )
 
-* 此属性表现为怪异模式下的盒模型。
+- 此属性表现为怪异模式下的盒模型。
 
 ⚠️ 注意：避免同一份 CSS 在不同浏览器下表现不同，需要做相关兼容性。
 
 在 HTML 文档中中声明了 `DOCTYPE` 类型，所有的浏览器都会把盒模型解释为 W3C 盒模型。
 
 ```html
-<!doctype html>
+<!DOCTYPE html>
 ```
 
 ```css
@@ -95,13 +95,13 @@ nav:
 
 ## 获取盒模型宽高
 
-* 访问元素内联样式宽高：`element.style.width`
-* 访问元素计算宽高（仅支持 IE 查询）：`element.currentStyle.width`
-* 访问元素计算宽高（支持主流浏览器）：`window.getComputedStyle(element).width`
-* 访问元素计算宽高（支持主流浏览器）取到的是盒子总宽度：`element.getBoundingClientRect().width`
+- 访问元素内联样式宽高：`element.style.width`
+- 访问元素计算宽高（仅支持 IE 查询）：`element.currentStyle.width`
+- 访问元素计算宽高（支持主流浏览器）：`window.getComputedStyle(element).width`
+- 访问元素计算宽高（支持主流浏览器）取到的是盒子总宽度：`element.getBoundingClientRect().width`
 
 ---
 
 **参考资料：**
 
-* [📝 CSS 盒子模型详解](https://juejin.im/entry/576f6f371532bc005fe0eae1)
+- [📝 CSS 盒子模型详解](https://juejin.im/entry/576f6f371532bc005fe0eae1)

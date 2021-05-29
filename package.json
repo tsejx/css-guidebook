@@ -1,7 +1,7 @@
 {
   "name": "css-guidebook",
   "version": "1.0.0",
-  "description": "A technical mannual about CSS knowledge",
+  "description": "A technical handbook about CSS knowledge",
   "main": "index.js",
   "scripts": {
     "start": "yarn run dev",
@@ -25,12 +25,13 @@
   "license": "MIT",
   "homepage": "https://tsejx.github.io/css-guidebook/",
   "devDependencies": {
-    "dumi": "^1.0.34",
+    "dumi": "^1.1.3",
     "lint-md": "^0.2.0",
     "typescript": "^3.9.7"
   },
   "dependencies": {
     "ahooks": "^2.4.0",
-    "antd": "^4.5.4"
+    "antd": "^4.5.4",
+    "classnames": "^2.2.6"
   }
 }

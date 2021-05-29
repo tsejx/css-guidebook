@@ -1,6 +1,6 @@
 ---
-title: Sass
-order: 2
+title: Sass - 语法
+order: 6
 group:
   title: 预编译
   order: 2
@@ -9,7 +9,7 @@ nav:
   order: 3
 ---
 
-# Sass
+# Sass - 语法
 
 [中文文档](https://www.sass.hk/docs/)
 

@@ -1,5 +1,5 @@
 ---
-title: 盒子
+title: 盒模型
 order: 2
 group:
   title: 属性
@@ -9,7 +9,7 @@ nav:
   order: 1
 ---
 
-# 盒子
+# 盒模型
 
 - box-sizing
 - display
@@ -17,7 +17,10 @@ nav:
 - margin
 - padding
 - border
+- border-color
 - border-radius
+- border-style
+- border-width
 - box-shadow
 
 ## display
@@ -30,6 +33,34 @@ nav:
 | inline-block | 行内块元素。（CSS2.1 新增的值）                              |
 | list-item    | 此元素会作为列表显示。                                       |
 | table        | 此元素会作为块级表格来显示（类似 table），表格前后带有换行符 |
+
+### 使用 `display: inline-block` 时奇怪的空隙
+
+给两个或两个以上的元素设置 `display: inline-block` 或者 `display: inline`，将会导致它们之间产生一个微小的空隙。原因是浏览器会将元素当作字词去解释，从而给每个元素之间添加一个字符的空隙。
+
+下面的例子中，每个项目的右侧都有一个 `8px` 的空隙，但是使用 `display: inline-block` 而产生的小空隙将会使其变为 `12px`，这不是我们想要的效果。
+
+```css
+li:not(:last-child) {
+  margin-right: 8px;
+}
+```
+
+https://ask.qcloudimg.com/draft/6430183/kvfewwshv4.png?imageView2/2/w/1620
+
+通过给父元素设置 `font-size: 0` 可以简单地解决这个问题。
+
+```css
+ul {
+  font-size: 0;
+}
+li {
+  /* 应该在这里重新设置字体大小，因为它会从父元素继承 `font-size: 0` */
+  font-size: 16px;
+}
+```
+
+https://ask.qcloudimg.com/draft/6430183/az3oycwzvc.png?imageView2/2/w/1620
 
 ## width & height
 
@@ -93,21 +124,6 @@ div {
 - 西方最小宽度由特定的连续的英文字符单元决定。并非所有的英文字符都会组成连续单元，一般会终止于空格（普通空格）、短横线、问号以及其他非英文字符等。
 
 ## border
-
-### 画三角形
-
-首先将元素的宽度、高度设为 0，然后设置边框样式。
-
-```css
-.triangle {
-  width: 0;
-  height: 0;
-  border-top: 50px solid transparent;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 50px solid #ff0000;
-}
-```
 
 ---
 
