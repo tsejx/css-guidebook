@@ -17,7 +17,7 @@ const config = {
   ],
   extraBabelPlugins: [
     [
-      'import',
+      'babel-plugin-import',
       {
         libraryName: 'antd',
         libraryDirectory: 'es',
