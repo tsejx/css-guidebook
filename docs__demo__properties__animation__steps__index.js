@@ -1,1 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[88],{H3H3:function(e,n,t){},e0cI:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),c=t.n(a);t("H3H3");class s extends c.a.Component{render(){return c.a.createElement("div",null,c.a.createElement("div",{className:"box1"}))}}n["default"]=s}}]);

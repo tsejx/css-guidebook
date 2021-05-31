@@ -1,1 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[68],{"D/Bq":function(e,c,a){"use strict";a.r(c);var l=a("q1tI"),n=a.n(l),o=(a("qJPl"),()=>n.a.createElement("div",{className:"hor-block-common"},n.a.createElement("div",{className:"hor-block-child"},"child")));c["default"]=()=>n.a.createElement(o,null)},qJPl:function(e,c,a){}}]);

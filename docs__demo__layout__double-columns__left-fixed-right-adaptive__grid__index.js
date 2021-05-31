@@ -1,1 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[37],{"6C/c":function(e,a,t){},"wy+O":function(e,a,t){"use strict";t.r(a);var c=t("q1tI"),n=t.n(c),l=(t("6C/c"),()=>n.a.createElement("div",{className:"lfra-grid"},n.a.createElement("div",{className:"left"},"left"),n.a.createElement("div",{className:"right"},"right")));a["default"]=()=>n.a.createElement(l,null)}}]);

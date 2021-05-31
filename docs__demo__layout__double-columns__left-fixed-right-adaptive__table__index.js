@@ -1,1 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[39],{"0cLw":function(e,a,t){},P3yK:function(e,a,t){"use strict";t.r(a);var c=t("q1tI"),l=t.n(c),n=(t("0cLw"),()=>l.a.createElement("div",{className:"lfra-table"},l.a.createElement("div",{className:"left"},"left"),l.a.createElement("div",{className:"right"},"right")));a["default"]=()=>l.a.createElement(n,null)}}]);

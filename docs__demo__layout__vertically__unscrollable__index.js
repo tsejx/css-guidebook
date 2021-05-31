@@ -1,1 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[87],{"6ZcT":function(e,l,a){},DTAT:function(e,l,a){"use strict";a.r(l);var c=a("q1tI"),n=a.n(c),t=(a("6ZcT"),()=>n.a.createElement("div",{className:"unscrollable-common unscrollable-parent"},n.a.createElement("div",{className:"unscrollable-child"},"child")));l["default"]=()=>n.a.createElement(t,null)}}]);
