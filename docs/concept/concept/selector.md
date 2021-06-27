@@ -120,12 +120,6 @@ li:first-child ~ li {
 **参考资料：**
 
 - [📖 W3C Selectors Level 3](https://www.w3.org/TR/selectors-3/)
-
-这 33 个超级好用的 CSS 选择器，你可能见都没见过
-https://juejin.im/post/6850037265461149703
-
-前端布局必须了解的 css 选择器
-https://juejin.im/post/6844904147414712334
-
-这些 CSS 伪类，你可能还不知道，可以用起来了！
-https://juejin.im/post/6844904181304655886
+- [这 33 个超级好用的 CSS 选择器，你可能见都没见过](https://juejin.im/post/6850037265461149703)
+- [前端布局必须了解的 css 选择器](https://juejin.im/post/6844904147414712334)
+- [这些 CSS 伪类，你可能还不知道，可以用起来了！](https://juejin.im/post/6844904181304655886)

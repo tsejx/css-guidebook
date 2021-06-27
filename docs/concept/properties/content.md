@@ -22,11 +22,11 @@ nav:
 - `cursive`（方正静蕾体）
 - `fantasy`
 
-## 多字体反馈机制
+### 多字体反馈机制
 
 指定多个字体，如果找不到会按照顺序使用其他字体，或者用同类字体。
 
-## 自定义字体
+### 自定义字体
 
 **自定义字体**
 
@@ -53,7 +53,9 @@ nav:
 
 ## text
 
-## line-height
+## 行高
+
+相关属性：`line-height`
 
 ### 构成
 
@@ -73,3 +75,13 @@ nav:
 
 基线和底线之间有距离的，如果 12px 字体那么缝隙可能就是 3px
 解决方案：按照底线对齐，`vertical-align:bottom` 或者 `display:block`
+
+## 文本段落
+
+- `white-space`：用于设置如何处理元素中的空白
+  - `normal`：默认，空白会被浏览器忽略
+  - `pre`：空白会被浏览器保留，其行为方式类似 HTML 的 `pre` 标签
+  - `nowrap`：文本不会换行，文本会在同一行的
+- `word-wrap`
+- `word-break`
+- `text-overflow`

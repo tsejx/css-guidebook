@@ -20,3 +20,21 @@ order: 7
 ## 自适应布局
 
 <code src="../../demo/layout/flex-practise/responsive-layout/index.tsx" />
+
+## 九宫格
+
+## 十六宫格
+
+### 平均分布并可换行
+
+https://www.jianshu.com/p/e8f236fcf515
+
+```css
+.container {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+```

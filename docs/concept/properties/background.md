@@ -12,6 +12,13 @@ nav:
 # 背景
 
 - background 背景
+- background-clip
+- background-color
+- background-image
+- background-origin
+- background-position
+- background-repeat
+- background-size
 
 ## 背景颜色
 
@@ -62,3 +69,17 @@ nav:
 适用：小图标，例如：Loading 图
 
 用法：一般用在构建中转，打包
+
+## 压缩或拉伸图片
+
+用 CSS 调整一张图片大小的时，如果纵横比与图片的宽度不一致，则图片会被压缩或拉伸。
+
+解决方案很简单：使用 CSS 的 `object-fit`。它的功能和给背景图片设置 `background-size: cover` 类似。
+
+```css
+img {
+  object-fit: cover;
+}
+```
+
+`object-fit` 并非百试百灵。一些图片必须在不裁剪或者不调整大小的情况下显示，并且某些平台会强制用户以特定的尺寸裁剪或上传图片。例如，Dribbble 规定上传的缩略图尺寸为 800 x 600 像素。

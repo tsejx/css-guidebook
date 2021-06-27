@@ -1,6 +1,6 @@
 /**
  * title: 多块级元素-弹性布局
- * desc: 父元素设定为 `display: flex` 布局，并使用 `justify-content` 将子元素位于容器中心
+ * desc: 父元素设定为 flex 布局，并使用 justify-content 将子元素位于容器中心
  */
 
 import React from 'react';

@@ -1,6 +1,6 @@
 /**
  * title: 块级元素
- * desc: 只需要为定位元素设置 `margin: 0 auto` 即可实现
+ * desc: 只需要为定位元素设置  即可实现
  */
 
 import React from 'react';
