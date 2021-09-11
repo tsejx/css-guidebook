@@ -1,0 +1,39 @@
+.background-attachment {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+
+  .scroll-wrapper {
+    height: auto;
+    margin: 20px;
+    overflow: hidden;
+    border: 1px solid #000;
+  }
+
+  .item {
+    width: 100px;
+    height: 100px;
+    /* p 标签自带 margin 样式*/
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('./background.jpg');
+    overflow-y: scroll;
+  }
+
+  .scroll {
+    background-attachment: scroll;
+  }
+
+  .fixed {
+    background-attachment: fixed;
+  }
+
+  .local {
+    background-attachment: local;
+    background-position: 0;
+  }
+}

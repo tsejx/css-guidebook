@@ -6,7 +6,7 @@ group:
   title: 属性
   order: 2
 title: 顺序
-order: 100
+order: 21
 ---
 
 # 顺序
@@ -20,7 +20,7 @@ order: 100
 Formatting Model > Box Model > Typographic > Visual
 ```
 
-- **Formatting Model：**position / top / right / bottom / float / display / overflow
-- **Box Model：**border / margin / padding / width / height
-- **Typographic：**font / line-height / text-align / word-wrap
-- **Visual：**background / coloor / transition / list-style
+- **Formatting Model**：position / top / right / bottom / float / display / overflow
+- **Box Model**：border / margin / padding / width / height
+- **Typographic**：font / line-height / text-align / word-wrap
+- **Visual**：background / coloor / transition / list-style

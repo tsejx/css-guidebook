@@ -13,7 +13,7 @@ nav:
 
 ## 固定侧边栏自适应
 
-<code src="../../demo/layout/grid-practise/sidebar-fixed-adaptive/index.tsx" />
+<code src="../../../example/layout/grid-practise/sidebar-fixed-adaptive/index.tsx" />
 
 ---
 

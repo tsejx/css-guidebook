@@ -1,12 +1,12 @@
 ---
-title: 三栏布局
-order: 14
-group:
-  title: 多栏布局
-  order: 7
 nav:
   title: 布局
   order: 2
+group:
+  title: 多栏布局
+  order: 7
+title: 三栏布局
+order: 2
 ---
 
 # 三栏布局
@@ -28,7 +28,7 @@ nav:
 - 因为浮动脱离文档流，所以中间栏一定要放到最后面
 - 如果有文字出现，布局就会错乱，导致扩展性不好
 
-<code src="../../demo/layout/triple-columns/float/index.tsx" />
+<code src="../../../example/layout/triple-columns/float/index.tsx" />
 
 - 两边固定宽度，中间宽度自适应。
 - 利用中间元素的 margin 值控制两边的间距
@@ -42,7 +42,7 @@ nav:
 - 两侧分别设置至两侧边距 `left: 0` 和 `right: 0`
 - 中间栏左右边距设置为上面的固定宽度 `left: width` 和 `right: width`
 
-<code src="../../demo/layout/triple-columns/position/index.tsx" />
+<code src="../../../example/layout/triple-columns/position/index.tsx" />
 
 ### 表格布局
 
@@ -52,7 +52,7 @@ nav:
 - 三栏 `display: table-cell`
 - 两侧栏设置固定宽度 `width`
 
-<code src="../../demo/layout/triple-columns/table/index.tsx" />
+<code src="../../../example/layout/triple-columns/table/index.tsx" />
 
 - 表格布局外边距 `margin` 不起效
 
@@ -62,7 +62,7 @@ nav:
 - 两侧栏设置固定宽度 `width`
 - 中间栏设置占主轴空间 `flex: 1`
 
-<code src="../../demo/layout/triple-columns/flex/index.tsx" />
+<code src="../../../example/layout/triple-columns/flex/index.tsx" />
 
 ### 网格布局
 
@@ -71,7 +71,7 @@ nav:
 - 容器分栏，两侧固定，中间自适应 `grid-template-columns: width auto width`
 - 容器分列固定高度 `grid-template-rows`
 
-<code src="../../demo/layout/triple-columns/grid/index.tsx" />
+<code src="../../../example/layout/triple-columns/grid/index.tsx" />
 
 ## 圣杯布局
 
@@ -101,7 +101,7 @@ nav:
 - 左侧区域需要设置 `margin-left: -100%` 和 `right` 为自身宽度，回到上一行最左侧
 - 右侧区域需要设置 `margin-right` 为自身宽度，回到上一行最右侧
 
-<code src="../../demo/layout/holy-grail/float/index.tsx" />
+<code src="../../../example/layout/holy-grail/float/index.tsx" />
 
 **文字溢出问题：**
 
@@ -118,7 +118,7 @@ nav:
 - 设置 `container` 为弹性布局 `display: flex`
 - `left` 和 `right` 区域定宽，`center` 设置为 `flex: 1` 即可
 
-<code src="../../demo/layout/holy-grail/flex/index.tsx" />
+<code src="../../../example/layout/holy-grail/flex/index.tsx" />
 
 参考资料：[CodePen](https://codepen.io/cameron-townsend/pen/qZrLpE?editors=1100)
 
@@ -131,11 +131,11 @@ nav:
 - 设置各列宽度 `grid-template-rows`
 - 设置各行高度 `grid-template-columns`
 
-<code src="../../demo/layout/holy-grail/grid/index.tsx" />
+<code src="../../../example/layout/holy-grail/grid/index.tsx" />
 
 ## 双飞翼布局
 
-<code src="../../demo/layout/holy-grail/double-wings/index.tsx" />
+<code src="../../../example/layout/holy-grail/double-wings/index.tsx" />
 
 [🖥 演示代码](https://codepen.io/itagn/pen/XxpVqP)
 

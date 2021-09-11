@@ -1,0 +1,37 @@
+.background-position {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+
+  .item {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-image: url('./background.jpg');
+    border: 1px solid #000;
+  }
+
+  .center {
+    background-position: center;
+  }
+
+  .bottom-left {
+    background-position: bottom left;
+  }
+
+  .right-fifty-percent {
+    background-position: 50%;
+  }
+
+  .top-left-offset {
+    background-position: -25px -25px;
+  }
+
+  .bottom-right-offset {
+    background-position: 25px 50px;
+  }
+}

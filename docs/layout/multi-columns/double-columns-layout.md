@@ -1,12 +1,12 @@
 ---
-title: 双栏布局
-order: 13
-group:
-  title: 多栏布局
-  order: 7
 nav:
   title: 布局
   order: 2
+group:
+  title: 多栏布局
+  order: 7
+title: 双栏布局
+order: 1
 ---
 
 # 双栏布局
@@ -26,7 +26,7 @@ nav:
 - 定宽元素浮动，脱离文档流
 - 自适应元素为了不被遮挡，设置 `margin` 大于等于定宽元素宽度
 
-<code src="../../demo/layout/double-columns/left-fixed-right-adaptive/float-margin/index.tsx" />
+<code src="../../../example/layout/double-columns/left-fixed-right-adaptive/float-margin/index.tsx" />
 
 **优点**：简单，易理解，兼容性好
 
@@ -34,7 +34,7 @@ nav:
 
 ### float + margin(fix)
 
-<code src="../../demo/layout/double-columns/left-fixed-right-adaptive/float-margin-fix/index.tsx" />
+<code src="../../../example/layout/double-columns/left-fixed-right-adaptive/float-margin-fix/index.tsx" />
 
 ⚠️ **注意事项：**
 
@@ -48,13 +48,13 @@ nav:
 
 定宽元素浮动，自适应元素触发 [BFC](bfc.md) 达到自适应。
 
-<code src="../../demo/layout/double-columns/left-fixed-right-adaptive/float-overflow/index.tsx" />
+<code src="../../../example/layout/double-columns/left-fixed-right-adaptive/float-overflow/index.tsx" />
 
 ### table
 
 **原理**：CSS Table 以表格的形式显示。
 
-<code src="../../demo/layout/double-columns/left-fixed-right-adaptive/table/index.tsx" />
+<code src="../../../example/layout/double-columns/left-fixed-right-adaptive/table/index.tsx" />
 
 **优点**：
 
@@ -74,7 +74,7 @@ nav:
 
 **原理**：利用绝对定位算好宽高固定好两个盒子的位置。
 
-<code src="../../demo/layout/double-columns/left-fixed-right-adaptive/position/index.tsx" />
+<code src="../../../example/layout/double-columns/left-fixed-right-adaptive/position/index.tsx" />
 
 **优点**：
 
@@ -87,13 +87,13 @@ nav:
 
 ### flex
 
-<code src="../../demo/layout/double-columns/left-fixed-right-adaptive/flex/index.tsx" />
+<code src="../../../example/layout/double-columns/left-fixed-right-adaptive/flex/index.tsx" />
 
 **缺点**：PC 端兼容性不好
 
 ### grid
 
-<code src="../../demo/layout/double-columns/left-fixed-right-adaptive/grid/index.tsx" />
+<code src="../../../example/layout/double-columns/left-fixed-right-adaptive/grid/index.tsx" />
 
 **优点**：
 
@@ -110,16 +110,16 @@ nav:
 - 两元素浮动
 - 自适应元素为了不被遮挡，设置 `margin` 大于等于定宽元素宽度
 
-<code src="../../demo/layout/double-columns/left-adaptive-right-fixed/float-margin/index.tsx" />
+<code src="../../../example/layout/double-columns/left-adaptive-right-fixed/float-margin/index.tsx" />
 
 ### table
 
-<code src="../../demo/layout/double-columns/left-adaptive-right-fixed/table/index.tsx" />
+<code src="../../../example/layout/double-columns/left-adaptive-right-fixed/table/index.tsx" />
 
 ### flex
 
-<code src="../../demo/layout/double-columns/left-adaptive-right-fixed/flex/index.tsx" />
+<code src="../../../example/layout/double-columns/left-adaptive-right-fixed/flex/index.tsx" />
 
 ### grid
 
-<code src="../../demo/layout/double-columns/left-adaptive-right-fixed/grid/index.tsx" />
+<code src="../../../example/layout/double-columns/left-adaptive-right-fixed/grid/index.tsx" />

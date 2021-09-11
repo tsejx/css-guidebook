@@ -1,0 +1,41 @@
+.background-size {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+
+  .item {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-repeat: no-repeat;
+    background-image: url('./background.jpg');
+    border: 1px solid #000;
+  }
+
+  .auto {
+    background-size: auto;
+  }
+
+  .cover {
+    background-size: cover;
+  }
+
+  .cover-center {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .contain {
+    background-size: contain;
+  }
+
+  .length-50 {
+    background-size: 50px 50px;
+  }
+
+  .perc-50 {
+    background-size: 80px 80%;
+  }
+}

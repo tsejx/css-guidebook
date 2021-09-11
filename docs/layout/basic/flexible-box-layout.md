@@ -71,11 +71,11 @@ Flex 属性分为两部分：
 
 **flex：将对象作为弹性伸缩盒显示**
 
-<code src="../../demo/layout/flex/flex-box/index.tsx" />
+<code src="../../../example/layout/flex/flex-box/index.tsx" />
 
 **inline-flex：将对象作为内联块级弹性伸缩盒显示**
 
-<code src="../../demo/layout/flex/inline-flex-box/index.tsx" />
+<code src="../../../example/layout/flex/inline-flex-box/index.tsx" />
 
 ### flex-direction
 
@@ -92,7 +92,7 @@ Flex 属性分为两部分：
 - `column`：表示子项从上向下排列。此时**垂直方向轴**为主轴。
 - `column-reverse`：表示子项从下向上排列。
 
-<code src="../../demo/layout/flex/flex-direction/index.tsx" />
+<code src="../../../example/layout/flex/flex-direction/index.tsx" />
 
 ### flex-wrap
 
@@ -108,7 +108,7 @@ Flex 属性分为两部分：
 - `wrap`：表示换行，所有子项目多行排列，溢出的子项会被放到下一行，按从上向下顺序排列。
 - `wrap-reverse`：所有子项目多行排列，按从下向上顺序排列。
 
-<code src="../../demo/layout/flex/flex-wrap/index.tsx" />
+<code src="../../../example/layout/flex/flex-wrap/index.tsx" />
 
 从上述 demo 中不难发现，换行以后两行之间产生了很大的间距，这个问题，在后面介绍的  `align-content`  属性中可以得到很好的解决。
 
@@ -139,7 +139,7 @@ Flex 属性分为两部分：
 - `space-around`：弹性容器子项均匀分布，每个项目两侧的间隔相等，相邻项目之间的距离是两个项目之间留白的和。所以，项目之间的间隔比项目与边框的间隔大一倍。要注意特殊情况，当剩余空间为负数或者只有一个项时，效果等同于`center`。
 - `space-evenly`：弹性容器子项均匀分布，所有项目之间及项目与边框之间的距离相等。
 
-<code src="../../demo/layout/flex/justify-content/index.tsx" />
+<code src="../../../example/layout/flex/justify-content/index.tsx" />
 
 ### align-items
 
@@ -157,7 +157,7 @@ Flex 属性分为两部分：
 - `center`：表示与交叉轴的中线对齐。
 - `baseline`：表示基线对齐，当行内轴与侧轴在同一线上，即所有子项的基线在同一线上时，效果等同于`flex-start`。
 
-<code src="../../demo/layout/flex/align-items/index.tsx" />
+<code src="../../../example/layout/flex/align-items/index.tsx" />
 
 ### align-content
 
@@ -180,7 +180,7 @@ Flex 属性分为两部分：
 
 ⚠️ **注意：**该属性只作用于多行的情况（`flex-warp: wrap / warp-reverse`），在只有一行的弹性容器上无效，另外该属性可以很好的处理，换行以后相邻行之间产生的间距。
 
-<code src="../../demo/layout/flex/align-content/index.tsx" />
+<code src="../../../example/layout/flex/align-content/index.tsx" />
 
 设定条件：
 
@@ -202,7 +202,7 @@ Flex 属性分为两部分：
 }
 ```
 
-<code src="../../demo/layout/flex/order/index.tsx" />
+<code src="../../../example/layout/flex/order/index.tsx" />
 
 ### flex-grow
 
@@ -212,7 +212,7 @@ Flex 属性分为两部分：
 
 一行的子盒子同时设置 `flex-grow` 属性的话，会根据设置的值的大小按比例排放子项。
 
-<code src="../../demo/layout/flex/flex-grow/index.tsx" />
+<code src="../../../example/layout/flex/flex-grow/index.tsx" />
 
 计算方式：
 
@@ -238,7 +238,7 @@ Flex 属性分为两部分：
 
 如果所有项目的 `flex-shrink` 属性都为 1，当空间不足时，都将等比例缩小。如果一个项目的 `flex-shrink` 属性为 0，其他项目都为 1，则空间不足时，前者不缩小。
 
-<code src="../../demo/layout/flex/flex-shrink/index.tsx" />
+<code src="../../../example/layout/flex/flex-shrink/index.tsx" />
 
 计算方式：
 
@@ -260,7 +260,7 @@ Flex 属性分为两部分：
 
 示例：
 
-<code src="../../demo/layout/flex/flex-basis/index.tsx" />
+<code src="../../../example/layout/flex/flex-basis/index.tsx" />
 
 ⚠️ **注意：**
 
@@ -301,7 +301,7 @@ Flex 属性分为两部分：
 }
 ```
 
-<code src="../../demo/layout/flex/align-self/index.tsx" />
+<code src="../../../example/layout/flex/align-self/index.tsx" />
 
 ## 兼容性
 
@@ -318,7 +318,7 @@ Flexbox 需要一些特定的前缀以支持大多数的浏览器。甚至还存
 
 这里假设 flex 容器为 `.box`，子项为 `.item`。
 
-<code src="../../demo/layout/flex/flex-generator/index.tsx" />
+<code src="../../../example/layout/flex/flex-generator/index.tsx" />
 
 ### 定义容器为弹性布局
 

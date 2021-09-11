@@ -76,6 +76,12 @@ nav:
 基线和底线之间有距离的，如果 12px 字体那么缝隙可能就是 3px
 解决方案：按照底线对齐，`vertical-align:bottom` 或者 `display:block`
 
+## text-decoration
+
+[CSS 文字装饰 text-decoration & text-emphasis](https://juejin.cn/post/6947866495309316104)
+
+## text-emphasis
+
 ## 文本段落
 
 - `white-space`：用于设置如何处理元素中的空白

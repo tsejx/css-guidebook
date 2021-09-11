@@ -1,0 +1,35 @@
+.background-clip {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+
+  .item {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+    border: 10px dotted #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #bae7ff;
+  }
+
+  .initial {
+    background-clip: initial;
+  }
+
+  .border-box {
+    background-clip: border-box;
+  }
+
+  .padding-box {
+    background-clip: padding-box;
+  }
+
+  .content-box {
+    background-clip: content-box;
+  }
+}

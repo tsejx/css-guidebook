@@ -22,3 +22,9 @@ nav:
 - transform-origin 变形原点
 - transofrm-style 3D 呈现
 - backface-visibility 隐藏内容
+
+## transform-origin
+
+[MDN: transform-origin](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transform-origin)
+
+`transform-origin` CSS 属性让你更改一个元素变形的原点。

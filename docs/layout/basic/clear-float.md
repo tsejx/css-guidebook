@@ -19,7 +19,7 @@ order: 5
 
 ## 父元素设置固定高度
 
-<code src="../../demo/layout/float/height/index.tsx" />
+<code src="../../../example/layout/float/height/index.tsx" />
 
 - 优点：简单、代码少、容易掌握
 - 缺点：只适合高度固定的布局，要给出精确的高度，如果高度和父级 `div` 不一样时，会产生问题
@@ -30,7 +30,7 @@ order: 5
 
 结尾处加空 `div` 标签 `clear: both`。
 
-<code src="../../demo/layout/float/clear/index.tsx" />
+<code src="../../../example/layout/float/clear/index.tsx" />
 
 - 优点：简单、代码少、浏览器支持好、不容易出现怪问题
 - 缺点：不少初学者不理解原理；如果页面浮动布局多，就要增加很多空 `div`，让人感觉很不好
@@ -41,7 +41,7 @@ order: 5
 
 原理其实和第二种方法一样，只是这里的空标签使用的是 `<br/>` 标签。
 
-<code src="../../demo/layout/float/clear-br/index.tsx" />
+<code src="../../../example/layout/float/clear-br/index.tsx" />
 
 **建议：**不推荐使用，只作了解。
 
@@ -49,7 +49,7 @@ order: 5
 
 父级块级元素定义 伪类 `:after` 和 `zoom`。
 
-<code src="../../demo/layout/float/pseudo/index.tsx" />
+<code src="../../../example/layout/float/pseudo/index.tsx" />
 
 - 优点：浏览器支持好、不容易出现怪问题（目前：大型网站都有使用，如：腾迅，网易，新浪等等）
 - 缺点：代码多、不少初学者不理解原理，要两句代码结合使用才能让主流浏览器都支持。
@@ -60,7 +60,7 @@ order: 5
 
 父级 `div` 定义 `overflow: hidden`。
 
-<code src="../../demo/layout/float/overflow-hidden/index.tsx" />
+<code src="../../../example/layout/float/overflow-hidden/index.tsx" />
 
 - 优点：简单、代码少、浏览器支持好
 - 缺点：不能和 `position` 配合使用，因为超出的尺寸的会被隐藏。
@@ -69,7 +69,7 @@ order: 5
 
 ## 使用 overflow-auto  触发 BFC
 
-<code src="../../demo/layout/float/overflow-auto/index.tsx" />
+<code src="../../../example/layout/float/overflow-auto/index.tsx" />
 
 - 优点：简单、代码少、浏览器支持好
 - 缺点：内部宽高超过父级 `div` 时，会出现滚动条。
@@ -78,7 +78,7 @@ order: 5
 
 ## 设置父元素浮动触发 BFC
 
-<code src="../../demo/layout/float/parent-float/index.tsx" />
+<code src="../../../example/layout/float/parent-float/index.tsx" />
 
 - 优点：没有优点
 - 缺点：会产生新的浮动问题。
@@ -87,7 +87,7 @@ order: 5
 
 ## 设置父级为表格元素触发 BFC
 
-<code src="../../demo/layout/float/parent-table/index.tsx" />
+<code src="../../../example/layout/float/parent-table/index.tsx" />
 
 - 优点：没有优点
 - 缺点：会产生新的未知问题。

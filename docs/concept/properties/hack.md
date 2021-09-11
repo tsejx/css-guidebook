@@ -1,6 +1,6 @@
 ---
 title: HACK
-order: 10
+order: 20
 group:
   title: 属性
   order: 2
@@ -95,10 +95,14 @@ Chrome 中文界面下默认会将小于 12px 的文本强制按照 12px 显示�
 解决方法是改变 CSS 属性的排列顺序：L-V-H-A :
 
 ```css
-a:link {}
-a:visited {}
-a:hover {}
-a:active {}
+a:link {
+}
+a:visited {
+}
+a:hover {
+}
+a:active {
+}
 ```
 
 ## 事件对象

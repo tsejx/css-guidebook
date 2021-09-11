@@ -13,21 +13,25 @@ order: 7
 
 ## 自动填充剩余空间
 
-常见布局：当内容区域高度不够的时候，`footer` 仍然需要固定在底部。这时候，我们可以给 `content` 使用 `flex-grow: 1`，使他自动填满剩余空间。
+常见布局：当内容区域高度不够的时候，`footer` 仍然需要固定在底部。这时候，我们可以给 `main` 使用 `flex-grow: 1`，使他自动填满剩余空间。
 
-<code src="../../demo/layout/flex-practise/auto-fill/index.tsx" />
+<code src="@example/layout/flex-practise/auto-fill/index.tsx" />
 
 ## 自适应布局
 
-<code src="../../demo/layout/flex-practise/responsive-layout/index.tsx" />
+<code src="@example/layout/flex-practise/responsive-layout/index.tsx" />
 
 ## 九宫格
+
+### 边距九宫格
+
+<code src="@example/layout/flex-practise/nine-grid/index.tsx" />
+
+### 边框九宫格
 
 ## 十六宫格
 
 ### 平均分布并可换行
-
-https://www.jianshu.com/p/e8f236fcf515
 
 ```css
 .container {
@@ -38,3 +42,7 @@ https://www.jianshu.com/p/e8f236fcf515
   flex-wrap: wrap;
 }
 ```
+
+## 参考资料
+
+- [Common CSS Flexbox Layout Patterns with Example Code](https://tobiasahlin.com/blog/common-flexbox-patterns)

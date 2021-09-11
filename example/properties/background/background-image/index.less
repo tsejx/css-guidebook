@@ -1,0 +1,29 @@
+.background-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+
+  .item {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .absolute-url {
+    background-image: url('https://img.zcool.cn/community/01dc935dea3d39a801209568eb679a.jpg@1280w_1l_2o_100sh.jpg')
+  }
+
+  .relative-url {
+    background-image: url('./images.jpg');
+  }
+
+  .gradient-color {
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+}

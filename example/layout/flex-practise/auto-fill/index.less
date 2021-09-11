@@ -1,0 +1,33 @@
+@import '../../../common.less';
+
+.flexible-auto-fill {
+  display: flex;
+  flex-direction: column;
+  /* 这里为了方便展示设置了固定高度，如果是移动端可以设置为 100% 或 auto */
+  width: 120px;
+  height: 200px;
+
+  background-color: @bg-container;
+
+  .header,
+  .main,
+  .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+    background-color: @bg-item;
+  }
+
+  /* 固定高度 */
+  .header,
+  .footer {
+    height: 30px;
+  }
+
+  /* 内容主区域自适应 */
+  .main {
+    flex-grow: 1;
+  }
+}

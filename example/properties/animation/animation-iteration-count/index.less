@@ -1,0 +1,45 @@
+.animation-timing-function {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 200px;
+
+  .box {
+    position: absolute;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: #bae7ff;
+    animation-name: move;
+    animation-duration: 10s;
+  }
+
+  .zero {
+    animation-iteration-count: 0;
+  }
+
+  .two-times {
+    animation-iteration-count: 2;
+  }
+
+  .one-point-five-times {
+    animation-iteration-count: 1.5;
+  }
+
+  .infinite {
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes move {
+    0% {
+      left: 0px;
+    }
+    50% {
+      left: 500px;
+    }
+    100% {
+      left: 0px;
+    }
+  }
+}

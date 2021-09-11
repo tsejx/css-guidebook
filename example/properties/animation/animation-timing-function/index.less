@@ -1,0 +1,62 @@
+.animation-timing-function {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 200px;
+
+  .box {
+    position: absolute;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: #bae7ff;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+
+  .ease {
+    animation-timing-function: ease;
+  }
+
+  .ease-in {
+    animation-timing-function: ease-in;
+  }
+
+  .ease-out {
+    animation-timing-function: ease-out;
+  }
+
+  .ease-in-out {
+    animation-timing-function: ease-in-out;
+  }
+
+  .linear {
+    animation-timing-function: linear;
+  }
+
+  .step-start {
+    animation-timing-function: step-start;
+  }
+
+  .step-end {
+    animation-timing-function: step-end;
+  }
+
+  .cubic-bezier {
+    animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  }
+
+  @keyframes move {
+    0% {
+      left: 0px;
+    }
+    50% {
+      left: 500px;
+    }
+    100% {
+      left: 0px;
+    }
+  }
+}

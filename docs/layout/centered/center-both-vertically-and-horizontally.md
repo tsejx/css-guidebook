@@ -21,7 +21,7 @@ nav:
 
 ## 垂直居中文本
 
-<code src="../../demo/layout/centered/text/index.tsx" />
+<code src="../../../example/layout/centered/text/index.tsx" />
 
 ## 固定宽高元素
 
@@ -30,23 +30,23 @@ nav:
 - 负 `margin` 方案：居中元素相对于父元素绝对定位于 50%，并使用负 `margin` 自身宽高的一半，校正过多的偏移量
 - `margin` 自适应方案：居中元素相对于父元素四个方位的距离设为 0，并使用 `margin: auto` 自适应
 
-<code src="../../demo/layout/centered/certain/index.tsx" />
+<code src="../../../example/layout/centered/certain/index.tsx" />
 
 ## 未知宽高元素
 
 利用 2D 转换，在水平和垂直两个方向都反向平移宽高的一半，从而使元素水平垂直居中。
 
-<code src="../../demo/layout/centered/uncertain/index.tsx" />
+<code src="../../../example/layout/centered/uncertain/index.tsx" />
 
 ## 弹性布局
 
 利用弹性布局，其中 `justify-content` 用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式；而 `align-items` 属性定义弹性容器子项在弹性容器的当前行的侧轴（纵轴）方向上的对齐方式。
 
-<code src="../../demo/layout/centered/flex/index.tsx" />
+<code src="../../../example/layout/centered/flex/index.tsx" />
 
 ## 网格布局
 
-<code src="../../demo/layout/centered/grid/index.tsx" />
+<code src="../../../example/layout/centered/grid/index.tsx" />
 
 ## 可视窗口水平垂直居中
 

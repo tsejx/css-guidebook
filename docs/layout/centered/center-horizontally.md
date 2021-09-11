@@ -22,7 +22,7 @@ nav:
 - 内联表 `inline-table`
 - `inline-flex` 元素
 
-<code src="../../demo/layout/horizontally/inline/index.tsx" />
+<code src="../../../example/layout/horizontally/inline/index.tsx" />
 
 **优点**
 
@@ -45,7 +45,7 @@ nav:
 }
 ```
 
-<code src="../../demo/layout/horizontally/block/index.tsx" />
+<code src="../../../example/layout/horizontally/block/index.tsx" />
 
 ## 多块级元素
 
@@ -53,7 +53,7 @@ nav:
 
 如果一行中有两个或两个以上的块级元素，通过设置块级元素的显示类型为 `inline-block` 和父容器的 `text-align` 属性从而使多块级元素水平居中。
 
-<code src="../../demo/layout/horizontally/multi-inline/index.tsx" />
+<code src="../../../example/layout/horizontally/multi-inline/index.tsx" />
 
 **优点**
 
@@ -69,7 +69,7 @@ nav:
 
 利用弹性布局，实现水平居中，其中 `align-items` 用于设置弹性盒子元素在主轴方向上的对齐方式。
 
-<code src="../../demo/layout/horizontally/flex/index.tsx" />
+<code src="../../../example/layout/horizontally/flex/index.tsx" />
 
 **优点：** 适用于任意个元素
 
@@ -77,7 +77,7 @@ nav:
 
 ### 固定宽度-外边距偏移
 
-<code src="../../demo/layout/horizontally/margin/index.tsx" />
+<code src="../../../example/layout/horizontally/margin/index.tsx" />
 
 **优点**
 
@@ -91,10 +91,10 @@ nav:
 
 ### 固定宽度-外边距适配
 
-<code src="../../demo/layout/horizontally/direction/index.tsx" />
+<code src="../../../example/layout/horizontally/direction/index.tsx" />
 
 ### 未知宽度
 
-<code src="../../demo/layout/horizontally/transform/index.tsx" />
+<code src="../../../example/layout/horizontally/transform/index.tsx" />
 
 **优点：** 不用回流

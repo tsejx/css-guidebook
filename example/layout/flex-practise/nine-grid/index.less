@@ -1,0 +1,27 @@
+@import '../../../common.less';
+
+.flexible-nine-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: @bg-container;
+
+  width: 360px;
+  height: 360px;
+
+  .grid-item {
+    width: 32%;
+    height: 32%;
+    text-align: center;
+    background-color: @bg-item;
+
+    &:nth-child(-n+6) {
+      margin-bottom: 2%;
+    }
+
+    &:nth-child(3n+1),
+    &:nth-child(3n+2) {
+      margin-right: 2%;
+    }
+  }
+}

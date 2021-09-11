@@ -1,3 +1,5 @@
+import { resolve } from 'path';
+
 const config = {
   mode: 'site',
   title: 'CSS Guidebook',
@@ -6,6 +8,9 @@ const config = {
   publicPath: '/css-guidebook/',
   favicon: './favicon.ico',
   logo: 'http://img.mrsingsing.com/css-guidebook-favicon.png',
+  alias: {
+    '@example': resolve(__dirname, '../example')
+  },
   hash: true,
   exportStatic: {},
   navs: [

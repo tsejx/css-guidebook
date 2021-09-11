@@ -27,3 +27,9 @@ nav:
 | `transition-duration`        | 持续时间，规定完成过渡效果需要多少秒或毫秒，默认为 0 |
 | `transition-timing-function` | 速度曲线，规定速度效果的速度曲线，默认为 `ease`      |
 | `transition-delay`           | 延迟间隔，定义过渡效果何时开始，默认为 0             |
+
+示例：
+
+```css
+
+```

@@ -19,7 +19,7 @@ nav:
 
 **应用场景：**这种方法比较适合文字的居中，其核心是设置行高（line-height）等于包裹他的盒子的高，或者不设高度只设行高，这种适合文字居中且高度固定的场景，使用起来比较方便也比较有用。
 
-<code src="../../demo/layout/vertically/single-line/index.tsx" />
+<code src="../../../example/layout/vertically/single-line/index.tsx" />
 
 **优点：** 简单兼容性好
 
@@ -34,7 +34,7 @@ nav:
 
 使用表格布局的 `vertical-align: middle` 可以实现子元素的垂直居中。
 
-<code src="../../demo/layout/vertically/table/index.tsx" />
+<code src="../../../example/layout/vertically/table/index.tsx" />
 
 **实现条件：**
 
@@ -45,7 +45,7 @@ nav:
 
 利用弹性布局实现垂直居中，其中 `flex-direction: column` 定义主轴方向为纵向。
 
-<code src="../../demo/layout/vertically/flex/index.tsx" />
+<code src="../../../example/layout/vertically/flex/index.tsx" />
 
 **优点**
 
@@ -62,7 +62,7 @@ nav:
 
 利用精灵元素（Ghost Element）技术实现垂直居中，即在父容器内放一个 100% 高度的伪元素，让 **文本** 和 **伪元素** 垂直对齐，从而达到垂直居中的目的。
 
-<code src="../../demo/layout/vertically/ghost/index.tsx" />
+<code src="../../../example/layout/vertically/ghost/index.tsx" />
 
 ## 块级元素
 
@@ -70,7 +70,7 @@ nav:
 
 当居中元素的 `高度和宽度` 已知时，垂直居中问题就很简单。通过 **绝对定位** 元素距离顶部 50%，并设置 `margin-top` 向上偏移元素高度的一半，就可以实现垂直居中了。
 
-<code src="../../demo/layout/vertically/scrollable/index.tsx" />
+<code src="../../../example/layout/vertically/scrollable/index.tsx" />
 
 **优点：** 适用于所有浏览器.
 
@@ -78,7 +78,7 @@ nav:
 
 ### 固定高度-外边距适配
 
-<code src="../../demo/layout/vertically/unscrollable/index.tsx" />
+<code src="../../../example/layout/vertically/unscrollable/index.tsx" />
 
 **优点：** 简单
 
@@ -86,7 +86,7 @@ nav:
 
 ### 未知高度
 
-<code src="../../demo/layout/vertically/uncertain/index.tsx" />
+<code src="../../../example/layout/vertically/uncertain/index.tsx" />
 
 **优点：** 代码量少
 
@@ -94,7 +94,7 @@ nav:
 
 ## 图片垂直居中
 
-<code src="../../demo/layout/vertically/image/index.tsx" />
+<code src="../../../example/layout/vertically/image/index.tsx" />
 
 **为什么 fontSize 为 0 是必要的？**
 
