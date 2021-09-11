@@ -7,12 +7,12 @@
       content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
     />
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-    <link rel="stylesheet" href="/css-guidebook/umi.7936fc03.css" />
+    <link rel="stylesheet" href="/css-guidebook/umi.ffa96227.css" />
     <script>
       window.routerBase = "/css-guidebook/";
     </script>
     <script>
-      //! umi version: 3.4.25
+      //! umi version: 3.5.18
     </script>
     <script>
       !(function () {
@@ -21,7 +21,7 @@
           r = ["light", "dark", "auto"];
         document.documentElement.setAttribute(
           "data-prefers-color",
-          e === r[2] ? (t ? r[1] : r[0]) : r.includes(e) ? e : r[0]
+          e === r[2] ? (t ? r[1] : r[0]) : r.indexOf(e) > -1 ? e : r[0]
         );
       })();
     </script>
@@ -30,6 +30,6 @@
   <body>
     <div id="root"></div>
 
-    <script src="/css-guidebook/umi.c4da9581.js"></script>
+    <script src="/css-guidebook/umi.ae587b98.js"></script>
   </body>
 </html>
