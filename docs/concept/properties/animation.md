@@ -141,6 +141,10 @@ animation-iteration-count: 2, 0, infinite;
 | `alternate`         | 轮流，即来回往复进行                     |
 | `alternate-reverse` | 动画先反运行再正方向运行，并持续交替运行 |
 
+<br />
+
+<code src="@example/properties/animation/animation-direction/index.tsx" />
+
 ### animation-play-state
 
 `animation-play-state` 播放状态，规定动画的播放状态，用此来控制动画的暂停和继续。
@@ -150,16 +154,20 @@ animation-iteration-count: 2, 0, infinite;
 | `running` | 继续状态 |
 | `paused`  | 暂停状态 |
 
+<br />
+
+<code src="@example/properties/animation/animation-play-state/index.tsx" />
+
 ### animation-fill-mode
 
 `animation-fill-mode` 播放后样式，控制动画结束后的元素样式。
 
-| 属性值      | 说明                                                         |
-| :---------- | :----------------------------------------------------------- |
-| `none`      | 回到动画没开始时的状态                                       |
-| `forwards`  | 动画结束后动画停留在结束状态                                 |
-| `backwords` | 动画回到第一帧的状态                                         |
-| `both`      | 根据 animation-direction 轮流应用 forwards 和 backwards 规则 |
+| 属性值      | 说明                                                               |
+| :---------- | :----------------------------------------------------------------- |
+| `none`      | 回到动画没开始时的状态                                             |
+| `forwards`  | 动画结束后动画停留在结束状态                                       |
+| `backwords` | 动画回到第一帧的状态                                               |
+| `both`      | 根据 `animation-direction` 轮流应用 `forwards` 和 `backwards` 规则 |
 
 注意：与 `iteration-count` 不能冲突（动画执行无限次）
 

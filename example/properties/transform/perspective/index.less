@@ -1,0 +1,44 @@
+.perspective {
+  width: 200px;
+  height: 200px;
+
+  .cube {
+    font-size: 4em;
+    width: 2em;
+    margin: 1.5em auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-40deg) rotateY(32deg);
+  }
+
+  .side {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+
+    background: rgba(186, 231, 255, .6);
+    border: 1px solid rgba(0,0,0,.5);
+
+    color: white;
+    text-align: center;
+    line-height: 2em;
+  }
+
+  .front {
+    transform: translateZ(1em);
+  }
+  .top {
+    transform: rotateX(90deg) translateZ(1em);
+  }
+  .right {
+    transform: rotateY(90deg) translateZ(1em);
+  }
+  .left {
+    transform: rotateY(-90deg) translateZ(1em);
+  }
+  .bottom {
+    transform: rotateX(-90deg) translateZ(1em);
+  }
+  .back {
+    transform: rotateY(-180deg) translateZ(1em);
+  }
+}

@@ -1,0 +1,39 @@
+.transform-scale {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  height: 200px;
+
+  .container {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: #c9c9c9;
+  }
+
+  .item {
+    width: 100px;
+    height: 100px;
+    opacity: 0.5;
+    background-color: #bae7ff;
+    transform-origin: 0 0;
+  }
+
+  .point-two {
+    transform: scale(0.2);
+    /* 等同于 scaleX(2) scale(2) */
+  }
+
+  .point-five {
+    transform: scale(0.5);
+  }
+
+  .one-point-two {
+    transform: scale(1.2);
+  }
+
+  .two {
+    transform: scale(2);
+  }
+}

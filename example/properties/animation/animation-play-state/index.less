@@ -1,4 +1,4 @@
-.animation-iteration-count {
+.animation-play-state {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -15,20 +15,12 @@
     animation-duration: 10s;
   }
 
-  .zero {
-    animation-iteration-count: 0;
+  .paused {
+    animation-play-state: paused;
   }
 
   .two-times {
-    animation-iteration-count: 2;
-  }
-
-  .one-point-five-times {
-    animation-iteration-count: 1.5;
-  }
-
-  .infinite {
-    animation-iteration-count: infinite;
+    animation-play-state: running;
   }
 
   @keyframes move {

@@ -1,5 +1,5 @@
 /**
- * title: animation-timing-function
+ * title: animation-iteration-count
  * desc:
  */
 
@@ -10,19 +10,22 @@ import './index.less';
 const App = () => {
   const [iterationCount, setCount] = useState('zero');
 
+  const renderBox = (type) => {
+    return <div key={type} className={`box ${type}`}></div>
+  }
+
   return (
-    <div className="animation-timing-function">
+    <div className="animation-iteration-count">
       <Radio.Group
-        name="radiogroup"
         defaultValue={iterationCount}
         onChange={(e) => setCount(e.target.value)}
       >
         <Radio value="zero">0 次</Radio>
         <Radio value="two-times">2 次</Radio>
         <Radio value="one-point-five-times">1.5 次</Radio>
-        <Radio value="inifinit">无限次</Radio>
+        <Radio value="infinite">无限次</Radio>
       </Radio.Group>
-      <div className={`box ${iterationCount}`}></div>
+      {renderBox(iterationCount)}
     </div>
   );
 };

@@ -10,9 +10,13 @@ import './index.less';
 const App  = () => {
   const [timingFunction, setFun] = useState('linear');
 
+  const renderBox = (type) => {
+    return <div key={type} className={`box ${type}`} ></div>
+  }
+
   return (
     <div className="animation-timing-function">
-      <Radio.Group name="radiogroup" defaultValue={timingFunction} onChange={(e) => setFun(e.target.value)}>
+      <Radio.Group defaultValue={timingFunction} onChange={(e) => setFun(e.target.value)}>
         <Radio value="ease">ease</Radio>
         <Radio value="ease-in">ease-in</Radio>
         <Radio value="ease-out">ease-out</Radio>
@@ -22,7 +26,7 @@ const App  = () => {
         <Radio value="step-end">step-end</Radio>
         <Radio value="cubic-bezier">cubic-bezier</Radio>
       </Radio.Group>
-      <div className={`box ${timingFunction}`} ></div>
+      {renderBox(timingFunction)}
     </div>
   );
 };

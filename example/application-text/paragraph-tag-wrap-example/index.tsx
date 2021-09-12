@@ -10,7 +10,7 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <div className="container">
+        <div className="paragraph-tag-wrapper">
           <p className="chinese-paragraph">
             这是一段文本这是一段文本这是一段文本这是一段文本这是一段文本这是一段文本这是一段文本这是一段文本这是一段文本这是一段文本这是一段文本这是一段文本这是一段文本这是一段文本这是一段文本这是一段文本这是一段文本这是一段文本这是一段文本这是一段文本这是一段文本这是一段文本这是一段文本
           </p>
