@@ -1,3 +1,14 @@
+---
+nav:
+  title: 工程化
+  order: 3
+group:
+  title: 拓展
+  order: 4
+title: 扩展资料
+order: 1
+---
+
 # 扩展资料
 
 ## 奇技淫巧系列
