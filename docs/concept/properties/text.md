@@ -11,14 +11,6 @@ order: 4
 
 # 文本
 
-- `white-space`：用于设置如何处理元素中的空白
-- `normal`：默认，空白会被浏览器忽略
-- `pre`：空白会被浏览器保留，其行为方式类似 HTML 的 `pre` 标签
-- `nowrap`：文本不会换行，文本会在同一行的
-- `word-wrap`
-- `word-break`
-- `text-overflow`
-
 ## 属性说明
 
 ### text-align
@@ -37,6 +29,30 @@ order: 4
 | `end`          | 内容对齐结束边界                                                                                                                       |
 | `match-parent` | 这个值和 `inherit` 表现一致，只是该值继承的 `start` 或 `end` 关键字是针对父母的 `direction` 值并计算的，计算值可以是 `left` 和 `right` |
 | `justify-all`  | 效果等同于 `justify`，不同的是最后一行也会两端对齐                                                                                     |
+
+#### 单行文本两端对齐
+
+1. 首先，所有主流浏览器都支持 `text-align` 的 `justify` 属性值
+2. 其次，在这个例子中每个 `p` 都只有一行（所以既是第一行也是最后一行），所以无法通过定义 `text-align: justify` 来实现两端对齐，因为 `text-align: justify` 不会处理块级内容文本的最后一行
+3. 再次，好在有一个专门用来处理最后一行对齐的属性 `text-align-last`，可以通过定义 `text-align-last: justify` 来实现单行文本两端对齐
+4. 综上所述，我们无法简单的通过使用 `text-align` 或者 `text-align-last` 来实现单行文本两端对齐。那么可以换个思路，想办法让它们变成多行文本，使用伪元素派生一行新的占位内容是个不错的选择，此时再实现两端对齐，只需要 `text-align` 就行了
+
+### vertical-align
+
+`vertical-align` 用于定义行内元素在行框内的垂直对齐方式。
+
+| 属性值         | 说明                                                                                                      |
+| :------------- | :-------------------------------------------------------------------------------------------------------- |
+| `baseline`     | 把当前盒的基线与父级盒的基线对齐。如果该盒没有基线，就将底部外边距的边界和父级的基线对齐                  |
+| `sub`          | 把当前盒的基线降低到合适的位置作为父级盒的下标（该值不影响该元素文本的字体大小）                          |
+| `supr`         | 把当前盒的基线提升到合适的位置作为父级盒的上标（该值不影响该元素文本的字体大小）                          |
+| `text-top`     | 把当前盒的 `top` 和父级的内容区的 `top` 对齐                                                              |
+| `text-bottom`  | 把当前盒的 `bottom` 和父级的内容区的 `bottom` 对齐                                                        |
+| `middle`       | 把当前盒的垂直中心和父级盒的基线加上父级的半 `x-height` 对齐                                              |
+| `top`          | 把当前盒的 `top` 与行盒的 `top` 对齐                                                                      |
+| `bottom`       | 把当前盒的 `bottom` 与行盒的 `bottom` 对齐                                                                |
+| `<percentage>` | 把当前盒提升（正值）或者降低（负值）这个距离，百分比相对 `line-height` 计算。当值为 0%时等同于 `baseline` |
+| `<length>`     | 把当前盒提升（正值）或者降低（负值）这个距离。当值为 `0` 时等同于 `baseline`                              |
 
 ### text-decoration
 
@@ -57,6 +73,16 @@ text-decoration: <text-decoration-line> | <text-decoration-style> | <text-decora
 | `overline`     | 文字的装饰是上划线 |
 | `line-through` | 文字的装饰是贯穿线 |
 | `blink`        | 文字的装饰是闪烁   |
+
+对于 `<text-decoration-style>` 可取的属性值：
+
+| 属性值   | 说明     |
+| :------- | :------- |
+| `solid`  | 实线     |
+| `double` | 双线     |
+| `dotted` | 点状线条 |
+| `dashed` | 虚线     |
+| `wavy`   | 波浪线   |
 
 [CSS 文字装饰 text-decoration & text-emphasis](https://juejin.cn/post/6947866495309316104)
 
@@ -86,6 +112,10 @@ text-decoration: <text-decoration-line> | <text-decoration-style> | <text-decora
 | `distribute`      | 通过增加或减少字或字母之间的空格对齐文本，适用于东亚文档，尤其是泰国                                 |
 | `kashida`         | 通过拉长选定点的字符调整文本。这种调整模式是特别为阿拉伯脚本语言提供的                               |
 
+注意事项：
+
+- 因为这个属性影响文本布局，所以 `text-align` 属性必须设置为 `justify`
+
 ### text-indent
 
 `text-indent` 用于定义块内文本内容的缩进。
@@ -97,9 +127,61 @@ text-decoration: <text-decoration-line> | <text-decoration-style> | <text-decora
 | `each-line`    | 定义缩进作用在块容器的第一行或者内部的每个强制换行的首行，软换行不受影响 |
 | `hanging`      | 反向所有被缩进作用的行                                                   |
 
-### vertical-align
+注意事项：
 
-`vertical-align` 用于定义行内元素在行框内的垂直对齐方式。
+- 行内元素要使用该属性必须先定义该元素为块级或行内块级
+- `hanging` 和 `each-line` 关键词紧随在缩进数值之后
+
+示例：
+
+```css
+div {
+  text-indent: 2em each-line;
+}
+```
+
+### text-overflow
+
+`text-overflow` 用于当块容器 `overflow` 为非 `visible` 时，定义内联内容溢出其块容器是否截断或者添加 `...` 及自定义字符。
+
+| 属性值     | 说明                                           |
+| :--------- | :--------------------------------------------- |
+| `clip`     | 当内联内容溢出块容器时，将溢出部分裁切掉       |
+| `ellipsis` | 当内联内容溢出块容器时，将溢出部分替换为 `...` |
+
+注意事项：
+
+- 要使得 `text-overflow` 属性生效，块容器必须显式定义 `overflow` 为非 `visible` 值，同时显式或者隐式地定义 `width` 为非 `auto` 值，`white-space` 为 `nowrap` 值
+
+### letter-spacing
+
+`letter-spacing` 用于指定字符之间的额外间隙。
+
+可取属性值：
+
+| 属性值     | 说明                             |
+| :--------- | :------------------------------- |
+| `none`     | 默认间隔，计算值为 `0`           |
+| `<length>` | 用长度值指定字符间隔。可以为负值 |
+
+注意事项：
+
+- 该属性可以将指定的额外间隔添加到每个字符之后，最后一个单词也会被添加
+
+### word-spacing
+
+`word-spacing` 用于指定单词之间的额外间隙。
+
+| 属性值         | 说明                             |
+| :------------- | :------------------------------- |
+| `none`         | 默认间隔，计算值为 `0`           |
+| `<length>`     | 用长度值指定字符间隔。可以为负值 |
+| `<percentage>` | 用百分比指定字符间隔。可以为负值 |
+
+注意事项：
+
+- 该属性可以将指定的额外间隙添加到每个单词之后，最后一个单词不添加，这意外着可以通过该属性控制单词间的间隙大小
+- 判断是否为单词的依据是单词间是否有单词分割符，比如：空格
 
 ### word-wrap
 
@@ -120,15 +202,6 @@ text-decoration: <text-decoration-line> | <text-decoration-style> | <text-decora
 | `keep-all`   | 对于 CJK（中文，韩文，日文）文本不允许在字符内发生换行，Non-CJK 文本表现同 `normal`                                                |
 | `break-all`  | 对于 Non-CJK 文本允许在任意字符内发生换行。该值适合包含一些非亚洲文本的亚洲文本，比如使连续的英文字符断行                          |
 | `break-word` | 与 `break-all` 相同，不同的地方在于它要求一个没有断行破发点的词必须保持为一个整体单位。这与 `word-wrap` 的 `break-word` 值效果相同 |
-
-### text-overflow
-
-`text-overflow` 用于当块容器 `overflow` 为非 `visible` 时，定义内联内容溢出其块容器是否截断或者添加 `...` 及自定义字符。
-
-| 属性值     | 说明                                           |
-| :--------- | :--------------------------------------------- |
-| `clip`     | 当内联内容溢出块容器时，将溢出部分裁切掉       |
-| `ellipsis` | 当内联内容溢出块容器时，将溢出部分替换为 `...` |
 
 ### white-space
 
