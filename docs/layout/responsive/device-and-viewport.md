@@ -307,9 +307,7 @@ export default () => <img alt="Webpack执行流程" src={img} width={480} />;
                                               CSS像素px
 ```
 
----
-
-**参考资料：**
+## 参考资料
 
 - [📖 Image Size and Resolution 缩放因子](https://developer.apple.com/design/human-interface-guidelines/ios/icons-and-images/image-size-and-resolution/)
 - [📖 The UItimate Guide To iPhone Resolutions](https://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions)

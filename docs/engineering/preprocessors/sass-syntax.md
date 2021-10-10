@@ -425,9 +425,7 @@ $gutter-width: 10px;
 
 与 mixin 相同，也可以传递若干个全局变量给函数作为参数。一个函数可以含有多条语句，需要调用 `@return` 输出结果。
 
----
-
-**参考资料：**
+## 参考资料
 
 - [Sass Guidelines（中文版）](https://www.kancloud.cn/kancloud/sass-guidelin/48049)
 - [定义好的变量名](https://www.sass.hk/skill/sass67.html)

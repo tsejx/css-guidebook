@@ -87,9 +87,7 @@ order: 2
 - [Clamp.js](https://github.com/josephschmitt/Clamp.js)
 - [jQuery.dotdotdot]()
 
----
-
-**参考资料：**
+## 参考资料
 
 - [可能是最全的「文本溢出截断省略」方案合集](https://www.zoo.team/article/application-text-overflow)
 - [纯 CSS 实现多行文字截断](https://github.com/happylindz/blog/issues/12)

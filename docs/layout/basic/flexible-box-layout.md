@@ -381,9 +381,7 @@ Flexbox 需要一些特定的前缀以支持大多数的浏览器。甚至还存
 }
 ```
 
----
-
-**参考资料：**
+## 参考资料
 
 - [📖 CSS Flexible Box Layout Module Level 1](https://www.w3.org/TR/css-flexbox-1/)
 - [📝 A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)

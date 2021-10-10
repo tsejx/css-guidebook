@@ -219,12 +219,11 @@ if (animation === false) {
 
 ## 动画库
 
----
-
-**参考资料：**
+## 参考资料
 
 - [🛠 CSS Animation beta](http://cssanimate.com/)
 - [🛠 Browser Hacks](http://browserhacks.com/)
 - [🛠 CSS3 动画工具](http://www.shouce.ren/example/show/s/6869)
 - [📝 CSS3 动画合集：帧动画、补间动画、呼吸动画](https://blog.csdn.net/weixin_42839080/article/details/81546292)
 - [Web 动画原则及技巧浅析](https://juejin.cn/post/6976792239393472520)
+- [缓动函数速查表](https://www.xuanfengge.com/easeing/easeing/)

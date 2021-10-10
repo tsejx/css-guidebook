@@ -143,9 +143,7 @@ el.innerHTML = 'Content.';
 
 通常和最基本的字体用法配合使用。
 
----
-
-**参考资料：**
+## 参考资料
 
 - [🛠 中文字体压缩器](https://www.font-spider.org/)
 - [📝 真正了解 CSS3 背景下的 @font-face 规则](https://www.zhangxinxu.com/wordpress/2017/03/css3-font-face-src-local/)

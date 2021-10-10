@@ -86,6 +86,22 @@ order: 1
 - 父节点的层叠性影响着子节点的层叠性，也就是父节点 `z-index` 值很小，无论子节点的 `z-index` 值多大，其层级仍然很小
 - 如果没有 `z-index` 值，或者值相同，谁在 HTML 后面，谁的层叠行就更高
 
+### 失效场景
+
+`z-index` 属性在下列情况下会失效：
+
+1. 父元素 `position` 为 `relative` 时，子元素的 `z-index` 失效
+
+解决：父元素 `position` 改为 `absolute` 或 `static`
+
+2. 元素没有设置 `position` 属性为非 `static` 属性
+
+解决：设置该元素的 `position` 属性为 `relative`、`absolute` 或是 `fixed` 中的一种
+
+3. 元素在设置 `z-index` 的同时还设置了 `float` 浮动
+
+解决：`float` 去除，改为 `display：inline-block`
+
 ## 参考资料
 
 - [从零开始の CSS 学习笔记——定位](https://juejin.im/post/6859685615269576718)

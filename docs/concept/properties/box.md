@@ -24,7 +24,27 @@ nav:
 | `flex`         | 将对象作为弹性伸缩盒显示                         |
 | `grid`         |                                                  |
 
-### 内联布局的空隙问题
+### 行内元素与块级元素
+
+> `display` 属性的 `inline`、`block` 和 `inline-block` 之间有什么区别？
+
+- **inline**： 元素 **不会独占一行**，设置 `width`、`height` 属性无效。但可以设置水平方向的 `margin` 和 `padding` 属性，不能设置垂直方向的 `padding` 和 `margin`；
+- **block**： **会独占一行**，多个元素会另起一行，可以设置 `width`、`height`、`margin` 和 `padding` 属性；
+- **inline-block**： 将对象设置为 `inline` 对象，但对象的内容作为 `block` 对象呈现，之后的内联对象会被排列在同一行内。
+
+对于行内元素和块级元素，其特点如下：
+
+- 行内元素
+  - 设置宽高无效
+  - 可以设置水平方向的 `margin` 和 `padding` 属性，不能设置垂直方向的 `margin` 和 `padding`
+  - 不会自动换行
+- 块级元素
+  - 可以设置宽高
+  - 设置 margin 和 padding 都有效
+  - 可以自动换行
+  - 多个块状，默认排列从上到下
+
+### 行内元素的空隙问题
 
 **问题说明**：给两个或两个以上的元素设置 `display: inline-block` 或者 `display: inline`，将会导致它们之间产生一个微小的空隙。
 
@@ -253,8 +273,6 @@ outline: <outline-width> || <outline-style> || <outline-color>;
 - `outline` 通常是矩形，也可能是非矩形
 - `outline` 不允许像 `boder` 那样分拆为 `border-top` 或 `border-right`
 
----
-
-**参考资料：**
+## 参考资料
 
 - [awesome-css-cn](https://github.com/jobbole/awesome-css-cn)

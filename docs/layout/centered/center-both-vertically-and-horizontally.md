@@ -71,8 +71,6 @@ nav:
 }
 ```
 
----
-
-**参考资料：**
+## 参考资料
 
 - [📝 Centering in CSS: A Complete Guide](https://css-tricks.com/centering-css-complete-guide/)
