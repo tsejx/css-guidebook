@@ -15,7 +15,7 @@ nav:
 
 利用 `text-align: center` 可以实现块级元素内部的内联元素水平居中。
 
-**适用对象：**
+**适用对象**：
 
 - 内联元素 `line`
 - 内联块 `inline-block`
@@ -71,9 +71,9 @@ nav:
 
 <code src="../../../example/layout/horizontally/flex/index.tsx" />
 
-**优点：** 适用于任意个元素
+**优点**： 适用于任意个元素
 
-**缺点：** PC 端兼容性不好
+**缺点**： PC 端兼容性不好
 
 ### 固定宽度-外边距偏移
 
@@ -97,4 +97,4 @@ nav:
 
 <code src="../../../example/layout/horizontally/transform/index.tsx" />
 
-**优点：** 不用回流
+**优点**： 不用回流

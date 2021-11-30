@@ -36,7 +36,7 @@ order: 1
 
 <code src="../../../example/layout/double-columns/left-fixed-right-adaptive/float-margin-fix/index.tsx" />
 
-⚠️ **注意事项：**
+⚠️ **注意事项**：
 
 - 右边栏需要设定浮动 `float: right`
 - 右边栏需要设定宽度 `width: 100%` 和左外边距 `margin-left` 绝对值需要大于等于左边栏 `width` 才能上移一行

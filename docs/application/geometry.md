@@ -56,7 +56,7 @@ order: 1
 
 在这个网站 [CSS clip-path marker](https://bennettfeely.com/clippy/) 可以快捷创建简单的 `clip-path` 图形，得到对应的 CSS 代码。
 
-### 字符绘制
+### 三角形字符绘制
 
 十进制 Unicode 三角形的表示码。
 
@@ -81,12 +81,52 @@ order: 1
 
 <code src="../../example/application-geometry/corner-triangle/index.tsx" />
 
+## 正方形
+
+### 利用 vw 单位
+
+实现思路：将盒子的宽高设置为相同的数值和计量单位 `vw` 或 `vh`（一般使用 `vw`）
+
+<code src="../../example/application-geometry/square-vw/index.tsx" />
+
+### 设置垂直方向的 padding 撑开容器
+
+在 CSS 盒模型中，一个比较容易被忽略的就是 `margin` 和 `padding` 的百分比数值计算。按照规定，`margin` 和 `padding` 的百分比数值是相对 **父元素宽度** 的宽度计算的。由此可以发现只需将元素 <strong style="color:red">垂直方向</strong> 的一个 `padding` 值设定为与 `width` <strong style="color:red">相同的百分比</strong> 就可以制作出自适应正方形了：
+
+<code src="../../example/application-geometry/square-vertical-padding/index.tsx" />
+
+注意：为了解决内容区域被内容撑高的问题，可以设置容器的高度为 `0`。
+
+这种方案简洁明了，且兼容性好；但是除了填充内容后会出现问题以外，还有可能碰上 `max-height` 不收缩。
+
+### 利用伪元素的上边距撑开容器
+
+利用百分比数值的 `padding-bottom` 属性撑开容器诶不空间，但是这样做会导致再元素上设置 `max-height` 属性失效。
+
+<code src="../../example/application-geometry/square-pseudo/index.tsx" />
+
+由于 margin collapse 的原因，容器与伪元素在垂直方向发生了外边距折叠，所以我们想象中的撑开父元素高度并没有出现，解决方法就是在父元素上触发 BFC。
+
+```css
+.sqaure-pseudo {
+  overflow: hidden;
+}
+```
+
+若使用垂直方向上的 `padding` 撑开父元素，则不需要触发 BFC。
+
 ## 同心圆
 
 1. 使用 `box-shadow` 单个元素实现
 2. 使用 CSS3 `repeating-radial-gradient` 函数单个元素实现
 
 <code src="../../example/application-geometry/concentric-circles/index.tsx" />
+
+## 五角星
+
+<code src="../../example/application-geometry/pentagram-pseudo/index.tsx" />
+
+### 五角星字符绘制
 
 ## 参考资料
 

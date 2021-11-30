@@ -1,0 +1,12 @@
+.sqaure-pseudo {
+  width: 10%;
+  overflow: hidden;
+  background-color: skyblue;
+}
+
+.sqaure-pseudo::after {
+  content: '';
+  display: block;
+  /* margin 百分比相对父元素宽度计算 */
+  margin-top: 100%;
+}
