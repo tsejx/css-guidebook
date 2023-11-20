@@ -320,7 +320,9 @@ button:hover {
   width: 0;
 }
 
-.max(10px);
+.max {
+  .max(10px);
+}
 
 // 编译后
 .max {
@@ -360,7 +362,7 @@ Less 中混合调用自身，即可形成循环。
   .loop(@counter - 1);
 
   // 每次调用时产生的样式代码
-  width: (10px - * @counter);
+  width: (10px * @counter);
 }
 
 .container {
